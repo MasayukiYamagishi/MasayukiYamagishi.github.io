@@ -10,10 +10,10 @@ export function Header({ locale }: HeaderProps) {
   const dictionary = getDictionary(locale);
 
   return (
-    <header>
-      <nav aria-label="Global navigation">
+    <header className="p-4 flex justify-end gap-8">
+      <nav className="gap-4 flex" aria-label="Global navigation">
         {navigationItems.map((item) => (
-          <a key={item.key} href={`#${item.sectionId}`}>
+          <a className="text-base" key={item.key} href={`#${item.sectionId}`}>
             {dictionary.navigation[item.key]}
           </a>
         ))}

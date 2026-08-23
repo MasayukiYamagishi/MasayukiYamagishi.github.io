@@ -1,11 +1,15 @@
+import { socialLinks } from "@/config/site";
+
 export function Footer() {
   return (
-    <footer>
-      <p>🄫 2026 Masayuki Yamagishi</p>
-      <div className="social-links">
-        <a>GitHub</a>
-        <a>LinkedIn</a>
-        <a>Zenn</a>
+    <footer className="p-4">
+      <p className="text-base font-semibold">🄫 Masayuki Yamagishi 2026</p>
+      <div className="flex gap-2">
+        {socialLinks.map((item) => (
+          <a key={item.key} href={item.url}>
+            {item.label}
+          </a>
+        ))}
       </div>
     </footer>
   );

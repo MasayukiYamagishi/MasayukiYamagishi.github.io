@@ -12,7 +12,7 @@ import { en } from "@/i18n/dictionaries/en";
  */
 export default async function EnglishHomePage() {
   return (
-    <main>
+    <main className="mx-auto w-full max-w-5xl px-6 sm:px-8">
       <Hero dictionary={en.hero}></Hero>
       <Skills dictionary={en.skills}></Skills>
       <Posts dictionary={en.posts}></Posts>
