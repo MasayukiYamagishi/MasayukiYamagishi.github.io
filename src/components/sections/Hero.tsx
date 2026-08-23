@@ -13,7 +13,16 @@ export function Hero({ dictionary }: HeroProps) {
   return (
     <section
       id={sectionIds.about}
-      className="mx-auto flex min-h-[70vh] w-full max-w-5xl flex-col justify-center px-6 py-24 sm:px-8"
+      className="
+        mx-auto
+        w-full
+        max-w-5xl
+        scroll-mt-24
+        px-6
+        py-20
+        sm:px-8
+        sm:py-24
+      "
     >
       <h1 className="mb-2 text-base font-bold leading-8 text-foreground sm:text-4xl">
         {dictionary.name}
