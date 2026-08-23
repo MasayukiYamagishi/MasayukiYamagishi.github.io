@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <section>
+    <section id="about">
       <p>Frontend Engineer</p>
 
       <h1>Masayuki Yamagishi</h1>
