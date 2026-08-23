@@ -1,13 +1,25 @@
-export function Header() {
+import { navigationItems } from "@/config/navigation";
+import { getDictionary } from "@/i18n/getDictionary";
+import { LanguageSwitcher } from "../ui/LanguageSwitcher";
+
+type HeaderProps = {
+  locale: "ja" | "en";
+};
+
+export function Header({ locale }: HeaderProps) {
+  const dictionary = getDictionary(locale);
+
   return (
     <header>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#posts">Posts</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+      <nav aria-label="Global navigation">
+        {navigationItems.map((item) => (
+          <a key={item.key} href={`#${item.sectionId}`}>
+            {dictionary.navigation[item.key]}
+          </a>
+        ))}
       </nav>
+
+      <LanguageSwitcher locale={locale} />
     </header>
   );
 }

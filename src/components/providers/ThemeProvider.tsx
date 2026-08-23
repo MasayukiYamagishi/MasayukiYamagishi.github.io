@@ -1,5 +1,6 @@
 "use client";
 
+import { defaultTheme } from "@/config/theme";
 import { ThemeProvider as NextThemeProvider } from "next-themes";
 
 type ThemeProviderProps = {
@@ -10,7 +11,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
   return (
     <NextThemeProvider
       attribute="data-theme"
-      defaultTheme="system"
+      defaultTheme={defaultTheme}
       enableSystem
     >
       {children}

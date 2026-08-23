@@ -1,14 +1,27 @@
-export function Hero() {
+import { sectionIds } from "@/config/navigation";
+import { socialLinks } from "@/config/site";
+
+type HeroProps = {
+  dictionary: {
+    name: string;
+    role: string;
+    description: string;
+  };
+};
+
+export function Hero({ dictionary }: HeroProps) {
   return (
-    <section id="about">
-      <p>Frontend Engineer</p>
-
-      <h1>Masayuki Yamagishi</h1>
-
-      <p>
-        I build user-facing web products with a focus on UI quality,
-        accessibility and performance.
-      </p>
+    <section id={sectionIds.about}>
+      <h1>{dictionary.name}</h1>
+      <p>{dictionary.role}</p>
+      <p>{dictionary.description}</p>
+      <div className="social-links">
+        {socialLinks.map((item) => (
+          <a key={item.key} href={item.url}>
+            {item.label}
+          </a>
+        ))}
+      </div>
     </section>
   );
 }

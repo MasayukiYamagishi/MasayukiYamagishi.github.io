@@ -1,6 +1,12 @@
-export function Skills() {
+import { sectionIds } from "@/config/navigation";
+
+type SkillsProps = {
+  dictionary: {};
+};
+
+export function Skills({ dictionary }: SkillsProps) {
   return (
-    <section id="skills">
+    <section id={sectionIds.skills}>
       <div className="frontend"></div>
       <div className="backend"></div>
       <div className="Engineering"></div>
