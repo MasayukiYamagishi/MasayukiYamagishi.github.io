@@ -11,7 +11,7 @@ export function isLocale(value: string): value is Locale {
 export const localePaths = {
   ja: "/",
   en: "/en",
-} as const satisfies Record<Locale, String>;
+} as const satisfies Record<Locale, string>;
 
 export const localeLabels = {
   ja: "JA",
