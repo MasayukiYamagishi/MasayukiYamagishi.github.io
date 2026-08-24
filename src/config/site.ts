@@ -1,4 +1,11 @@
+import { Brand } from "@/components/ui/icons/brandIcons";
 import type { Metadata } from "next";
+
+type SocialLink = {
+  key: Brand;
+  label: string;
+  url: string;
+};
 
 export const siteConfig = {
   name: "Masayuki Yamagishi",
@@ -29,4 +36,4 @@ export const socialLinks = [
     label: "Zenn",
     url: "https://zenn.dev/midpt",
   },
-];
+] as const satisfies readonly SocialLink[];

@@ -1,6 +1,7 @@
 import { navigationItems } from "@/config/navigation";
 import { getDictionary } from "@/i18n/getDictionary";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher";
+import { ThemeSwitcher } from "../ui/ThemeSwitcher";
 
 type HeaderProps = {
   locale: "ja" | "en";
@@ -19,6 +20,7 @@ export function Header({ locale }: HeaderProps) {
         ))}
       </nav>
 
+      <ThemeSwitcher />
       <LanguageSwitcher locale={locale} />
     </header>
   );

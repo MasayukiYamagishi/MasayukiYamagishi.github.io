@@ -1,5 +1,5 @@
 import { sectionIds } from "@/config/navigation";
-import { socialLinks } from "@/config/site";
+import { SocialLinks } from "../ui/SocialLinks";
 
 type HeroProps = {
   dictionary: {
@@ -31,13 +31,8 @@ export function Hero({ dictionary }: HeroProps) {
       <p className="mt-6 mb-4 max-w-[68ch] text-base leading-7 text-muted sm:text-lg">
         {dictionary.description}
       </p>
-      <div className="flex gap-2">
-        {socialLinks.map((item) => (
-          <a key={item.key} href={item.url}>
-            {item.label}
-          </a>
-        ))}
-      </div>
+
+      <SocialLinks />
     </section>
   );
 }
