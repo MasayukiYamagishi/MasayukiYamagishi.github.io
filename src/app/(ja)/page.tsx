@@ -15,7 +15,7 @@ export default async function HomePage() {
     <main className="mx-auto w-full max-w-5xl px-6 sm:px-8">
       <Hero dictionary={ja.hero}></Hero>
       <Skills dictionary={ja.skills}></Skills>
-      <Posts dictionary={ja.posts}></Posts>
+      <Posts locale="ja" dictionary={ja.posts}></Posts>
       <Projects dictionary={ja.projects}></Projects>
       <WorkExperience dictionary={ja.experience}></WorkExperience>
     </main>

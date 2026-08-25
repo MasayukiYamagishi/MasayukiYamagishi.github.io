@@ -1,12 +1,25 @@
 import { sectionIds } from "@/config/navigation";
+import { getPosts } from "@/content/posts";
+import { Locale } from "@/i18n/config";
+import { ArticleCard } from "../ui/ArticleCard";
 
 type PostsProps = {
+  locale: Locale;
   dictionary: {
-    date: string;
+    publishedAt: string;
+    updatedAt: string;
   };
 };
 
-export function Posts({ dictionary }: PostsProps) {
+/**
+ * Postsセクション
+ *
+ * @param PostsProps props
+ * @returns PostsセクションのJSX
+ */
+export async function Posts({ locale, dictionary }: PostsProps) {
+  const posts = await getPosts();
+
   return (
     <section
       id={sectionIds.posts}
@@ -20,6 +33,17 @@ export function Posts({ dictionary }: PostsProps) {
         sm:px-8
         sm:py-24
       "
-    ></section>
+    >
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post) => (
+          <ArticleCard
+            key={post.slug}
+            post={post}
+            locale={locale}
+            dictionary={dictionary}
+          />
+        ))}
+      </div>
+    </section>
   );
 }

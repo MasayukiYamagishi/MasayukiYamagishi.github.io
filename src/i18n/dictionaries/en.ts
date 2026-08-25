@@ -24,7 +24,8 @@ export const en = {
   skills: {},
 
   posts: {
-    date: "投稿日",
+    publishedAt: "Published",
+    updatedAt: "Updated",
   },
 
   projects: {
