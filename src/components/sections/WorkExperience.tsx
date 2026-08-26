@@ -4,6 +4,7 @@ import {
   workExperiences,
 } from "@/content/workExperience";
 import { Locale } from "@/i18n/config";
+import { ExternalLink } from "lucide-react";
 import { SimpleIconGraphic } from "../ui/icons/SimpleIconGraphic";
 import { getTechnologyIcon } from "../ui/icons/TechnologyIcons";
 import { WorkExperienceTimelineItem } from "./work-experience/WorkExperienceTimelineItem";
@@ -28,7 +29,25 @@ export function WorkExperience({
           <WorkExperienceTimelineItem key={experience.id}>
             <header className="flex flex-col gap-1">
               <h3 className="text-xl font-semibold leading-snug text-foreground">
-                {experience.company[locale]}
+                {experience.companyUrl ? (
+                  <a
+                    href={experience.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline"
+                  >
+                    {experience.company[locale]}
+                    <ExternalLink
+                      aria-hidden="true"
+                      className="size-4 shrink-0"
+                    />
+                    <span className="sr-only">
+                      新しいタブで公式サイトを開く
+                    </span>
+                  </a>
+                ) : (
+                  experience.company[locale]
+                )}
               </h3>
 
               <div className="flex flex-col gap-0">

@@ -33,6 +33,7 @@ export type ExperienceProject = {
 export type WorkExperience = {
   id: string;
   company: LocalizedText;
+  companyUrl?: string;
   role: LocalizedText;
   period: ExperiencePeriod;
   summary: LocalizedText;
@@ -47,6 +48,8 @@ export const workExperiences = [
       ja: "株式会社MIT",
       en: "MIT Corp.",
     },
+
+    companyUrl: "https://k-mit.jp/",
 
     role: {
       ja: "システムエンジニア",
