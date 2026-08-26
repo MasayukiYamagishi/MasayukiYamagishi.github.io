@@ -21,7 +21,11 @@ export default async function EnglishHomePage() {
         heading={en.sections.projects}
         dictionary={en.projects}
       ></Projects>
-      <WorkExperience dictionary={en.experience}></WorkExperience>
+      <WorkExperience
+        locale="en"
+        heading={en.sections.experience}
+        dictionary={en.experience}
+      ></WorkExperience>
     </main>
   );
 }

@@ -1,7 +1,10 @@
 import type { SimpleIcon } from "simple-icons";
 import {
+  siClaudecode,
   siNextdotjs,
+  siPostgresql,
   siReact,
+  siSpringboot,
   siStorybook,
   siTailwindcss,
   siTypescript,
@@ -15,6 +18,9 @@ export const technologyIcons = {
   tailwindcss: siTailwindcss,
   typescript: siTypescript,
   zod: siZod,
+  springboot: siSpringboot,
+  postgresql: siPostgresql,
+  claudecode: siClaudecode,
 } as const satisfies Record<string, SimpleIcon>;
 
 /**

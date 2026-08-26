@@ -21,7 +21,14 @@ export const en = {
       "I build web products with a focus on UI quality, accessibility, and performance.",
   },
 
-  skills: {},
+  skills: {
+    nextjs: "Next.js",
+    typescript: "TypeScript",
+    java: "Java",
+    springboot: "Spring Boot",
+    postgresql: "PostgreSQL",
+    claudecode: "Claude Code",
+  },
 
   posts: {
     publishedAt: "Published",
@@ -33,5 +40,10 @@ export const en = {
     technologies: "Technologies",
   },
 
-  experience: {},
+  experience: {
+    present: "Present",
+    showProjects: "Show details",
+    hideProjects: "Hide details",
+    technologies: "Technologies",
+  },
 };

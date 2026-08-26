@@ -96,3 +96,29 @@ button {
     scroll-behavior: auto !important;
   }
 }
+
+.experience-details {
+  interpolate-size: allow-keywords;
+}
+
+.experience-details::details-content {
+  block-size: 0;
+  overflow: hidden;
+  opacity: 0;
+
+  transition:
+    block-size 240ms ease-out,
+    opacity 240ms ease-out,
+    content-visibility 240ms allow-discrete;
+}
+
+.experience-details[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-details::details-content {
+    transition: none;
+  }
+}

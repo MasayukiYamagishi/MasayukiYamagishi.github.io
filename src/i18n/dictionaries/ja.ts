@@ -21,7 +21,14 @@ export const ja = {
       "UI品質、アクセシビリティ、パフォーマンスを重視したWeb開発に取り組んでいます。",
   },
 
-  skills: {},
+  skills: {
+    nextjs: "Next.js",
+    typescript: "TypeScript",
+    java: "Java",
+    springboot: "Spring Boot",
+    postgresql: "PostgreSQL",
+    claudecode: "Claude Code",
+  },
 
   posts: {
     publishedAt: "投稿日",
@@ -33,5 +40,10 @@ export const ja = {
     technologies: "使用技術",
   },
 
-  experience: {},
+  experience: {
+    present: "現在",
+    showProjects: "詳細を見る",
+    hideProjects: "詳細を閉じる",
+    technologies: "主な技術",
+  },
 };
