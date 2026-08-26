@@ -12,7 +12,7 @@ export function Skills({ heading, dictionary }: SkillsProps) {
     <section
       id={sectionIds.skills}
       aria-labelledby={`${sectionIds.skills}-heading`}
-      className="scroll-mt-24 py-16 sm:py-20"
+      className="scroll-mt-24 py-20 sm:py-24"
     >
       <h2
         id={`${sectionIds.skills}-heading`}
