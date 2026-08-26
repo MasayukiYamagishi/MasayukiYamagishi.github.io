@@ -73,22 +73,6 @@ button {
   color: var(--background);
 }
 
-.brand-icon-light {
-  display: block;
-}
-
-.brand-icon-dark {
-  display: none;
-}
-
-[data-theme="dark"] .brand-icon-light {
-  display: none;
-}
-
-[data-theme="dark"] .brand-icon-dark {
-  display: block;
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -121,4 +105,20 @@ button {
   .experience-details::details-content {
     transition: none;
   }
+}
+
+.theme-icon-light {
+  display: block;
+}
+
+.theme-icon-dark {
+  display: none;
+}
+
+[data-theme="dark"] .theme-icon-light {
+  display: none;
+}
+
+[data-theme="dark"] .theme-icon-dark {
+  display: block;
 }

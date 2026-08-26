@@ -1,28 +1,37 @@
 import { sectionIds } from "@/config/navigation";
+import { skillGroups, SkillsDictionary } from "@/content/skills";
+import { SkillGroupCard } from "./skills/SkillGroupCard";
 
 type SkillsProps = {
-  dictionary: {};
+  heading: string;
+  dictionary: SkillsDictionary;
 };
 
-export function Skills({ dictionary }: SkillsProps) {
+export function Skills({ heading, dictionary }: SkillsProps) {
   return (
     <section
       id={sectionIds.skills}
-      className="
-        mx-auto
-        w-full
-        max-w-5xl
-        scroll-mt-24
-        px-6
-        py-20
-        sm:px-8
-        sm:py-24
-      "
+      aria-labelledby={`${sectionIds.skills}-heading`}
+      className="scroll-mt-24 py-16 sm:py-20"
     >
-      <div className="frontend"></div>
-      <div className="backend"></div>
-      <div className="Engineering"></div>
-      <div className="ai"></div>
+      <h2
+        id={`${sectionIds.skills}-heading`}
+        className="mb-8 text-2xl font-semibold text-foreground"
+      >
+        {heading}
+      </h2>
+
+      <div className="grid gap-4 md:grid-cols-2">
+        {skillGroups.map((group) => (
+          <SkillGroupCard
+            key={group.id}
+            title={dictionary.categories[group.id]}
+            skillIds={group.skills}
+            dictionary={dictionary}
+            wide={"wide" in group && group.wide}
+          />
+        ))}
+      </div>
     </section>
   );
 }

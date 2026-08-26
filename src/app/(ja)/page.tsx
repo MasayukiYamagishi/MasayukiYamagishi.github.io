@@ -14,13 +14,13 @@ export default async function HomePage() {
   return (
     <main className="mx-auto w-full max-w-5xl px-6 sm:px-8">
       <Hero dictionary={ja.hero}></Hero>
-      <Skills dictionary={ja.skills}></Skills>
       <Posts locale="ja" dictionary={ja.posts}></Posts>
       <Projects
         locale="ja"
         heading={ja.sections.projects}
         dictionary={ja.projects}
       ></Projects>
+      <Skills heading={ja.sections.skills} dictionary={ja.skills}></Skills>
       <WorkExperience
         locale="ja"
         heading={ja.sections.experience}

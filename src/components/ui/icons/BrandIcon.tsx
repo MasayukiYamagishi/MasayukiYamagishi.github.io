@@ -51,7 +51,7 @@ export function BrandIcon({
         alt=""
         width={size}
         height={size}
-        className="brand-icon-light"
+        className="theme-icon-light"
       />
 
       <Image
@@ -59,7 +59,7 @@ export function BrandIcon({
         alt=""
         width={size}
         height={size}
-        className="bland-icon-dark"
+        className="theme-icon-dark"
       />
     </span>
   );
