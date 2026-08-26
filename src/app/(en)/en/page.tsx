@@ -16,7 +16,11 @@ export default async function EnglishHomePage() {
       <Hero dictionary={en.hero}></Hero>
       <Skills dictionary={en.skills}></Skills>
       <Posts locale="en" dictionary={en.posts}></Posts>
-      <Projects dictionary={en.projects}></Projects>
+      <Projects
+        locale="en"
+        heading={en.sections.projects}
+        dictionary={en.projects}
+      ></Projects>
       <WorkExperience dictionary={en.experience}></WorkExperience>
     </main>
   );

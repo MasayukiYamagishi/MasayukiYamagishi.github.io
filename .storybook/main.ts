@@ -12,5 +12,14 @@ const config: StorybookConfig = {
   ],
   framework: "@storybook/nextjs-vite",
   staticDirs: ["..\\public"],
+
+  async viteFinal(config) {
+    config.optimizeDeps ??= {};
+    config.optimizeDeps.include = [
+      ...new Set([...(config.optimizeDeps.include ?? []), "lucide-react"]),
+    ];
+
+    return config;
+  },
 };
 export default config;

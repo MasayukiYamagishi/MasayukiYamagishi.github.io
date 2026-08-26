@@ -29,7 +29,8 @@ export const en = {
   },
 
   projects: {
-    updatedAt: "最終更新日",
+    externalSite: "External site",
+    technologies: "Technologies",
   },
 
   experience: {},

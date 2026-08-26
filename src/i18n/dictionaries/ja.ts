@@ -29,7 +29,8 @@ export const ja = {
   },
 
   projects: {
-    updatedAt: "最終更新日",
+    externalSite: "外部サイト",
+    technologies: "使用技術",
   },
 
   experience: {},
