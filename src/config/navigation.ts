@@ -1,8 +1,8 @@
 export const sectionIds = {
   about: "about",
-  skills: "skills",
   posts: "posts",
   projects: "projects",
+  skills: "skills",
   experience: "experience",
 } as const;
 
@@ -14,16 +14,16 @@ export const navigationItems = [
     sectionId: sectionIds.about,
   },
   {
-    key: "skills",
-    sectionId: sectionIds.skills,
-  },
-  {
     key: "posts",
     sectionId: sectionIds.posts,
   },
   {
     key: "projects",
     sectionId: sectionIds.projects,
+  },
+  {
+    key: "skills",
+    sectionId: sectionIds.skills,
   },
   {
     key: "experience",

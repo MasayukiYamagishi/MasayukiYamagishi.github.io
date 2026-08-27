@@ -20,9 +20,20 @@ export function WorkExperience({
   heading,
   dictionary,
 }: WorkExperienceProps) {
+  const headingId = `${sectionIds.experience}-heading`;
+
   return (
-    <section id={sectionIds.experience} className="scroll-mt-24 py-10 sm:py-12">
-      <h2 className="mb-8 text-2xl font-semibold text-foreground">{heading}</h2>
+    <section
+      id={sectionIds.experience}
+      aria-labelledby={headingId}
+      className="scroll-mt-24 py-10 sm:py-12"
+    >
+      <h2
+        id={headingId}
+        className="mb-8 text-2xl font-semibold text-foreground"
+      >
+        {heading}
+      </h2>
 
       <ol className="m-0 list-none p-0">
         {workExperiences.map((experience) => (

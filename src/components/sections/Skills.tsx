@@ -8,14 +8,16 @@ type SkillsProps = {
 };
 
 export function Skills({ heading, dictionary }: SkillsProps) {
+  const headingId = `${sectionIds.skills}-heading`;
+
   return (
     <section
       id={sectionIds.skills}
-      aria-labelledby={`${sectionIds.skills}-heading`}
+      aria-labelledby={headingId}
       className="scroll-mt-24 py-10 sm:py-12"
     >
       <h2
-        id={`${sectionIds.skills}-heading`}
+        id={headingId}
         className="mb-8 text-2xl font-semibold text-foreground"
       >
         {heading}

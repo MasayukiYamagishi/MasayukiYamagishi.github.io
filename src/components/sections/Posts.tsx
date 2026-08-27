@@ -19,11 +19,15 @@ type PostsProps = {
  * @returns PostsセクションのJSX
  */
 export async function Posts({ locale, heading, dictionary }: PostsProps) {
-  const headingId = `${sectionIds.projects}-heading`;
+  const headingId = `${sectionIds.posts}-heading`;
   const posts = await getPosts();
 
   return (
-    <section id={sectionIds.posts} className="scroll-mt-24 py-10 sm:py-12">
+    <section
+      id={sectionIds.posts}
+      aria-labelledby={headingId}
+      className="scroll-mt-24 py-10 sm:py-12"
+    >
       <h2
         id={headingId}
         className="mb-8 text-2xl font-semibold text-foreground"

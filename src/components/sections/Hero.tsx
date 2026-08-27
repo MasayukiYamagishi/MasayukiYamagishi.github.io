@@ -10,9 +10,12 @@ type HeroProps = {
 };
 
 export function Hero({ dictionary }: HeroProps) {
+  const headingId = `${sectionIds.about}-heading`;
+
   return (
     <section
       id={sectionIds.about}
+      aria-labelledby={headingId}
       className="
         mx-auto
         w-full
@@ -24,7 +27,10 @@ export function Hero({ dictionary }: HeroProps) {
         sm:py-24
       "
     >
-      <h1 className="mb-2 text-base font-bold leading-8 text-foreground sm:text-4xl">
+      <h1
+        id={headingId}
+        className="mb-2 text-base font-bold leading-8 text-foreground sm:text-4xl"
+      >
         {dictionary.name}
       </h1>
       <p className="text-accent text-base sm:text-lg">{dictionary.role}</p>
