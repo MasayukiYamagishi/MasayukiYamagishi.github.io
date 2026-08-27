@@ -11,7 +11,7 @@ export function Header({ locale }: HeaderProps) {
   const dictionary = getDictionary(locale);
 
   return (
-    <header className="p-4 flex justify-end gap-8">
+    <header className="p-4 flex justify-end items-center gap-6">
       <nav className="gap-4 flex" aria-label="Global navigation">
         {navigationItems.map((item) => (
           <a className="text-base" key={item.key} href={`#${item.sectionId}`}>
@@ -20,7 +20,7 @@ export function Header({ locale }: HeaderProps) {
         ))}
       </nav>
 
-      <ThemeSwitcher />
+      <ThemeSwitcher label={dictionary.controls.toggleTheme} />
       <LanguageSwitcher locale={locale} />
     </header>
   );

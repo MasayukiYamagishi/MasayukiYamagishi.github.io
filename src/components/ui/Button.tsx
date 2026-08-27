@@ -4,7 +4,7 @@ import {
   Button as BaseButton,
   type ButtonProps as BaseButtonProps,
 } from "@base-ui/react/button";
-import { forwardRef, ReactNode } from "react";
+import { forwardRef, type ReactNode } from "react";
 
 const variantStyles = {
   ghost: `

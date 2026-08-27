@@ -7,6 +7,10 @@ export const ja = {
     experience: "Experience",
   },
 
+  controls: {
+    toggleTheme: "ライトモードとダークモードを切り替える",
+  },
+
   sections: {
     skills: "Skills",
     posts: "Posts",

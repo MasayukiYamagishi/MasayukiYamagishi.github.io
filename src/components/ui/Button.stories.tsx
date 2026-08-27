@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/nextjs-vite";
+import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { Languages, Moon } from "lucide-react";
 import { expect, within } from "storybook/test";
 import { Button, IconButton } from "./Button";
@@ -35,6 +35,12 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {};
 
 export const Outline: Story = {
+  args: {
+    variant: "outline",
+  },
+};
+
+export const WithIcon: Story = {
   args: {
     children: (
       <>

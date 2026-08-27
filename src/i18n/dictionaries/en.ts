@@ -7,6 +7,10 @@ export const en = {
     experience: "Experience",
   },
 
+  controls: {
+    toggleTheme: "Toggle light and dark mode",
+  },
+
   sections: {
     skills: "Skills",
     posts: "Posts",

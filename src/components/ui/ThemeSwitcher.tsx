@@ -1,31 +1,25 @@
 "use client";
 
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { IconButton } from "./Button";
+import { Icon } from "./icons/Icon";
 
-export function ThemeSwitcher() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+type ThemeSwitcherProps = {
+  label: string;
+};
 
-  useEffect(() => {
-    // next-themesの値はクライアントマウント後に確定する
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setMounted(true);
-  }, []);
+export function ThemeSwitcher({ label }: ThemeSwitcherProps) {
+  const { resolvedTheme, setTheme } = useTheme();
 
-  if (!mounted) {
-    return null;
+  function toggleMenu() {
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
   }
 
   return (
-    <select
-      value={theme}
-      onChange={(event) => setTheme(event.target.value)}
-      aria-label="Color theme"
-    >
-      <option value="system">System</option>
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-    </select>
+    <IconButton aria-label={label} onClick={toggleMenu}>
+      <Icon icon={Moon} size={18} className="theme-icon-light" />
+      <Icon icon={Sun} size={18} className="theme-icon-dark" />
+    </IconButton>
   );
 }
