@@ -20,7 +20,7 @@ export async function Projects({ locale, heading, dictionary }: ProjectsProps) {
   const headingId = `${sectionIds.projects}-heading`;
 
   return (
-    <section id={sectionIds.projects} className="scroll-mt-24 py-20 sm:py-24">
+    <section id={sectionIds.projects} className="scroll-mt-24 py-10 sm:py-12">
       <h2
         id={headingId}
         className="mb-8 text-2xl font-semibold text-foreground"

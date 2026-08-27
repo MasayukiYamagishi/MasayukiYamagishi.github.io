@@ -14,7 +14,11 @@ export default async function EnglishHomePage() {
   return (
     <main className="mx-auto w-full max-w-5xl px-6 sm:px-8">
       <Hero dictionary={en.hero}></Hero>
-      <Posts locale="en" dictionary={en.posts}></Posts>
+      <Posts
+        locale="en"
+        heading={en.sections.posts}
+        dictionary={en.posts}
+      ></Posts>
       <Projects
         locale="en"
         heading={en.sections.projects}

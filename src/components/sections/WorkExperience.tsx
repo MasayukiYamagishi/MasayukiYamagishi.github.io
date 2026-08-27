@@ -21,7 +21,7 @@ export function WorkExperience({
   dictionary,
 }: WorkExperienceProps) {
   return (
-    <section id={sectionIds.experience} className="scroll-mt-24 py-20 sm:py-24">
+    <section id={sectionIds.experience} className="scroll-mt-24 py-10 sm:py-12">
       <h2 className="mb-8 text-2xl font-semibold text-foreground">{heading}</h2>
 
       <ol className="m-0 list-none p-0">
