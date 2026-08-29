@@ -8,6 +8,7 @@ import { getTechnologyIcon } from "./icons/TechnologyIcons";
 export type ProjectCardDictionary = {
   externalSite: string;
   technologies: string;
+  emptyMessage: string;
 };
 
 type ProjectCardProps = {

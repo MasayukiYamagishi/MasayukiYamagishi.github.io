@@ -17,8 +17,10 @@ export function Hero({ dictionary }: HeroProps) {
       id={sectionIds.about}
       aria-labelledby={headingId}
       className="
-        py-20
-        sm:py-24
+        pt-20
+        pb-10
+        sm:pt-24
+        sm:pb-12
       "
     >
       <h1

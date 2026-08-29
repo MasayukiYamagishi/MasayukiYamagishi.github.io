@@ -74,11 +74,13 @@ export const en = {
   posts: {
     publishedAt: "Published",
     updatedAt: "Updated",
+    emptyMessage: "No posts.",
   },
 
   projects: {
     externalSite: "External site",
     technologies: "Technologies",
+    emptyMessage: "The project is currently in the planning stages.",
   },
 
   experience: {

@@ -74,11 +74,13 @@ export const ja = {
   posts: {
     publishedAt: "投稿日",
     updatedAt: "最終更新日",
+    emptyMessage: "投稿はありません。",
   },
 
   projects: {
     externalSite: "外部サイト",
     technologies: "使用技術",
+    emptyMessage: "プロジェクトは現在準備中です。",
   },
 
   experience: {

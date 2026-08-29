@@ -32,17 +32,23 @@ export async function Projects({ locale, heading, dictionary }: ProjectsProps) {
         {heading}
       </h2>
 
-      <ul className="flex flex-col gap-5">
-        {projects.map((project) => (
-          <li key={project.slug} className="w-full">
-            <ProjectCard
-              project={project}
-              locale={locale}
-              dictionary={dictionary}
-            />
-          </li>
-        ))}
-      </ul>
+      {projects.length === 0 ? (
+        <p className="rounded-2xl border border-dashed border-border bg-surface px-6 py-10 text-center text-sm text-muted">
+          {dictionary.emptyMessage}
+        </p>
+      ) : (
+        <ul className="flex flex-col gap-5">
+          {projects.map((project) => (
+            <li key={project.slug} className="w-full">
+              <ProjectCard
+                project={project}
+                locale={locale}
+                dictionary={dictionary}
+              />
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   );
 }
