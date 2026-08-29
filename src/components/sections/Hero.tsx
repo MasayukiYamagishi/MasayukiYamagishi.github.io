@@ -20,7 +20,6 @@ export function Hero({ dictionary }: HeroProps) {
         mx-auto
         w-full
         max-w-5xl
-        scroll-mt-24
         px-6
         py-20
         sm:px-8

@@ -89,7 +89,7 @@ export type IconButtonProps = Omit<
   "aria-label" | "children" | "size"
 > & {
   "aria-label": string;
-  children: ReactNode;
+  children?: ReactNode;
 };
 
 export const IconButton = forwardRef<HTMLElement, IconButtonProps>(

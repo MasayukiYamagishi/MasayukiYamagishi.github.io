@@ -10,6 +10,10 @@ export const en = {
   controls: {
     toggleTheme: "Toggle light and dark mode",
     selectLanguage: "Select display language",
+    openNavigation: "Open navigation",
+    closeNavigation: "Close navigation",
+    navigationTitle: "Navigation",
+    navigationDescription: "Select a section to display",
   },
 
   sections: {

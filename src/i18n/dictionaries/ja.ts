@@ -10,6 +10,10 @@ export const ja = {
   controls: {
     toggleTheme: "ライトモードとダークモードを切り替える",
     selectLanguage: "表示言語を選択",
+    openNavigation: "ナビゲーションを開く",
+    closeNavigation: "ナビゲーションを閉じる",
+    navigationTitle: "ナビゲーション",
+    navigationDescription: "表示するセクションを選択",
   },
 
   sections: {

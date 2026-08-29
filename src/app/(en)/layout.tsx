@@ -26,7 +26,7 @@ export default async function LocaleLayout({ children }: Props) {
     >
       <body>
         <ThemeProvider>
-          <div className="isolate">
+          <div className="isolate pt-16">
             <Header locale="en" />
             {children}
             <Footer />

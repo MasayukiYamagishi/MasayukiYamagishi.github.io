@@ -26,7 +26,7 @@ export function WorkExperience({
     <section
       id={sectionIds.experience}
       aria-labelledby={headingId}
-      className="scroll-mt-24 py-10 sm:py-12"
+      className="py-10 sm:py-12"
     >
       <h2
         id={headingId}
