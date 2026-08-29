@@ -4,12 +4,14 @@ import { IconButton } from "../ui/Button";
 import { Icon } from "../ui/icons/Icon";
 
 type MobileNavigationItem = {
+  sectionId: string;
   href: string;
   label: string;
 };
 
 type MobileNavigationProps = {
   items: ReadonlyArray<MobileNavigationItem>;
+  activeSectionId: string;
   openLabel: string;
   closeLabel: string;
   title: string;
@@ -18,6 +20,7 @@ type MobileNavigationProps = {
 
 export function MobileNavigation({
   items,
+  activeSectionId,
   openLabel,
   closeLabel,
   title,
@@ -91,25 +94,33 @@ export function MobileNavigation({
             <Drawer.Content className="p-3">
               <nav aria-label={title}>
                 <ul className="flex flex-col gap-1">
-                  {items.map((item) => (
-                    <li key={item.href}>
-                      <Drawer.Close
-                        render={<a href={item.href} />}
-                        className="
-                                        block
-                                        min-h-12
-                                        rounded-lg
-                                        px-4
-                                        py-3
-                                        text-base
-                                        font-medium
-                                        hover:bg-surface-hover
-                                    "
-                      >
-                        {item.label}
-                      </Drawer.Close>
-                    </li>
-                  ))}
+                  {items.map((item) => {
+                    const isActive = item.sectionId === activeSectionId;
+
+                    return (
+                      <li key={item.sectionId}>
+                        <Drawer.Close
+                          render={
+                            <a
+                              href={item.href}
+                              aria-current={isActive ? "location" : undefined}
+                            />
+                          }
+                          className={[
+                            "block min-h-12 rounded-lg px-4 py-3",
+                            "text-base font-medium",
+                            "transition-colors duration-150",
+                            "motion-reduce:transition-none",
+                            isActive
+                              ? "bg-accent text-accent-foreground"
+                              : "text-muted hover:bg-surface-hover hover:text-foreground",
+                          ].join(" ")}
+                        >
+                          {item.label}
+                        </Drawer.Close>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
             </Drawer.Content>

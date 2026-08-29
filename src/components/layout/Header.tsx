@@ -2,7 +2,7 @@ import { navigationItems } from "@/config/navigation";
 import { getDictionary } from "@/i18n/getDictionary";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher";
 import { ThemeSwitcher } from "../ui/ThemeSwitcher";
-import { MobileNavigation } from "./MobileNavigation";
+import { HeaderNavigation } from "./HeaderNavigation";
 
 type HeaderProps = {
   locale: "ja" | "en";
@@ -10,7 +10,8 @@ type HeaderProps = {
 
 export function Header({ locale }: HeaderProps) {
   const dictionary = getDictionary(locale);
-  const mobileNavigationItems = navigationItems.map((item) => ({
+  const headerNavigationItems = navigationItems.map((item) => ({
+    sectionId: item.sectionId,
     href: `#${item.sectionId}`,
     label: dictionary.navigation[item.key],
   }));
@@ -44,26 +45,13 @@ export function Header({ locale }: HeaderProps) {
           md:gap-6
       "
       >
-        <div className="md:hidden">
-          <MobileNavigation
-            items={mobileNavigationItems}
-            openLabel={dictionary.controls.openNavigation}
-            closeLabel={dictionary.controls.closeNavigation}
-            title={dictionary.controls.navigationTitle}
-            description={dictionary.controls.navigationDescription}
-          />
-        </div>
-
-        <nav
-          className="hidden items-center gap-4 md:flex"
-          aria-label={dictionary.controls.navigationTitle}
-        >
-          {navigationItems.map((item) => (
-            <a className="text-base" key={item.key} href={`#${item.sectionId}`}>
-              {dictionary.navigation[item.key]}
-            </a>
-          ))}
-        </nav>
+        <HeaderNavigation
+          items={headerNavigationItems}
+          openLabel={dictionary.controls.openNavigation}
+          closeLabel={dictionary.controls.closeNavigation}
+          title={dictionary.controls.navigationTitle}
+          description={dictionary.controls.navigationDescription}
+        />
 
         <div className="flex items-center gap-2">
           <ThemeSwitcher label={dictionary.controls.toggleTheme} />
