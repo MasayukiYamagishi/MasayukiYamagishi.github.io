@@ -11,20 +11,48 @@ export function Header({ locale }: HeaderProps) {
   const dictionary = getDictionary(locale);
 
   return (
-    <header className="p-4 flex justify-end items-center gap-6">
-      <nav className="gap-4 flex" aria-label="Global navigation">
-        {navigationItems.map((item) => (
-          <a className="text-base" key={item.key} href={`#${item.sectionId}`}>
-            {dictionary.navigation[item.key]}
-          </a>
-        ))}
-      </nav>
+    <header
+      className="
+      fixed
+      inset-x-0
+      top-0
+      z-40
+      border-b
+      border-border/60
+      bg-background/90
+      backdrop-blur-sm
+      backdrop-saturate-150
+      supports-backdrop-filter:bg-background/65
+    "
+    >
+      <div
+        className="
+          mx-auto
+          flex
+          h-16
+          w-full
+          max-w-5xl
+          items-center
+          justify-end
+          gap-6
+          px-6
+          sm:px-8
+      "
+      >
+        <nav className="mr-2 gap-4 flex" aria-label="Global navigation">
+          {navigationItems.map((item) => (
+            <a className="text-base" key={item.key} href={`#${item.sectionId}`}>
+              {dictionary.navigation[item.key]}
+            </a>
+          ))}
+        </nav>
 
-      <ThemeSwitcher label={dictionary.controls.toggleTheme} />
-      <LanguageSwitcher
-        locale={locale}
-        label={dictionary.controls.selectLanguage}
-      />
+        <ThemeSwitcher label={dictionary.controls.toggleTheme} />
+        <LanguageSwitcher
+          locale={locale}
+          label={dictionary.controls.selectLanguage}
+        />
+      </div>
     </header>
   );
 }
