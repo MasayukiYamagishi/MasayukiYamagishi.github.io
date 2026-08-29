@@ -45,7 +45,13 @@ The website uses the following font software through `next/font/google`.
 | Geist Mono   | Copyright 2024 The Geist Project Authors                    | SIL Open Font License 1.1 |
 | Noto Sans JP | Copyright 2014–2021 Adobe, with Reserved Font Name "Source" | SIL Open Font License 1.1 |
 
-Authoritative license files:
+Local copies of the authoritative license texts:
+
+- [Geist OFL 1.1](./licenses/fonts/Geist-OFL-1.1.txt)
+- [Geist Mono OFL 1.1](./licenses/fonts/GeistMono-OFL-1.1.txt)
+- [Noto Sans JP OFL 1.1](./licenses/fonts/NotoSansJP-OFL-1.1.txt)
+
+Upstream sources:
 
 - https://github.com/google/fonts/blob/main/ofl/geist/OFL.txt
 - https://github.com/google/fonts/blob/main/ofl/geistmono/OFL.txt
@@ -58,6 +64,7 @@ Interface icons are provided by Lucide through `lucide-react`.
 Lucide is licensed under the ISC License:
 
 - Copyright (c) 2026 Lucide Icons and Contributors
+- [Local license copy](./licenses/lucide/LICENSE.txt)
 - https://github.com/lucide-icons/lucide/blob/main/LICENSE
 
 Some Lucide icons used by this project are derived from Feather Icons and are
@@ -78,6 +85,8 @@ icon is available under CC0.
 
 Simple Icons license and disclaimer:
 
+- [Local CC0-1.0 copy](./licenses/simple-icons/CC0-1.0.txt)
+- [Local disclaimer copy](./licenses/simple-icons/DISCLAIMER.md)
 - https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
 - https://github.com/simple-icons/simple-icons/blob/develop/DISCLAIMER.md
 
@@ -182,6 +191,7 @@ The following paths contain Storybook onboarding or example materials:
 
 Storybook is distributed under the MIT License:
 
+- [Local license copy](./licenses/storybook/MIT.txt)
 - https://github.com/storybookjs/storybook/blob/next/LICENSE
 
 Some example assets depict third-party brands, including Discord, Figma,
