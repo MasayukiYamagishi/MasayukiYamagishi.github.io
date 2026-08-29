@@ -100,6 +100,7 @@ export function MobileNavigation({
                     return (
                       <li key={item.sectionId}>
                         <Drawer.Close
+                          nativeButton={false}
                           render={
                             <a
                               href={item.href}
@@ -112,7 +113,7 @@ export function MobileNavigation({
                             "transition-colors duration-150",
                             "motion-reduce:transition-none",
                             isActive
-                              ? "bg-accent text-accent-foreground"
+                              ? "bg-surface-hover text-foreground"
                               : "text-muted hover:bg-surface-hover hover:text-foreground",
                           ].join(" ")}
                         >

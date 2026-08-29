@@ -124,7 +124,7 @@ export function HeaderNavigation({
                 "active:scale-[0.98]",
                 "motion-reduce:transition-none",
                 isActive
-                  ? "bg-accent text-accent-foreground"
+                  ? "bg-surface-hover text-foreground"
                   : "text-muted hover:bg-surface-hover hover:text-foreground",
               ].join(" ")}
             >

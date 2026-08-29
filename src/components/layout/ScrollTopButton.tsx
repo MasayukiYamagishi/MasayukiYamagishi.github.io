@@ -39,7 +39,7 @@ export function ScrollToTopButton({ label }: ScrollTopToButtonProps) {
 
   const handleClick = () => {
     const prefersReduceMotion = window.matchMedia(
-      "(prefers-reduces-motion: reduce",
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     window.scrollTo({
@@ -65,7 +65,7 @@ export function ScrollToTopButton({ label }: ScrollTopToButtonProps) {
         "fixed right-6 bottom-6 z-30",
         "sm:right-8 sm:bottom-8",
         isVisible
-          ? "transition-y-0 opacity-100"
+          ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-2 opacity-0",
       ].join(" ")}
     >
