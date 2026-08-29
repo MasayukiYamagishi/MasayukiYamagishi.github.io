@@ -2,6 +2,11 @@ import { SocialLinks } from "../ui/SocialLinks";
 
 const COPYRIGHT_START_YEAR = 2026;
 
+/**
+ * サイト共通フッター
+ *
+ * @returns サイト共通フッターのJSX
+ */
 export function Footer() {
   const currentYear = new Date().getFullYear();
 

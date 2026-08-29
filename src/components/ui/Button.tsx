@@ -63,6 +63,12 @@ const baseStyle = `
     motion-reduce:active:scale-100
 `;
 
+/**
+ * 共通スタイルを適用する汎用ボタン
+ *
+ * @param ButtonProps props
+ * @returns 汎用ボタンのJSX
+ */
 export const Button = forwardRef<HTMLElement, ButtonProps>(function Button(
   { className, size = "default", type = "button", variant = "ghost", ...props },
   ref,
@@ -92,6 +98,12 @@ export type IconButtonProps = Omit<
   children?: ReactNode;
 };
 
+/**
+ * アイコン表示に適した正方形のボタン
+ *
+ * @param IconButtonProps props
+ * @returns アイコンボタンのJSX
+ */
 export const IconButton = forwardRef<HTMLElement, IconButtonProps>(
   function IconButton(props, ref) {
     return <Button ref={ref} size="icon" {...props} />;

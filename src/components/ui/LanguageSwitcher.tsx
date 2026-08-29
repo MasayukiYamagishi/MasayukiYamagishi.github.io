@@ -27,6 +27,12 @@ const menuItemStyles = `
   data-highlighted:bg-surface-hover
 `;
 
+/**
+ * 表示言語を切り替えるメニュー
+ *
+ * @param LanguageSwitcherProps props
+ * @returns 言語切り替えメニューのJSX
+ */
 export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
   return (
     <Menu.Root>

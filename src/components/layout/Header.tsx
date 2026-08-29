@@ -8,6 +8,12 @@ type HeaderProps = {
   locale: "ja" | "en";
 };
 
+/**
+ * サイト共通ヘッダー
+ *
+ * @param HeaderProps props
+ * @returns サイト共通ヘッダーのJSX
+ */
 export function Header({ locale }: HeaderProps) {
   const dictionary = getDictionary(locale);
   const headerNavigationItems = navigationItems.map((item) => ({

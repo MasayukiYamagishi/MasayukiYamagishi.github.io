@@ -10,6 +10,12 @@ type ScrollTopToButtonProps = {
   label: string;
 };
 
+/**
+ * ページの先頭へ戻るボタン
+ *
+ * @param ScrollTopToButtonProps props
+ * @returns ページの先頭へ戻るボタンのJSX
+ */
 export function ScrollToTopButton({ label }: ScrollTopToButtonProps) {
   const [isVisible, setIsVisible] = useState(false);
 

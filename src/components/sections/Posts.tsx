@@ -9,6 +9,7 @@ type PostsProps = {
   dictionary: {
     publishedAt: string;
     updatedAt: string;
+    emptyMessage: string;
   };
 };
 
@@ -26,7 +27,7 @@ export async function Posts({ locale, heading, dictionary }: PostsProps) {
     <section
       id={sectionIds.posts}
       aria-labelledby={headingId}
-      className="py-10 sm:py-12"
+      className="scroll-mt-24 py-10 sm:py-12"
     >
       <h2
         id={headingId}
@@ -34,16 +35,22 @@ export async function Posts({ locale, heading, dictionary }: PostsProps) {
       >
         {heading}
       </h2>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
-          <ArticleCard
-            key={post.slug}
-            post={post}
-            locale={locale}
-            dictionary={dictionary}
-          />
-        ))}
-      </div>
+      {posts.length === 0 ? (
+        <p className="rounded-2xl border border-dashed border-border bg-surface px-6 py-10 text-center text-sm text-muted">
+          {dictionary.emptyMessage}
+        </p>
+      ) : (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => (
+            <ArticleCard
+              key={post.slug}
+              post={post}
+              locale={locale}
+              dictionary={dictionary}
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 }

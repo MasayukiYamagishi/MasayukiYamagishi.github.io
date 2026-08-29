@@ -35,7 +35,7 @@ function formatDate(value: string, locale: Locale) {
 /**
  * Postsセクションに掲載するカードコンポーネント
  *
- * @param ArticleCardProp props
+ * @param ArticleCardProps props
  * @returns Posts用カードコンポーネント
  */
 export function ArticleCard({ post, locale, dictionary }: ArticleCardProps) {

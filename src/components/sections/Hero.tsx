@@ -9,6 +9,12 @@ type HeroProps = {
   };
 };
 
+/**
+ * プロフィールの概要を表示するヒーローセクション
+ *
+ * @param HeroProps props
+ * @returns ヒーローセクションのJSX
+ */
 export function Hero({ dictionary }: HeroProps) {
   const headingId = `${sectionIds.about}-heading`;
 
@@ -17,8 +23,10 @@ export function Hero({ dictionary }: HeroProps) {
       id={sectionIds.about}
       aria-labelledby={headingId}
       className="
-        py-20
-        sm:py-24
+        pt-20
+        pb-10
+        sm:pt-24
+        sm:pb-12
       "
     >
       <h1

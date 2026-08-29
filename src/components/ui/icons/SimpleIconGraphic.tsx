@@ -6,6 +6,12 @@ type SimpleIconGraphicProps = {
   className?: string;
 };
 
+/**
+ * Simple Iconsのデータを描画するアイコン
+ *
+ * @param SimpleIconGraphicProps props
+ * @returns Simple Iconsを用いたアイコンのJSX
+ */
 export function SimpleIconGraphic({
   icon,
   size = 14,

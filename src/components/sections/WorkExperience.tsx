@@ -15,6 +15,12 @@ type WorkExperienceProps = {
   dictionary: WorkExperienceDictionary;
 };
 
+/**
+ * 職歴と担当プロジェクトを表示するセクション
+ *
+ * @param WorkExperienceProps props
+ * @returns 職歴セクションのJSX
+ */
 export function WorkExperience({
   locale,
   heading,
