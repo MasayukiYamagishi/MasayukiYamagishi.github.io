@@ -3,10 +3,14 @@ import { getProject } from "@/content/projects";
 import { Locale } from "@/i18n/config";
 import { ProjectCard, ProjectCardDictionary } from "../ui/ProjectCard";
 
+type ProjectsDictionary = ProjectCardDictionary & {
+  emptyMessage: string;
+};
+
 type ProjectsProps = {
   locale: Locale;
   heading: string;
-  dictionary: ProjectCardDictionary;
+  dictionary: ProjectsDictionary;
 };
 
 /**
