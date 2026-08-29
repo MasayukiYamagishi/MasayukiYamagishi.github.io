@@ -9,6 +9,12 @@ type HeroProps = {
   };
 };
 
+/**
+ * プロフィールの概要を表示するヒーローセクション
+ *
+ * @param HeroProps props
+ * @returns ヒーローセクションのJSX
+ */
 export function Hero({ dictionary }: HeroProps) {
   const headingId = `${sectionIds.about}-heading`;
 

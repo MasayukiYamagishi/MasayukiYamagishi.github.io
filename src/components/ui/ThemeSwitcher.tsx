@@ -9,6 +9,12 @@ type ThemeSwitcherProps = {
   label: string;
 };
 
+/**
+ * ライトテーマとダークテーマを切り替えるボタン
+ *
+ * @param ThemeSwitcherProps props
+ * @returns テーマ切り替えボタンのJSX
+ */
 export function ThemeSwitcher({ label }: ThemeSwitcherProps) {
   const { resolvedTheme, setTheme } = useTheme();
 

@@ -6,6 +6,12 @@ type ThemedImageGraphicProps = {
   size?: number;
 };
 
+/**
+ * テーマに応じた画像を表示するアイコン
+ *
+ * @param ThemedImageGraphicProps props
+ * @returns テーマ対応アイコンのJSX
+ */
 export function ThemedImageGraphic({
   icon,
   size = 14,

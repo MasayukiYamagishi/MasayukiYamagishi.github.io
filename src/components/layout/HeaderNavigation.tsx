@@ -87,6 +87,12 @@ function useActiveSection(items: ReadonlyArray<HeaderNavigationItem>) {
   return activeSectionId;
 }
 
+/**
+ * 表示中のセクションを示すヘッダーナビゲーション
+ *
+ * @param HeaderNavigationProps props
+ * @returns ヘッダーナビゲーションのJSX
+ */
 export function HeaderNavigation({
   items,
   openLabel,

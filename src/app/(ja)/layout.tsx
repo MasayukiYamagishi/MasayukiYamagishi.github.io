@@ -12,6 +12,12 @@ type Props = {
   children: ReactNode;
 };
 
+/**
+ * 日本語ページのルートレイアウト
+ *
+ * @param Props props
+ * @returns 日本語ページのルートレイアウトのJSX
+ */
 export default async function LocaleLayout({ children }: Props) {
   return (
     <html

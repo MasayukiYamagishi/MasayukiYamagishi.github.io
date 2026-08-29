@@ -7,6 +7,12 @@ type SkillsProps = {
   dictionary: SkillsDictionary;
 };
 
+/**
+ * スキル一覧セクション
+ *
+ * @param SkillsProps props
+ * @returns スキル一覧セクションのJSX
+ */
 export function Skills({ heading, dictionary }: SkillsProps) {
   const headingId = `${sectionIds.skills}-heading`;
 

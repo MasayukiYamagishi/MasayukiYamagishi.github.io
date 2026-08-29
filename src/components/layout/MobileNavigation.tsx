@@ -18,6 +18,12 @@ type MobileNavigationProps = {
   description: string;
 };
 
+/**
+ * モバイル向けのドロワーナビゲーション
+ *
+ * @param MobileNavigationProps props
+ * @returns モバイルナビゲーションのJSX
+ */
 export function MobileNavigation({
   items,
   activeSectionId,

@@ -7,6 +7,12 @@ type ThemeProviderProps = {
   children: React.ReactNode;
 };
 
+/**
+ * テーマ設定を子孫コンポーネントへ提供するプロバイダー
+ *
+ * @param ThemeProviderProps props
+ * @returns テーマプロバイダーのJSX
+ */
 export function ThemeProvider({ children }: ThemeProviderProps) {
   return (
     <NextThemeProvider
