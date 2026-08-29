@@ -28,6 +28,7 @@ export function Hero({ dictionary }: HeroProps) {
     >
       <h1
         id={headingId}
+        tabIndex={-1}
         className="mb-2 text-base font-bold leading-8 text-foreground sm:text-4xl"
       >
         {dictionary.name}

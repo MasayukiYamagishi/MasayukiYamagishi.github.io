@@ -14,6 +14,7 @@ export const en = {
     closeNavigation: "Close navigation",
     navigationTitle: "Navigation",
     navigationDescription: "Select a section to display",
+    backToTop: "Back to top",
   },
 
   sections: {

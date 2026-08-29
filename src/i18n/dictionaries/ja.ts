@@ -14,6 +14,7 @@ export const ja = {
     closeNavigation: "ナビゲーションを閉じる",
     navigationTitle: "ナビゲーション",
     navigationDescription: "表示するセクションを選択",
+    backToTop: "ページの先頭へ戻る",
   },
 
   sections: {
