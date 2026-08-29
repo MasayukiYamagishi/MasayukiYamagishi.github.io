@@ -9,6 +9,7 @@ export const en = {
 
   controls: {
     toggleTheme: "Toggle light and dark mode",
+    selectLanguage: "Select display language",
   },
 
   sections: {

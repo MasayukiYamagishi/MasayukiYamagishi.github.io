@@ -9,6 +9,7 @@ export const ja = {
 
   controls: {
     toggleTheme: "ライトモードとダークモードを切り替える",
+    selectLanguage: "表示言語を選択",
   },
 
   sections: {

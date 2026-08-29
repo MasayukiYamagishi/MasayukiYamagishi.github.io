@@ -14,6 +14,6 @@ export const localePaths = {
 } as const satisfies Record<Locale, string>;
 
 export const localeLabels = {
-  ja: "JA",
-  en: "EN",
+  ja: "日本語",
+  en: "English",
 } as const satisfies Record<Locale, string>;

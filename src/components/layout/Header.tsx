@@ -21,7 +21,10 @@ export function Header({ locale }: HeaderProps) {
       </nav>
 
       <ThemeSwitcher label={dictionary.controls.toggleTheme} />
-      <LanguageSwitcher locale={locale} />
+      <LanguageSwitcher
+        locale={locale}
+        label={dictionary.controls.selectLanguage}
+      />
     </header>
   );
 }
