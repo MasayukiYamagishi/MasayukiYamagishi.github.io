@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/nextjs-vite";
 
-import { expect, within } from "storybook/test";
+import { expect, waitFor, within } from "storybook/test";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 const meta = {
@@ -30,18 +30,26 @@ export const Japanese: Story = {
 
     await userEvent.click(trigger);
 
+    await waitFor(async () => {
+      await expect(trigger).toHaveAttribute("aria-expanded", "true");
+    });
+
     // Menu.PortalはStoryのcanvas外、body直下に描画される
     const body = within(canvasElement.ownerDocument.body);
     const menu = await body.findByRole("menu");
 
-    await expect(menu).toBeVisible();
+    await waitFor(async () => {
+      await expect(menu).toBeVisible();
+    });
+
+    const menuItems = within(menu);
 
     await expect(
-      body.getByRole("menuitem", { name: "日本語" }),
+      menuItems.getByRole("menuitem", { name: "日本語" }),
     ).toHaveAttribute("aria-current", "page");
 
     await expect(
-      body.getByRole("menuitem", { name: "English" }),
+      menuItems.getByRole("menuitem", { name: "English" }),
     ).toHaveAttribute("href", "/en");
   },
 };
