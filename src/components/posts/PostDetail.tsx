@@ -59,10 +59,8 @@ export function PostDetail({
           hover:text-foreground
         "
       >
-        <span aria-hidden="true">
-          <Icon icon={ArrowLeft} size={18} />
-          {dictionary.backToPosts}
-        </span>
+        <Icon icon={ArrowLeft} size={18} />
+        <span>{dictionary.backToPosts}</span>
       </Link>
 
       <article className="mt-8">

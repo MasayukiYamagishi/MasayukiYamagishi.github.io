@@ -6,8 +6,8 @@ import type { Metadata } from "next";
 import { getPostBySlug } from "./index";
 
 const openGraphLocales = {
-  ja: "ja-JP",
-  en: "en-US",
+  ja: "ja_JP",
+  en: "en_US",
 } as const satisfies Record<Locale, string>;
 
 function getPostPath(locale: Locale, slug: string) {
