@@ -47,7 +47,7 @@ const httpsUrlSchema = z
     (value) => {
       try {
         return new URL(value).protocol === "https:";
-      } catch (error) {
+      } catch {
         return false;
       }
     },

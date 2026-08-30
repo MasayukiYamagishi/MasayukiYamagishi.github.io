@@ -1,11 +1,12 @@
 import { navigationItems } from "@/config/navigation";
+import { localePaths, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/getDictionary";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher";
 import { ThemeSwitcher } from "../ui/ThemeSwitcher";
 import { HeaderNavigation } from "./HeaderNavigation";
 
 type HeaderProps = {
-  locale: "ja" | "en";
+  locale: Locale;
 };
 
 /**
@@ -16,9 +17,11 @@ type HeaderProps = {
  */
 export function Header({ locale }: HeaderProps) {
   const dictionary = getDictionary(locale);
+  const homePath = localePaths[locale];
+
   const headerNavigationItems = navigationItems.map((item) => ({
     sectionId: item.sectionId,
-    href: `#${item.sectionId}`,
+    href: `${homePath}#${item.sectionId}`,
     label: dictionary.navigation[item.key],
   }));
 

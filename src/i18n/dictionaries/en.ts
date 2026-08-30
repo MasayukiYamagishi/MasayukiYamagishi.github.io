@@ -75,6 +75,7 @@ export const en = {
     publishedAt: "Published",
     updatedAt: "Updated",
     emptyMessage: "No posts.",
+    backToPosts: "Back to posts",
   },
 
   projects: {

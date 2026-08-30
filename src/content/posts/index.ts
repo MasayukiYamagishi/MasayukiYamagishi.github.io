@@ -1,3 +1,5 @@
+import "server-only";
+
 import { readFile, readdir } from "fs/promises";
 import path from "node:path";
 import { cache } from "react";
@@ -5,8 +7,8 @@ import { parse } from "yaml";
 import { postFileSchema } from "./schema";
 import type { Post } from "./types";
 
+const EMPTY_POST_ROUTE_SLUG = "__placeholder__";
 const POSTS_DIRECTORY = path.join(process.cwd(), "src", "content", "posts");
-
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 async function getPostSlugs() {
@@ -115,3 +117,19 @@ export async function getPostBySlug(slug: string): Promise<Post | undefined> {
 }
 
 export type { Post } from "./types";
+
+export async function getPostRouteParams() {
+  const posts = await getPosts();
+
+  if (posts.length === 0) {
+    return [
+      {
+        slug: EMPTY_POST_ROUTE_SLUG,
+      },
+    ];
+  }
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}

@@ -75,6 +75,7 @@ export const ja = {
     publishedAt: "投稿日",
     updatedAt: "最終更新日",
     emptyMessage: "投稿はありません。",
+    backToPosts: "Posts一覧へ戻る",
   },
 
   projects: {
