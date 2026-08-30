@@ -13,7 +13,9 @@
     "build-storybook": "storybook build",
     "images:build": "node scripts/optimize-images.mjs",
     "prebuild": "pnpm images:build",
-    "post:new": "node scripts/create-post.mjs"
+    "post:new": "node scripts/create-post.mjs",
+    "project:new": "node scripts/create-project.mjs",
+    "test:scripts": "node --test tests/scripts/content-scaffolding.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
