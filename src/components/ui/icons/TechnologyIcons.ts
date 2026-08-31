@@ -11,11 +11,13 @@ import {
   siGithubactions,
   siGithubcopilot,
   siGradle,
+  siGrafana,
   siHtml5,
   siJunit5,
   siLinux,
   siNextdotjs,
   siOpenjdk,
+  siOpentelemetry,
   siPostgresql,
   siPrisma,
   siPython,
@@ -55,6 +57,8 @@ export const technologyIcons = {
   cursor: siCursor,
   githubcopilot: siGithubcopilot,
   java: siOpenjdk,
+  grafana: siGrafana,
+  opentelemetry: siOpentelemetry,
 } as const satisfies Record<string, SimpleIcon>;
 
 export type ThemedTechnologyIcon = {
