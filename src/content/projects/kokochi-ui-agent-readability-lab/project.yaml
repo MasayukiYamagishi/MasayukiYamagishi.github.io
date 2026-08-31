@@ -1,0 +1,29 @@
+order: 2
+url: "https://github.com/MasayukiYamagishi/kokochi-ui-agent-readability-lab"
+title:
+  ja: "KOKOCHI UI Agent Readability Lab"
+  en: "KOKOCHI UI Agent Readability Lab"
+tags:
+  - id: python
+    label:
+      ja: "Python"
+      en: "Python"
+  - id: typescript
+    label:
+      ja: "TypeScript"
+      en: "TypeScript"
+  - id: react
+    label:
+      ja: "React"
+      en: "React"
+  - id: opentelemetry
+    label:
+      ja: "OpenTelemetry"
+      en: "OpenTelemetry"
+  - id: grafana
+    label:
+      ja: "Grafana"
+      en: "Grafana"
+description:
+  ja: "HTML構造の違いがLLMのWeb UI解釈に与える影響を比較する実験基盤です。再現可能なFixtureと評価指標、Python製runner、OpenTelemetryとGrafanaによるtrace・metrics・logsの観測環境を構築しました。"
+  en: "An experimental platform for measuring how HTML structure affects LLM interpretation of web UIs, using reproducible fixtures, Python evaluation tooling, and OpenTelemetry/Grafana observability."
