@@ -1,6 +1,9 @@
 import { ArrowUpRight } from "lucide-react";
 import type { ComponentPropsWithoutRef } from "react";
 import { Icon } from "../ui/icons/Icon";
+import { ExternalLinkCard } from "./embeds/ExternalLinkCard";
+import { YoutubeEmbed } from "./embeds/YoutubeEmbed";
+import { ZennArticleCard } from "./embeds/ZennArticleCard";
 
 type LinkProps = ComponentPropsWithoutRef<"a">;
 type ImageProps = ComponentPropsWithoutRef<"img">;
@@ -41,4 +44,7 @@ function PostContentImage({ alt, loading, decoding, ...props }: ImageProps) {
 export const postContentComponents = {
   a: PostContentLink,
   img: PostContentImage,
+  ExternalLinkCard,
+  YoutubeEmbed,
+  ZennArticleCard,
 };
