@@ -123,8 +123,8 @@ export const LongText: Story = {
         en: "A multilingual portfolio website built with Next.js and TypeScript",
       },
       description: {
-        ja: "アクセシビリティ、パフォーマンス、静的エクスポート、コンテンツ管理、レスポンシブデザインを考慮して設計したポートフォリオサイトです。",
-        en: "A portfolio website designed around accessibility, performance, static exports, content management, and responsive design.",
+        ja: "Next.jsとTypeScriptを基盤に、日英の多言語コンテンツ、キーボード操作やスクリーンリーダーを考慮したアクセシビリティ、端末幅に応じて読みやすさを保つレスポンシブUIを実装したポートフォリオサイトです。Storybookを使ったコンポーネント単位の開発と確認、画像最適化、自動テスト、静的エクスポート、GitHub Pagesへの継続的デプロイまでを一つのリポジトリで管理しています。コンテンツを安全に追加できるよう、メタデータのスキーマ検証と雛形生成スクリプトも用意しています。",
+        en: "A multilingual Next.js and TypeScript portfolio with accessible keyboard and screen-reader interactions, responsive layouts, and reusable Storybook components. It also includes image optimization, automated tests, static export, GitHub Pages deployment, schema validation, and content scaffolding.",
       },
     },
   },

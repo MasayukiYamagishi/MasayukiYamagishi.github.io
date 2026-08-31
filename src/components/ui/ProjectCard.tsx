@@ -63,7 +63,7 @@ export function ProjectCard({ project, locale, dictionary }: ProjectCardProps) {
           {title}
         </h3>
 
-        <p className="mt-2 line-clamp-3 flex-1 text-sm leading-6 text-muted sm:line-clamp-2">
+        <p className="mt-2 flex-1 wrap-break-word text-sm leading-6 text-muted">
           {project.description[locale]}
         </p>
 
