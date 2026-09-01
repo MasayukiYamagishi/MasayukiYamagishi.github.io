@@ -1,5 +1,5 @@
 import { CircleAlert, Info, TriangleAlert } from "lucide-react";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Icon } from "../ui/icons/Icon";
 
 type CalloutTone = "info" | "warn" | "alert";
@@ -28,6 +28,12 @@ const toneConfig = {
   },
 } as const;
 
+/**
+ * 記事本文に補足・注意・警告を表示するコールアウトコンポーネント
+ *
+ * @param CalloutProps props
+ * @returns コールアウトのJSX
+ */
 export function Callout({ tone, title, children }: CalloutProps) {
   const config = toneConfig[tone];
 

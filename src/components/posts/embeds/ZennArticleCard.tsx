@@ -1,7 +1,16 @@
-import { ExternalLinkCard, ExternalLinkCardProps } from "./ExternalLinkCard";
+import {
+  ExternalLinkCard,
+  type ExternalLinkCardProps,
+} from "./ExternalLinkCard";
 
 type ZennArticleCardProps = Omit<ExternalLinkCardProps, "siteName">;
 
+/**
+ * Zennの記事情報を表示する外部リンクカードコンポーネント
+ *
+ * @param ZennArticleCardProps props
+ * @returns Zenn記事リンクカードのJSX
+ */
 export function ZennArticleCard(props: ZennArticleCardProps) {
   const url = new URL(props.href);
 
