@@ -170,6 +170,24 @@ export function PostDetail({
             [&_ul]:list-disc
             [&_ul]:space-y-2
             [&_ul]:pl-6
+
+            [&_p]:whitespace-pre-wrap
+            [&_strong]:font-semibold
+            [&_em]:italic
+            [&_del]:text-muted
+            [&_del]:line-through
+            [&_u]:underline
+
+            [&_blockquote]:rounded-r-xl
+            [&_blockquote]:bg-surface
+            [&_blockquote]:py-4
+            [&_blockquote]:pr-4
+
+            [&_blockquote_cite]:mt-3
+            [&_blockquote_cite]:block
+            [&_blockquote_cite]:text-sm
+            [&_blockquote_cite]:not-italic
+            [&_blockquote_cite]:text-muted
         "
         >
           {children}

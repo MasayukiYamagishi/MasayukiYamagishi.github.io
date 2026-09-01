@@ -60,14 +60,36 @@ export function ArticleCard({ post, locale, dictionary }: ArticleCardProps) {
           hover:shadow-lg
         "
       >
-        <div className="aspect-video overflow-hidden bg-border">
+        <div className="relative aspect-video overflow-hidden bg-border">
           <Image
             src={post.thumbnail.src}
             alt={post.thumbnail.alt[locale]}
             width={post.thumbnail.width}
             height={post.thumbnail.height}
+            sizes="
+              (max-width: 639px) calc(100vw - 3rem),
+              (max-width: 1023px) 50vw,
+              320px
+            "
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
           />
+          <span
+            aria-hidden="true"
+            className="
+              pointer-events-none
+              absolute
+              inset-x-0
+              bottom-0
+              h-16
+              bg-linear-to-b
+              from-transparent
+              via-surface/70
+              to-surface
+              transition-colors
+              group-hover:via-surface-hover/70
+              group-hover:to-surface-hover
+            "
+          ></span>
         </div>
         <div className="flex flex-1 flex-col gap-3 p-4 sm:p-5">
           <h3 className="text-base leading-snug font-semibold text-foreground">

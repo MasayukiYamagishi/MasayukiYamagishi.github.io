@@ -21,6 +21,15 @@ const SHARP_INPUT_EXTENSIONS = new Set([
 
 const CONTENT_COPY_EXTENSIONS = new Set([".gif", ".svg"]);
 
+const POSTS_CONTENT_ROOT = path.join(PROJECT_ROOT, "src", "content", "posts");
+
+const FALLBACK_THUMBNAIL_SOURCE = path.join(
+  SOURCE_ROOT,
+  "fallback-thumbnail-1600x900.png",
+);
+
+const FALLBACK_OG_SOURCE = path.join(SOURCE_ROOT, "fallback-og-1200x630.png");
+
 const THUMBNAIL_CARD = {
   width: 800,
   height: 450,
@@ -59,10 +68,20 @@ function assertSafeOutputDirectory() {
   }
 }
 
-async function findRequiredImage(directory, baseName) {
-  const entries = await readdir(directory, {
-    withFileTypes: true,
-  });
+async function findOptionalImage(directory, baseName) {
+  let entries;
+
+  try {
+    entries = await readdir(directory, {
+      withFileTypes: true,
+    });
+  } catch (error) {
+    if (isEnoent(error)) {
+      return undefined;
+    }
+
+    throw error;
+  }
 
   const matches = entries.filter((entry) => {
     if (!entry.isFile()) {
@@ -77,17 +96,13 @@ async function findRequiredImage(directory, baseName) {
     );
   });
 
-  if (matches.length !== 1) {
-    throw new Error(
-      [
-        `${directory}に${baseName}画像が必要です。`,
-        `検出数: ${matches.length}`,
-        `例: ${baseName}.png`,
-      ].join(" "),
-    );
+  if (matches.length > 1) {
+    throw new Error(`${directory}に${baseName}画像が複数存在します。`);
   }
 
-  return path.join(directory, matches[0].name);
+  const match = matches[0];
+
+  return match ? path.join(directory, match.name) : undefined;
 }
 
 async function validateSourceImage(
@@ -266,7 +281,12 @@ async function buildPostImages(slug) {
 
   const outputDirectory = path.join(OUTPUT_ROOT, slug);
 
-  const thumbnailSource = await findRequiredImage(sourceDirectory, "thumbnail");
+  const customThumbnailSource = await findOptionalImage(
+    sourceDirectory,
+    "thumbnail",
+  );
+
+  const thumbnailSource = customThumbnailSource ?? FALLBACK_THUMBNAIL_SOURCE;
 
   await validateSourceImage(thumbnailSource, {
     label: `${slug} thumbnail`,
@@ -277,11 +297,19 @@ async function buildPostImages(slug) {
 
   await writeFixedWebp(
     thumbnailSource,
+    path.join(outputDirectory, "thumbnail-card.webp"),
+    THUMBNAIL_CARD,
+  );
+
+  await writeFixedWebp(
+    thumbnailSource,
     path.join(outputDirectory, "thumbnail-detail.webp"),
     THUMBNAIL_DETAIL,
   );
 
-  const ogSource = await findRequiredImage(sourceDirectory, "og");
+  const customOgSource = await findOptionalImage(sourceDirectory, "og");
+
+  const ogSource = customOgSource ?? FALLBACK_OG_SOURCE;
 
   await validateSourceImage(ogSource, {
     label: `${slug} OG image`,
@@ -301,7 +329,7 @@ async function buildPostImages(slug) {
 async function main() {
   assertSafeOutputDirectory();
 
-  const entries = await readdir(SOURCE_ROOT, {
+  const entries = await readdir(POSTS_CONTENT_ROOT, {
     withFileTypes: true,
   });
 

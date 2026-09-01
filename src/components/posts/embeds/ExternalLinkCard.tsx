@@ -32,7 +32,7 @@ export function ExternalLinkCard({
   }
 
   return (
-    <aside aria-label="`${siteName}: ${title}`">
+    <aside aria-label={`${siteName}: ${title}`}>
       <a
         href={href}
         className="

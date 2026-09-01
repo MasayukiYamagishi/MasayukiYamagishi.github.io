@@ -1,9 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 import type { ComponentPropsWithoutRef } from "react";
 import { Icon } from "../ui/icons/Icon";
+import { Callout } from "./Callout";
 import { ExternalLinkCard } from "./embeds/ExternalLinkCard";
 import { YoutubeEmbed } from "./embeds/YoutubeEmbed";
 import { ZennArticleCard } from "./embeds/ZennArticleCard";
+import { InlineText } from "./InlineText";
 
 type LinkProps = ComponentPropsWithoutRef<"a">;
 type ImageProps = ComponentPropsWithoutRef<"img">;
@@ -15,8 +17,8 @@ function PostContentLink({ href, children, ...props }: LinkProps) {
     <a href={href} {...props}>
       {children}
       {isExternal && (
-        <span aria-hidden="true" className="ml-1 inline-block text-xs">
-          <Icon icon={ArrowUpRight} size={18} />
+        <span aria-hidden="true" className="ml-1 inline-flex align-[-0.125em]">
+          <Icon icon={ArrowUpRight} size={16} />
         </span>
       )}
     </a>
@@ -47,4 +49,6 @@ export const postContentComponents = {
   ExternalLinkCard,
   YoutubeEmbed,
   ZennArticleCard,
+  InlineText,
+  Callout,
 };
