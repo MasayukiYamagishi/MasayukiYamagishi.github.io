@@ -1,0 +1,29 @@
+order: 1
+url: "https://github.com/MasayukiYamagishi/MasayukiYamagishi.github.io"
+title:
+  ja: "MasayukiYamagishi.github.io"
+  en: "MasayukiYamagishi.github.io"
+tags:
+  - id: nextjs
+    label:
+      ja: "Next.js"
+      en: "Next.js"
+  - id: typescript
+    label:
+      ja: "TypeScript"
+      en: "TypeScript"
+  - id: tailwindcss
+    label:
+      ja: "Tailwind CSS"
+      en: "Tailwind CSS"
+  - id: storybook
+    label:
+      ja: "Storybook"
+      en: "Storybook"
+  - id: zod
+    label:
+      ja: "Zod"
+      en: "Zod"
+description:
+  ja: "Next.jsとTypeScriptで構築した静的ポートフォリオです。日英コンテンツ、アクセシビリティ、レスポンシブUI、StorybookによるUI開発、自動テスト、GitHub Pagesへの継続的デプロイに対応しています。"
+  en: "A statically generated Next.js and TypeScript portfolio with bilingual content, accessible responsive UI, Storybook, automated tests, and continuous deployment to GitHub Pages."

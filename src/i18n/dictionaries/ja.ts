@@ -43,6 +43,8 @@ export const ja = {
     html5: "HTML",
     css: "CSS",
     typescript: "TypeScript",
+    javascript: "JavaScript",
+    jquery: "jQuery",
     react: "React",
     nextjs: "Next.js",
     tailwindcss: "Tailwind CSS",
@@ -51,6 +53,7 @@ export const ja = {
 
     java: "Java",
     springboot: "Spring Boot",
+    thymeleaf: "Thymeleaf",
     python: "Python",
     fastapi: "FastAPI",
 
@@ -62,8 +65,10 @@ export const ja = {
     githubactions: "GitHub Actions",
     linux: "Linux",
     apachemaven: "Apache Maven",
+    apachejmeter: "Apache JMeter",
     gradle: "Gradle",
     junit5: "JUnit 5",
+    intellijidea: "IntelliJ IDEA",
 
     claudecode: "Claude Code",
     cursor: "Cursor",
@@ -75,6 +80,7 @@ export const ja = {
     publishedAt: "投稿日",
     updatedAt: "最終更新日",
     emptyMessage: "投稿はありません。",
+    backToPosts: "Posts一覧へ戻る",
   },
 
   projects: {
@@ -85,6 +91,7 @@ export const ja = {
 
   experience: {
     present: "現在",
+    openOfficialSite: "新しいタブで公式サイトを開く",
     showProjects: "詳細を見る",
     hideProjects: "詳細を閉じる",
     technologies: "主な技術",

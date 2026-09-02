@@ -1,0 +1,34 @@
+<Callout tone="warn" title="Translation notice">
+  This English version was machine-translated from the original Japanese text, so some wording may sound unnatural or differ slightly in nuance.
+</Callout>
+
+I published an article on Zenn about my experience evaluating how LLMs interpret user interfaces.
+
+<ZennArticleCard
+  href="https://zenn.dev/midpt/articles/llm-ui-otel-evaluation"
+  title="Measuring LLM-Based UI Interpretation with OpenTelemetry"
+  description="An article about using OpenTelemetry to measure the results of UI interpretation evaluations performed with a local LLM."
+  publishedAt="2026-08-10"
+  imageSrc="/images/posts/measuring-llm-ui-interpretation/content/zenn-og.webp"
+/>
+
+This article was submitted to Zenn’s “Share Your OpenTelemetry Knowledge” writing contest.
+
+It describes an experiment in which a local LLM running through Ollama was given interfaces that looked identical but used different HTML structures. I then measured the differences in how the LLM interpreted them using OpenTelemetry and Grafana.
+KOKOCHI UI, a personal project currently in progress, was named after the Japanese word for “comfortable” because I want to **provide comfortable interfaces that are easy for both people and AI to use**. The article covers my experience building an environment for gathering evidence to support that project’s premise.
+
+## Key takeaways
+
+- I built an experimental platform for comparing how LLMs interpret user interfaces.
+- I compared interfaces that looked identical but differed in their HTML structure.
+- I applied OpenTelemetry and Grafana to UI evaluation.
+
+## Recommended for
+
+- People interested in OpenTelemetry
+- People interested in how the usability of a UI can be evaluated programmatically
+
+## Related links
+
+- [Zenn “Share Your OpenTelemetry Knowledge” writing contest](https://zenn.dev/contests/splunk-opentelemetry-2026)
+- [KOKOCHI UI Agent Readability Lab](https://github.com/MasayukiYamagishi/kokochi-ui-agent-readability-lab)

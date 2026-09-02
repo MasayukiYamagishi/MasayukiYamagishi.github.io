@@ -3,7 +3,7 @@ import { z } from "zod";
 const TAG_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export const PROJECT_TITLE_MAX_LENGTH = 50;
-export const PROJECT_DESCRIPTION_MAX_LENGTH = 200;
+export const PROJECT_DESCRIPTION_MAX_LENGTH = 300;
 
 function createLocalizedTextSchema(fieldName: string, maxLength?: number) {
   function createTextSchema(languageName: string) {
@@ -47,7 +47,7 @@ const httpsUrlSchema = z
     (value) => {
       try {
         return new URL(value).protocol === "https:";
-      } catch (error) {
+      } catch {
         return false;
       }
     },

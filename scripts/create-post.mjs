@@ -1,22 +1,64 @@
 import { access, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { parseArgs } from "node:util";
 import { stringify } from "yaml";
 
 const SCRIPT_DIRECTORY = path.dirname(fileURLToPath(import.meta.url));
-
-const PROJECT_ROOT = path.resolve(SCRIPT_DIRECTORY, "..");
-
-const POSTS_ROOT = path.join(PROJECT_ROOT, "src", "content", "posts");
-
-const POST_ASSETS_ROOT = path.join(PROJECT_ROOT, "assets", "posts");
+const DEFAULT_PROJECT_ROOT = path.resolve(SCRIPT_DIRECTORY, "..");
 
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-function getSlug() {
+function hasErrorCode(error, code) {
+  return (
+    typeof error === "object" &&
+    error !== null &&
+    "code" in error &&
+    error.code === code
+  );
+}
+
+function assertValidSlug(slug) {
+  if (!SLUG_PATTERN.test(slug)) {
+    throw new Error(
+      [
+        `slugが不正です: ${slug}`,
+        "小文字英数字をハイフンで区切ってください。",
+        "例: my-first-post",
+      ].join("\n"),
+    );
+  }
+}
+
+function assertPathInsideProject(projectRoot, targetPath) {
+  const relativePath = path.relative(projectRoot, targetPath);
+
+  if (
+    relativePath === "" ||
+    relativePath === ".." ||
+    relativePath.startsWith(`..${path.sep}`) ||
+    path.isAbsolute(relativePath)
+  ) {
+    throw new Error(`生成先がプロジェクト外です: ${targetPath}`);
+  }
+}
+
+async function pathExists(targetPath) {
+  try {
+    await access(targetPath);
+    return true;
+  } catch (error) {
+    if (hasErrorCode(error, "ENOENT")) {
+      return false;
+    }
+
+    throw error;
+  }
+}
+
+export function parsePostSlug(args = process.argv.slice(2)) {
   const { values, positionals } = parseArgs({
-    args: process.argv.slice(2),
+    args,
     options: {
       slug: {
         type: "string",
@@ -48,35 +90,18 @@ function getSlug() {
     );
   }
 
-  if (!SLUG_PATTERN.test(slug)) {
-    throw new Error(
-      [
-        `slugが不正です: ${slug}`,
-        "小文字英数字をハイフンで区切ってください。",
-        "例: my-first-post",
-      ].join("\n"),
-    );
-  }
+  assertValidSlug(slug);
 
   return slug;
 }
 
-async function pathExists(targetPath) {
-  try {
-    await access(targetPath);
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-function getTodayInJapan() {
+export function getTodayInJapan(now = new Date()) {
   const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: "Asia/Tokyo",
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
-  }).formatToParts(new Date());
+  }).formatToParts(now);
 
   const values = Object.fromEntries(
     parts
@@ -87,7 +112,7 @@ function getTodayInJapan() {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
-function createPostMetadata() {
+function createPostMetadata(publishedAt) {
   return {
     title: {
       ja: "",
@@ -97,7 +122,7 @@ function createPostMetadata() {
       ja: "",
       en: "",
     },
-    publishedAt: getTodayInJapan(),
+    publishedAt,
     thumbnail: {
       alt: {
         ja: "",
@@ -113,10 +138,20 @@ function createPostMetadata() {
   };
 }
 
-async function createPost(slug) {
-  const postDirectory = path.join(POSTS_ROOT, slug);
+export async function createPost(
+  slug,
+  { projectRoot = DEFAULT_PROJECT_ROOT, now = new Date() } = {},
+) {
+  assertValidSlug(slug);
 
-  const assetDirectory = path.join(POST_ASSETS_ROOT, slug);
+  const postsRoot = path.join(projectRoot, "src", "content", "posts");
+  const postAssetsRoot = path.join(projectRoot, "assets", "posts");
+
+  const postDirectory = path.join(postsRoot, slug);
+  const assetDirectory = path.join(postAssetsRoot, slug);
+
+  assertPathInsideProject(projectRoot, postDirectory);
+  assertPathInsideProject(projectRoot, assetDirectory);
 
   if (await pathExists(postDirectory)) {
     throw new Error(`記事はすでに存在します: ${postDirectory}`);
@@ -126,15 +161,20 @@ async function createPost(slug) {
     throw new Error(`画像ディレクトリはすでに存在します: ${assetDirectory}`);
   }
 
-  await mkdir(postDirectory, {
+  await mkdir(postsRoot, {
     recursive: true,
   });
 
-  await mkdir(path.join(assetDirectory, "content"), {
+  await mkdir(postAssetsRoot, {
     recursive: true,
   });
 
-  const metadata = createPostMetadata();
+  // recursiveを付けず、同時実行時にも既存ディレクトリを拒否する
+  await mkdir(postDirectory);
+  await mkdir(assetDirectory);
+  await mkdir(path.join(assetDirectory, "content"));
+
+  const metadata = createPostMetadata(getTodayInJapan(now));
 
   await Promise.all([
     writeFile(path.join(postDirectory, "post.yaml"), stringify(metadata), {
@@ -176,22 +216,21 @@ async function createPost(slug) {
 }
 
 async function main() {
-  const slug = getSlug();
-
-  await mkdir(POSTS_ROOT, {
-    recursive: true,
-  });
-
-  await mkdir(POST_ASSETS_ROOT, {
-    recursive: true,
-  });
+  const slug = parsePostSlug();
 
   await createPost(slug);
 }
 
-main().catch((error) => {
-  console.error("");
-  console.error(error instanceof Error ? error.message : String(error));
+const entryPath = process.argv[1];
 
-  process.exitCode = 1;
-});
+if (
+  entryPath &&
+  pathToFileURL(path.resolve(entryPath)).href === import.meta.url
+) {
+  main().catch((error) => {
+    console.error("");
+    console.error(error instanceof Error ? error.message : String(error));
+
+    process.exitCode = 1;
+  });
+}

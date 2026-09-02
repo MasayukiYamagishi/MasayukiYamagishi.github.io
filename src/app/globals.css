@@ -13,6 +13,10 @@
 
   --accent: #18181b;
   --accent-foreground: #ffffff;
+
+  --info: #1d4ed8;
+  --warn: #92400e;
+  --alert: #b91c1c;
 }
 
 [data-theme="dark"] {
@@ -27,6 +31,10 @@
 
   --accent: #f4f4f5;
   --accent-foreground: #18181b;
+
+  --info: #93c5fd;
+  --warn: #fcd34d;
+  --alert: #fca5a5;
 }
 
 @theme inline {
@@ -41,6 +49,10 @@
 
   --font-sans: var(--font-geist-sans), var(--font-noto-sans-jp), sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
+
+  --color-info: var(--info);
+  --color-warn: var(--warn);
+  --color-alert: var(--alert);
 }
 
 html {

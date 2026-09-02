@@ -20,9 +20,7 @@ type HeaderNavigationProps = {
 const ACTIVE_OFFSET_PX = 80;
 
 function useActiveSection(items: ReadonlyArray<HeaderNavigationItem>) {
-  const [activeSectionId, setActiveSectionId] = useState(
-    items[0]?.sectionId ?? "",
-  );
+  const [activeSectionId, setActiveSectionId] = useState("");
 
   useEffect(() => {
     const sections = items

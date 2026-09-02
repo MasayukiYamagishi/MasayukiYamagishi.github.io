@@ -1,0 +1,15 @@
+title:
+  ja: "Google StitchでUIのたたき台を作る"
+  en: "Creating Initial UI Drafts with Google Stitch"
+description:
+  ja: "Google StitchでUIのたたき台を作る流れと、複数案の生成、デザインシステム、Instant Prototypeなどを紹介した記事をZennに投稿しました。個人開発で画面設計を素早く始めたい方に向けています。"
+  en: "I published a Zenn article on using Google Stitch for initial UI drafts, covering design variations, design systems, and Instant Prototype for faster indie UI design."
+publishedAt: 2026-03-30
+thumbnail:
+  alt:
+    ja: "青と紫のグラデーション背景に「Google StitchでUIのたたき台を作る」と表示したサムネイル"
+    en: "Article thumbnail with a blue and purple gradient background and the title about creating initial UI drafts with Google Stitch."
+ogImage:
+  alt:
+    ja: "青と紫のグラデーション背景に「Google StitchでUIのたたき台を作る」と表示したOG画像"
+    en: "Open Graph image with a blue and purple gradient background and the title about creating initial UI drafts with Google Stitch."

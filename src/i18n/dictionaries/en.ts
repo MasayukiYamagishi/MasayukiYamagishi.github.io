@@ -43,6 +43,8 @@ export const en = {
     html5: "HTML",
     css: "CSS",
     typescript: "TypeScript",
+    javascript: "JavaScript",
+    jquery: "jQuery",
     react: "React",
     nextjs: "Next.js",
     tailwindcss: "Tailwind CSS",
@@ -51,6 +53,7 @@ export const en = {
 
     java: "Java",
     springboot: "Spring Boot",
+    thymeleaf: "Thymeleaf",
     python: "Python",
     fastapi: "FastAPI",
 
@@ -62,8 +65,10 @@ export const en = {
     githubactions: "GitHub Actions",
     linux: "Linux",
     apachemaven: "Apache Maven",
+    apachejmeter: "Apache JMeter",
     gradle: "Gradle",
     junit5: "JUnit 5",
+    intellijidea: "IntelliJ IDEA",
 
     claudecode: "Claude Code",
     cursor: "Cursor",
@@ -75,6 +80,7 @@ export const en = {
     publishedAt: "Published",
     updatedAt: "Updated",
     emptyMessage: "No posts.",
+    backToPosts: "Back to posts",
   },
 
   projects: {
@@ -85,6 +91,7 @@ export const en = {
 
   experience: {
     present: "Present",
+    openOfficialSite: "Open the official website in a new tab",
     showProjects: "Show details",
     hideProjects: "Hide details",
     technologies: "Technologies",

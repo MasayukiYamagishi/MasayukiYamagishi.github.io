@@ -60,12 +60,17 @@ export function ArticleCard({ post, locale, dictionary }: ArticleCardProps) {
           hover:shadow-lg
         "
       >
-        <div className="aspect-video overflow-hidden bg-border">
+        <div className="relative aspect-video overflow-hidden bg-border">
           <Image
             src={post.thumbnail.src}
             alt={post.thumbnail.alt[locale]}
             width={post.thumbnail.width}
             height={post.thumbnail.height}
+            sizes="
+              (max-width: 639px) calc(100vw - 3rem),
+              (max-width: 1023px) 50vw,
+              320px
+            "
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
           />
         </div>

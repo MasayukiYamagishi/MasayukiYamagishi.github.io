@@ -1,0 +1,15 @@
+title:
+  ja: "OpenTelemetryでLLMのUI解釈結果を計測してみた"
+  en: "Measuring How LLMs Interpret UIs with OpenTelemetry"
+description:
+  ja: "見た目を揃えてHTML構造だけを変えたUIをLLMに評価させ、結果をOpenTelemetryとGrafanaで観測した記事をZennに投稿しました。AIに解釈されやすいUIや評価基盤に関心がある方に向けています。"
+  en: "I published a Zenn article on evaluating visually identical UIs with different HTML structures using an LLM and observing the results with OpenTelemetry and Grafana."
+publishedAt: 2026-08-10
+thumbnail:
+  alt:
+    ja: "Grafanaダッシュボードの画面と、OpenTelemetryでLLMのUI解釈結果を計測する記事の見出しを組み合わせたサムネイル"
+    en: "Article thumbnail combining a Grafana dashboard screenshot with a title about measuring LLM UI interpretation results using OpenTelemetry."
+ogImage:
+  alt:
+    ja: "Grafanaダッシュボードの画面と、OpenTelemetryでLLMのUI解釈結果を計測する記事の見出しを組み合わせたOG画像"
+    en: "Open Graph image combining a Grafana dashboard screenshot with a title about measuring LLM UI interpretation results using OpenTelemetry."

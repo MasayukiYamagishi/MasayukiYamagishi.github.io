@@ -9,6 +9,12 @@ const meta = {
   tags: ["autodocs"],
   parameters: {
     layout: "centered",
+    nextjs: {
+      appDirectory: true,
+      navigation: {
+        pathname: "/",
+      },
+    },
   },
   args: {
     locale: "ja",
@@ -58,5 +64,13 @@ export const English: Story = {
   args: {
     locale: "en",
     label: "Select display language",
+  },
+  parameters: {
+    nextjs: {
+      appDirectory: true,
+      navigation: {
+        pathname: "/en",
+      },
+    },
   },
 };

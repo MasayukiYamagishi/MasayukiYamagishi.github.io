@@ -1,8 +1,9 @@
 import { sectionIds } from "@/config/navigation";
+import type { SkillsDictionary } from "@/content/skills";
 import {
+  getWorkExperiences,
   WorkExperienceDictionary,
-  workExperiences,
-} from "@/content/workExperience";
+} from "@/content/work-experience";
 import { Locale } from "@/i18n/config";
 import { ExternalLink } from "lucide-react";
 import { SimpleIconGraphic } from "../ui/icons/SimpleIconGraphic";
@@ -13,6 +14,7 @@ type WorkExperienceProps = {
   locale: Locale;
   heading: string;
   dictionary: WorkExperienceDictionary;
+  skillsDictionary: SkillsDictionary;
 };
 
 /**
@@ -21,12 +23,14 @@ type WorkExperienceProps = {
  * @param WorkExperienceProps props
  * @returns 職歴セクションのJSX
  */
-export function WorkExperience({
+export async function WorkExperience({
   locale,
   heading,
   dictionary,
+  skillsDictionary,
 }: WorkExperienceProps) {
   const headingId = `${sectionIds.experience}-heading`;
+  const workExperiences = await getWorkExperiences();
 
   return (
     <section
@@ -59,7 +63,7 @@ export function WorkExperience({
                       className="size-4 shrink-0"
                     />
                     <span className="sr-only">
-                      新しいタブで公式サイトを開く
+                      {dictionary.openOfficialSite}
                     </span>
                   </a>
                 ) : (
@@ -111,7 +115,7 @@ export function WorkExperience({
                 </span>
               </summary>
 
-              <ul className="mt-2">
+              <ul className="mt-2 flex flex-col gap-1.5">
                 {experience.projects.map((project) => (
                   <li
                     key={project.id}
@@ -140,10 +144,10 @@ export function WorkExperience({
 
                         {project.period.end ? (
                           <time
-                            dateTime={experience.period.end}
+                            dateTime={project.period.end}
                             className="tabular-nums"
                           >
-                            {experience.period.end}
+                            {project.period.end}
                           </time>
                         ) : (
                           <span>{dictionary.present}</span>
@@ -151,14 +155,18 @@ export function WorkExperience({
                       </p>
                     </div>
 
+                    <p className="mb-2 text-sm leading-snug text-foreground">
+                      {project.description[locale]}
+                    </p>
+
                     <ul className="list-outside list-disc space-y-1 pl-5 marker:text-muted">
-                      {/* Contribution */}
-                      {project.contributions.map((contribute) => (
+                      {/* Highlights */}
+                      {project.highlights.map((highlight) => (
                         <li
-                          key={contribute.ja}
+                          key={highlight.ja}
                           className="text-sm leading-snug text-foreground"
                         >
-                          {contribute[locale]}
+                          {highlight[locale]}
                         </li>
                       ))}
                     </ul>
@@ -169,12 +177,12 @@ export function WorkExperience({
                       </p>
                       <ul className="flex flex-wrap gap-1.5">
                         {/* Technologies */}
-                        {project.technologies.map((tech) => {
-                          const icon = getTechnologyIcon(tech.id);
+                        {project.technologies.map((technologyId) => {
+                          const icon = getTechnologyIcon(technologyId);
 
                           return (
                             <li
-                              key={tech.id}
+                              key={technologyId}
                               className="
                                 inline-flex
                                 items-center
@@ -198,7 +206,7 @@ export function WorkExperience({
                                   className="shrink-0 opacity-80"
                                 />
                               )}
-                              <span>{tech.label[locale]}</span>
+                              <span>{skillsDictionary[technologyId]}</span>
                             </li>
                           );
                         })}

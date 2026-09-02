@@ -31,6 +31,7 @@ export default async function HomePage() {
           locale="ja"
           heading={ja.sections.experience}
           dictionary={ja.experience}
+          skillsDictionary={ja.skills}
         ></WorkExperience>
       </main>
 

@@ -1,0 +1,15 @@
+title:
+  ja: "ポートフォリオをGitHub Pagesで公開しました"
+  en: "I Published My Portfolio on GitHub Pages"
+description:
+  ja: "ポートフォリオをGitHub Pagesで公開しました。初めて訪れた方に向けて、自己紹介、掲載しているProjects・Posts、今後発信する内容をまとめています。"
+  en: "I published my portfolio on GitHub Pages. This post introduces me, the Projects and Posts featured on the site, and the topics I plan to share."
+publishedAt: 2026-08-31
+thumbnail:
+  alt:
+    ja: "漫画風の吹き出しに「ポートフォリオ開設!!」と大きく描いたサムネイル"
+    en: "Comic-style article thumbnail with large Japanese text announcing the launch of the portfolio."
+ogImage:
+  alt:
+    ja: "漫画風の吹き出しに「ポートフォリオ開設!!」と大きく描いたOG画像"
+    en: "Comic-style Open Graph image with large Japanese text announcing the launch of the portfolio."
