@@ -20,9 +20,9 @@ export const localeLabels = {
 
 export function getLocalizedPathname(pathname: string, targetLocale: Locale) {
   const pathnameWithoutLocale =
-    pathname === localeLabels.en
+    pathname === localePaths.en
       ? localePaths.ja
-      : pathname.startsWith(`${localePaths.en}`)
+      : pathname.startsWith(`${localePaths.en}/`)
         ? pathname.slice(localePaths.en.length)
         : pathname;
 
