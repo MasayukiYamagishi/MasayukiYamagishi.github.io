@@ -1,0 +1,183 @@
+id: mit
+company:
+  ja: "株式会社MIT"
+  en: "MIT Corp."
+companyUrl: "https://k-mit.jp/"
+role:
+  ja: "システムエンジニア"
+  en: "System Engineer"
+period:
+  start: "2021-04"
+summary:
+  ja: "業務システムとWebサービスの開発を中心に、要件整理・設計・実装・テスト・保守運用を経験。プログラミングスクールの運営とチームリードを経て、現在はサブリーダーとして顧客提案、技術支援、コードレビュー、生成AIを活用した開発を担当しています。"
+  en: "Experience across business systems and web services, including requirements, design, implementation, testing, and maintenance. After leading an in-house programming school, I now serve as a sub-lead handling client proposals, technical support, code reviews, and AI-assisted development."
+projects:
+  - id: sales-management-renewal
+    title:
+      ja: "販売管理システムの刷新"
+      en: "Sales management system renewal"
+    role:
+      ja: "サブリーダー / 設計・開発担当"
+      en: "Sub-lead / Design and Development"
+    period:
+      start: "2026-01"
+    description:
+      ja: "従来運用されていた販売管理システムを、Next.jsとSpring Bootを用いた新システムへ刷新する案件です。"
+      en: "A project to replace an existing sales management system with a new system built with Next.js and Spring Boot."
+    highlights:
+      - ja: "7名の開発チームでサブリーダーを務め、顧客ヒアリング、要件整理・提案、メンバーへの技術支援、コードレビューを担当。"
+        en: "Serve as sub-lead in a seven-person development team, handling client interviews, requirements organization, proposals, technical support, and code reviews."
+      - ja: "Claude Codeを活用した仕様駆動開発に取り組み、コマンドやスキルの整備から仕様作成、実装、テスト作成までを担当。"
+        en: "Use Claude Code for specification-driven development, covering command and skill setup, specification authoring, implementation, and test creation."
+    technologies:
+      - nextjs
+      - typescript
+      - java
+      - springboot
+      - postgresql
+      - flyway
+      - prisma
+      - claudecode
+
+  - id: education-service-operations-tool
+    title:
+      ja: "教育系サービス向け社内運用ツールの新規開発・性能検証"
+      en: "Internal operations tool development and performance testing for an education service"
+    role:
+      ja: "設計・開発担当 / 技術支援"
+      en: "System Design and Development / Technical Support"
+    period:
+      start: "2025-08"
+      end: "2025-12"
+    description:
+      ja: "教育系サービスの運用担当者が利用する社内管理ツールの新規開発と、バックエンドAPIの性能検証を行う案件です。"
+      en: "A project to develop a new internal administration tool for education-service operators and evaluate backend API performance."
+    highlights:
+      - ja: "5〜6名のアジャイルチームで、利用者へのヒアリング、要件整理、設計、実装、単体テストまでを担当。"
+        en: "Worked in a five-to-six-person agile team, covering user interviews, requirements organization, design, implementation, and unit testing."
+      - ja: "CursorやGitHub Copilotを活用した開発、AIが生成したコードの修正、新人メンバーへの技術支援を担当。"
+        en: "Used Cursor and GitHub Copilot, corrected AI-generated code, and provided technical support to a junior team member."
+      - ja: "APIの性能測定指標を顧客に提案・調整し、JMeterを用いて測定を実施。"
+        en: "Proposed and aligned API performance metrics with the client, then conducted measurements using JMeter."
+    technologies:
+      - java
+      - springboot
+      - thymeleaf
+      - html5
+      - css
+      - githubactions
+      - cursor
+      - githubcopilot
+      - apachejmeter
+
+  - id: programming-school-operations
+    title:
+      ja: "自社プログラミングスクールの立ち上げ・運営"
+      en: "Launch and operation of an in-house programming school"
+    role:
+      ja: "チームリーダー"
+      en: "Team Lead"
+    period:
+      start: "2024-09"
+      end: "2025-08"
+    description:
+      ja: "自社の新規事業として立ち上げたプログラミングスクールの教材制作、システム管理、受講者対応、サービス改善を行う業務です。"
+      en: "Work involving curriculum development, system administration, learner support, and service improvement for a newly launched in-house programming school."
+    highlights:
+      - ja: "2〜3名のチームを率い、Java、Git、Linux、プロンプトエンジニアリングなどの教材制作、スクールシステムの管理、受講者対応を担当。"
+        en: "Led a two-to-three-person team and handled curriculum development for Java, Git, Linux, and prompt engineering, along with school-system administration and learner support."
+      - ja: "競合サービスを調査し、利用者に提供する価値を整理しながらサービス改善を推進。"
+        en: "Researched competing services and drove improvements by clarifying the value delivered to learners."
+    technologies:
+      - java
+      - springboot
+      - javascript
+      - git
+      - linux
+      - html5
+      - css
+
+  - id: industrial-product-inspection-tool
+    title:
+      ja: "工業製品検査ツールの開発"
+      en: "Industrial product inspection tool development"
+    role:
+      ja: "開発担当"
+      en: "Application Developer"
+    period:
+      start: "2024-01"
+      end: "2024-08"
+    description:
+      ja: "C++モジュールで取得した検査データをPythonで受け取り、Web UIに表示する工業製品検査ツールの開発案件です。"
+      en: "A project to develop an industrial product inspection tool that receives inspection data from a C++ module in Python and presents it through a web UI."
+    highlights:
+      - ja: "7〜8名のスクラムチームで、取得したデータをUI表示向けに加工するPythonの処理を実装。"
+        en: "Worked in a seven-to-eight-person Scrum team and implemented Python processing to transform acquired data for UI presentation."
+      - ja: "Figmaで作成されたUIデザインを基に、Reactコンポーネントを実装。"
+        en: "Implemented React components based on UI designs created in Figma."
+    technologies:
+      - python
+      - fastapi
+      - typescript
+      - react
+      - nextjs
+      - prisma
+      - storybook
+      - linux
+
+  - id: lease-management-system-replacement
+    title:
+      ja: "リース管理システムのリプレイス"
+      en: "Lease management system replacement"
+    role:
+      ja: "設計・開発担当"
+      en: "System Design and Development"
+    period:
+      start: "2023-07"
+      end: "2024-12"
+    description:
+      ja: "COBOLで稼働していた基幹業務システムを、Spring Bootを用いた新しいリース管理システムへ移行する案件です。"
+      en: "A project to replace a COBOL-based core business system with a new lease management system built with Spring Boot."
+    highlights:
+      - ja: "6〜7名のチームで、基本設計・詳細設計、実装、単体テストを担当。"
+        en: "Worked in a six-to-seven-person team, covering basic and detailed design, implementation, and unit testing."
+      - ja: "既存システムに詳しい担当者と仕様を擦り合わせ、移行に必要な設計と技術検証を実施。"
+        en: "Aligned specifications with subject-matter experts on the existing system and conducted the design and technical validation required for the migration."
+    technologies:
+      - java
+      - springboot
+      - typescript
+      - react
+      - git
+      - junit5
+      - intellijidea
+
+  - id: real-estate-search-service
+    title:
+      ja: "不動産情報検索サービスの開発・保守"
+      en: "Development and maintenance of a real estate search service"
+    role:
+      ja: "設計・開発担当"
+      en: "System Design and Development"
+    period:
+      start: "2021-04"
+      end: "2023-06"
+    description:
+      ja: "Java、Spring Boot、Thymeleaf、TypeScriptで構成された不動産情報検索サービスの開発・保守運用案件です。"
+      en: "A project to develop and maintain a real estate search service built with Java, Spring Boot, Thymeleaf, and TypeScript."
+    highlights:
+      - ja: "7〜8名のスクラムチームで、設計の擦り合わせからJavaとSpring Bootによるバックエンド開発、TypeScriptによる状態遷移を含むフロントエンド開発までを担当。"
+        en: "Worked in a seven-to-eight-person Scrum team, covering design alignment, backend development with Java and Spring Boot, and frontend development in TypeScript including state-transition handling."
+      - ja: "単体テスト、リファクタリング、ドキュメント整備、保守運用を担当。"
+        en: "Handled unit testing, refactoring, documentation, and ongoing maintenance."
+    technologies:
+      - java
+      - springboot
+      - thymeleaf
+      - junit5
+      - typescript
+      - jquery
+      - apachemaven
+      - gradle
+      - git
+      - intellijidea

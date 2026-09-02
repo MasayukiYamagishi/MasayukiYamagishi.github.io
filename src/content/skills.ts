@@ -1,8 +1,45 @@
+export const technologyIds = [
+  "typescript",
+  "javascript",
+  "jquery",
+  "react",
+  "nextjs",
+  "html5",
+  "css",
+  "tailwindcss",
+  "storybook",
+  "zod",
+  "java",
+  "springboot",
+  "thymeleaf",
+  "python",
+  "fastapi",
+  "postgresql",
+  "prisma",
+  "flyway",
+  "git",
+  "githubactions",
+  "linux",
+  "apachemaven",
+  "apachejmeter",
+  "gradle",
+  "junit5",
+  "intellijidea",
+  "claudecode",
+  "cursor",
+  "githubcopilot",
+  "codex",
+] as const;
+
+export type TechnologyId = (typeof technologyIds)[number];
+
 export const skillGroups = [
   {
     id: "frontend",
     skills: [
       "typescript",
+      "javascript",
+      "jquery",
       "react",
       "nextjs",
       "html5",
@@ -10,6 +47,7 @@ export const skillGroups = [
       "tailwindcss",
       "storybook",
       "zod",
+      "thymeleaf",
     ],
   },
   {
@@ -27,8 +65,10 @@ export const skillGroups = [
       "githubactions",
       "linux",
       "apachemaven",
+      "apachejmeter",
       "gradle",
       "junit5",
+      "intellijidea",
     ],
   },
   {
@@ -36,11 +76,15 @@ export const skillGroups = [
     skills: ["claudecode", "cursor", "githubcopilot", "codex"],
     wide: true,
   },
-] as const;
+] as const satisfies readonly {
+  id: string;
+  skills: readonly TechnologyId[];
+  wide?: boolean;
+}[];
 
 export type SkillGroupId = (typeof skillGroups)[number]["id"];
 export type SkillId = (typeof skillGroups)[number]["skills"][number];
 
-export type SkillsDictionary = Record<SkillId, string> & {
+export type SkillsDictionary = Record<TechnologyId, string> & {
   categories: Record<SkillGroupId, string>;
 };

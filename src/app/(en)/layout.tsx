@@ -3,6 +3,8 @@ import { Header } from "@/components/layout/Header";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { geistMono, geistSans, notoSansJP } from "@/config/fonts";
 import { siteMetadata } from "@/config/site";
+import { themeInitializationScript } from "@/config/theme";
+import Script from "next/script";
 import { ReactNode } from "react";
 import "../globals.css";
 
@@ -31,6 +33,9 @@ export default async function LocaleLayout({ children }: Props) {
       suppressHydrationWarning
     >
       <body>
+        <Script id="theme-initializer" strategy="beforeInteractive">
+          {themeInitializationScript}
+        </Script>
         <ThemeProvider>
           <div className="isolate pt-16">
             <Header locale="en" />

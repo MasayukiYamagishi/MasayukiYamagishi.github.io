@@ -31,6 +31,7 @@ export default async function EnglishHomePage() {
           locale="en"
           heading={en.sections.experience}
           dictionary={en.experience}
+          skillsDictionary={en.skills}
         ></WorkExperience>
       </main>
 
