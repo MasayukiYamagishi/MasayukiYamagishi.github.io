@@ -1,4 +1,4 @@
-import { sectionIds } from "@/config/navigation";
+import { pageTopIds } from "@/config/navigation";
 import { SocialLinks } from "../ui/SocialLinks";
 
 type HeroProps = {
@@ -16,12 +16,10 @@ type HeroProps = {
  * @returns ヒーローセクションのJSX
  */
 export function Hero({ dictionary }: HeroProps) {
-  const headingId = `${sectionIds.about}-heading`;
-
   return (
     <section
-      id={sectionIds.about}
-      aria-labelledby={headingId}
+      id={pageTopIds.section}
+      aria-labelledby={pageTopIds.heading}
       className="
         pt-20
         pb-10
@@ -30,7 +28,7 @@ export function Hero({ dictionary }: HeroProps) {
       "
     >
       <h1
-        id={headingId}
+        id={pageTopIds.heading}
         tabIndex={-1}
         className="mb-2 text-base font-bold leading-8 text-foreground sm:text-4xl"
       >

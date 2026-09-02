@@ -18,6 +18,7 @@ export const ja = {
   },
 
   sections: {
+    about: "About",
     skills: "Skills",
     posts: "Posts",
     projects: "Projects",
@@ -29,6 +30,16 @@ export const ja = {
     role: "フロントエンドエンジニア",
     description:
       "UI品質、アクセシビリティ、パフォーマンスを重視したWeb開発に取り組んでいます。",
+  },
+
+  about: {
+    name: "名前",
+    birthplace: "出身地",
+    birthDate: "生年月日",
+    introduction: "自己紹介文は現在準備中です。",
+    filmPortfolio: "映像作家としてのポートフォリオ",
+    openFilmPortfolio:
+      "映像作家としてのポートフォリオを新しいタブで開く",
   },
 
   skills: {

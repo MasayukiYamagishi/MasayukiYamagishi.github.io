@@ -1,4 +1,5 @@
 import { ScrollToTopButton } from "@/components/layout/ScrollTopButton";
+import { About } from "@/components/sections/About";
 import { Hero } from "@/components/sections/Hero";
 import { Posts } from "@/components/sections/Posts";
 import { Projects } from "@/components/sections/Projects";
@@ -16,6 +17,11 @@ export default async function HomePage() {
     <>
       <main className="mx-auto w-full max-w-5xl px-6 sm:px-8">
         <Hero dictionary={ja.hero}></Hero>
+        <About
+          locale="ja"
+          heading={ja.sections.about}
+          dictionary={ja.about}
+        ></About>
         <Posts
           locale="ja"
           heading={ja.sections.posts}

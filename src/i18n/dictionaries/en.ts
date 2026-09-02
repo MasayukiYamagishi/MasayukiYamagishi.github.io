@@ -18,6 +18,7 @@ export const en = {
   },
 
   sections: {
+    about: "About",
     skills: "Skills",
     posts: "Posts",
     projects: "Projects",
@@ -29,6 +30,15 @@ export const en = {
     role: "Frontend Engineer",
     description:
       "I build web products with a focus on UI quality, accessibility, and performance.",
+  },
+
+  about: {
+    name: "Name",
+    birthplace: "Birthplace",
+    birthDate: "Date of birth",
+    introduction: "A personal introduction is coming soon.",
+    filmPortfolio: "Filmmaking portfolio",
+    openFilmPortfolio: "Open the filmmaking portfolio in a new tab",
   },
 
   skills: {
