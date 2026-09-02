@@ -17,3 +17,20 @@ export const localeLabels = {
   ja: "日本語",
   en: "English",
 } as const satisfies Record<Locale, string>;
+
+export function getLocalizedPathname(pathname: string, targetLocale: Locale) {
+  const pathnameWithoutLocale =
+    pathname === localeLabels.en
+      ? localePaths.ja
+      : pathname.startsWith(`${localePaths.en}`)
+        ? pathname.slice(localePaths.en.length)
+        : pathname;
+
+  if (targetLocale === defaultLocale) {
+    return pathnameWithoutLocale;
+  }
+
+  return pathnameWithoutLocale === localePaths.ja
+    ? localePaths.en
+    : `${localePaths.en}${pathnameWithoutLocale}`;
+}

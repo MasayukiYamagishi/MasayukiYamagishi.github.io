@@ -1,9 +1,15 @@
 "use client";
 
-import { Locale, localeLabels, localePaths, locales } from "@/i18n/config";
+import {
+  getLocalizedPathname,
+  Locale,
+  localeLabels,
+  locales,
+} from "@/i18n/config";
 import { Menu } from "@base-ui/react";
 import { Check, ChevronDown, Languages } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "./Button";
 import { Icon } from "./icons/Icon";
 
@@ -34,6 +40,8 @@ const menuItemStyles = `
  * @returns 言語切り替えメニューのJSX
  */
 export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
+  const pathname = usePathname();
+
   return (
     <Menu.Root>
       <Menu.Trigger
@@ -81,7 +89,7 @@ export function LanguageSwitcher({ locale, label }: LanguageSwitcherProps) {
                   closeOnClick
                   render={
                     <Link
-                      href={localePaths[targetLocale]}
+                      href={getLocalizedPathname(pathname, targetLocale)}
                       hrefLang={targetLocale}
                       lang={targetLocale}
                       aria-current={isCurrent ? "page" : undefined}
