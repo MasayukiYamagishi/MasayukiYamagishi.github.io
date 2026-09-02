@@ -3,7 +3,10 @@ import {
   type ExternalLinkCardProps,
 } from "./ExternalLinkCard";
 
-type ZennArticleCardProps = Omit<ExternalLinkCardProps, "siteName">;
+type ZennArticleCardProps = Omit<
+  ExternalLinkCardProps,
+  "brand" | "siteName"
+>;
 
 /**
  * Zennの記事情報を表示する外部リンクカードコンポーネント
@@ -22,5 +25,5 @@ export function ZennArticleCard(props: ZennArticleCardProps) {
     throw new Error(`Zennの記事URLを指定してください: ${props.href}`);
   }
 
-  return <ExternalLinkCard {...props} siteName="Zenn" />;
+  return <ExternalLinkCard {...props} brand="zenn" siteName="Zenn.dev" />;
 }

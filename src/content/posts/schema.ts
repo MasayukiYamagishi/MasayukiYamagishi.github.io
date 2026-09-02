@@ -52,10 +52,20 @@ const postDescriptionSchema = createLocalizedTextSchema(
   POST_DESCRIPTION_MAX_LENGTH,
 );
 
-const imageAltSchema = createLocalizedTextSchema(
-  "画像の代替テキスト",
-  POST_IMAGE_ALT_MAX_LENGTH,
-);
+const imageAltTextSchema = z
+  .string()
+  .trim()
+  .max(
+    POST_IMAGE_ALT_MAX_LENGTH,
+    `画像の代替テキストは${POST_IMAGE_ALT_MAX_LENGTH}文字以内で指定してください。`,
+  );
+
+const imageAltSchema = z
+  .object({
+    ja: imageAltTextSchema,
+    en: imageAltTextSchema,
+  })
+  .strict();
 
 const imageMetadataSchema = z
   .object({

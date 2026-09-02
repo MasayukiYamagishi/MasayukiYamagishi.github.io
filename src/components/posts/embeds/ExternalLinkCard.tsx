@@ -1,5 +1,7 @@
+import { BrandIcon } from "@/components/ui/icons/BrandIcon";
 import { Icon } from "@/components/ui/icons/Icon";
-import { ArrowUpRight } from "lucide-react";
+import type { Brand } from "@/components/ui/icons/brandIcons";
+import { Link } from "lucide-react";
 import Image from "next/image";
 
 export type ExternalLinkCardProps = {
@@ -9,6 +11,7 @@ export type ExternalLinkCardProps = {
   description?: string;
   publishedAt?: string;
   imageSrc: `/images/posts/${string}`;
+  brand?: Brand;
 };
 
 /**
@@ -24,6 +27,7 @@ export function ExternalLinkCard({
   description,
   publishedAt,
   imageSrc,
+  brand,
 }: ExternalLinkCardProps) {
   const url = new URL(href);
 
@@ -45,35 +49,49 @@ export function ExternalLinkCard({
                     transition
                     hover:bg-surface-hover
                     no-underline!
-                    sm:grid-cols-[minmax(0,1fr)_12rem]
+                    sm:min-h-40
+                    sm:grid-cols-[minmax(0,3fr)_minmax(12rem,2fr)]
                 "
       >
-        <div className="min-w-0 p-4">
-          <p className="flex flex-wrap gap-2 text-xs text-muted">
-            <span>{siteName}</span>
-
-            {publishedAt && <time dateTime={publishedAt}>{publishedAt}</time>}
-          </p>
-
-          <p className="mt-2 flex items-start gap-2 font-semibold text-foreground">
-            <span>{title}</span>
-            <Icon icon={ArrowUpRight} size={16} className="mt-1 shrink-0" />
+        <div className="flex min-w-0 flex-col p-4">
+          <p className="text-base leading-snug font-semibold text-foreground">
+            {title}
           </p>
 
           {description && (
-            <p className="mt-2 text-sm leading-6 text-muted">{description}</p>
+            <p className="mt-1.5 text-sm leading-6 text-muted">
+              {description}
+            </p>
           )}
+
+          <p className="mt-auto flex flex-wrap items-center gap-x-2 gap-y-1 pt-3 text-xs text-muted">
+            <span className="inline-flex items-center gap-1.5 font-medium text-foreground">
+              {brand ? (
+                <BrandIcon
+                  brand={brand}
+                  size={14}
+                  className="inline-block shrink-0"
+                />
+              ) : (
+                <Icon icon={Link} size={14} strokeWidth={1.75} />
+              )}
+              <span>{siteName}</span>
+            </span>
+
+            {publishedAt && <time dateTime={publishedAt}>{publishedAt}</time>}
+          </p>
         </div>
 
         {imageSrc && (
-          <Image
-            src={imageSrc}
-            alt=""
-            width={1200}
-            height={630}
-            sizes="(max-width: 640px) 100vw, 192px"
-            className="h-full w-full object-cover rounded-none! border-0!"
-          />
+          <div className="relative aspect-[40/21] min-h-0 bg-border sm:aspect-auto">
+            <Image
+              src={imageSrc}
+              alt=""
+              fill
+              sizes="(max-width: 639px) calc(100vw - 3rem), (max-width: 767px) 40vw, 288px"
+              className="object-cover rounded-none! border-0!"
+            />
+          </div>
         )}
       </a>
     </aside>

@@ -43,7 +43,7 @@ export const Default: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const card = canvas.getByRole("complementary", {
-      name: "Zenn: 画面UIのたたき台作成はGoogle Stitchが楽",
+      name: "Zenn.dev: 画面UIのたたき台作成はGoogle Stitchが楽",
     });
     const link = within(card).getByRole("link", {
       name: /画面UIのたたき台作成はGoogle Stitchが楽/,
@@ -53,7 +53,20 @@ export const Default: Story = {
       "href",
       "https://zenn.dev/midpt/articles/google-stitch-intro",
     );
-    await expect(within(card).getByText("Zenn")).toBeVisible();
+    await expect(within(card).getByText("Zenn.dev")).toBeVisible();
+    await expect(within(card).getByText("2026-03-30")).toBeVisible();
+  },
+};
+
+export const LongTitle: Story = {
+  args: {
+    href: "https://zenn.dev/midpt/articles/designing-better-ai-built-web-apps-with-hbd",
+    title: "Webアプリの「良い設計」を考えるためのHumane by Design入門",
+    description:
+      "Humane by Designを手掛かりに、AI時代のWebアプリ設計を考える記事です。",
+    publishedAt: "2026-08-18",
+    imageSrc:
+      "/images/posts/humane-by-design-for-ai-built-apps/content/zenn-og.webp",
   },
 };
 

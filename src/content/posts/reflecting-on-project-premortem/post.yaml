@@ -1,0 +1,15 @@
+title:
+  ja: "失敗したプロジェクトの事前検死を振り返った話"
+  en: "Reflecting on the Premortem of a Failed Project"
+description:
+  ja: "新規プロジェクトの撤退後に、開始前に行った「事前検死」を振り返った記事をZenn Publicationに投稿しました。見落としていたリスクや、事前検死をチームで活かす際の注意点を紹介します。"
+  en: "I published a Zenn Publication article reflecting on a premortem conducted before a new project that was later discontinued, including overlooked risks and lessons for teams."
+publishedAt: 2025-07-15
+thumbnail:
+  alt:
+    ja: "頬杖をつく人物のモノクロ写真に記事タイトルを重ねた、事前検死を振り返る記事のサムネイル"
+    en: "Article thumbnail showing a monochrome person resting their chin on their hand, with the title about reflecting on a failed project's premortem."
+ogImage:
+  alt:
+    ja: "頬杖をつく人物のモノクロ写真に記事タイトルを重ねた、事前検死を振り返る記事のOG画像"
+    en: "Open Graph image showing a monochrome person resting their chin on their hand, with the title about reflecting on a failed project's premortem."

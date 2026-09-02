@@ -83,9 +83,9 @@ async function readPost(slug: string): Promise<Post> {
     slug,
     ...metadata,
     thumbnail: {
-      src: `/images/posts/${slug}/thumbnail-detail.webp`,
-      width: 1600,
-      height: 900,
+      src: `/images/posts/${slug}/thumbnail-card.webp`,
+      width: 800,
+      height: 450,
       alt: thumbnail.alt,
     },
     ogImage: {

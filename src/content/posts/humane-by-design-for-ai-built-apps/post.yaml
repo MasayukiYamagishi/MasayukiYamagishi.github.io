@@ -1,0 +1,15 @@
+title:
+  ja: "Webアプリの「良い設計」を考えるためのHumane by Design入門"
+  en: "Humane by Design: An Introduction to Better Web App Design"
+description:
+  ja: "Laws of UXの作者であるJon Yablonski氏のプロダクトであるHumane by Designを紹介する記事をZennに投稿しました。"
+  en: "I published a Zenn article introducing Humane by Design, a project by Jon Yablonski, the author of Laws of UX."
+publishedAt: 2026-08-18
+thumbnail:
+  alt:
+    ja: "Humane by Designの文字を写した画面を背景に記事タイトルを配置したサムネイル"
+    en: "Article thumbnail featuring a close-up of the words Humane by Design with the article title above and below."
+ogImage:
+  alt:
+    ja: "Humane by Designの文字を写した画面を背景に記事タイトルを配置したOG画像"
+    en: "Open Graph image featuring a close-up of the words Humane by Design with the article title above and below."
