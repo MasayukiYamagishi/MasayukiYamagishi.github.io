@@ -2,7 +2,7 @@ import { BrandIcon } from "@/components/ui/icons/BrandIcon";
 import { Icon } from "@/components/ui/icons/Icon";
 import type { Brand } from "@/components/ui/icons/brandIcons";
 import { Link } from "lucide-react";
-import Image from "next/image";
+import Image, { type ImageProps } from "next/image";
 
 export type ExternalLinkCardProps = {
   href: string;
@@ -10,15 +10,16 @@ export type ExternalLinkCardProps = {
   title: string;
   description?: string;
   publishedAt?: string;
-  imageSrc: `/images/posts/${string}`;
+  imageSrc?: ImageProps["src"];
   brand?: Brand;
+  newTabLabel?: string;
 };
 
 /**
- * 外部リンクカードコンポーネント
+ * 外部サイトの概要を表示するリンクカード
  *
  * @param ExternalLinkCardProps props
- * @returns 外部リンクカードコンポーネントのJSX
+ * @returns 外部リンクカードのJSX
  */
 export function ExternalLinkCard({
   href,
@@ -28,30 +29,40 @@ export function ExternalLinkCard({
   publishedAt,
   imageSrc,
   brand,
+  newTabLabel,
 }: ExternalLinkCardProps) {
   const url = new URL(href);
 
   if (url.protocol !== "https:") {
-    throw new Error(`埋め込みリンクにはHTTPS URLを指定してください: ${href}`);
+    throw new Error(`外部リンクにはHTTPS URLを指定してください: ${href}`);
   }
 
   return (
     <aside aria-label={`${siteName}: ${title}`}>
       <a
         href={href}
-        className="
-                    grid
-                    overflow-hidden
-                    rounded-xl
-                    border
-                    border-border
-                    bg-surface
-                    transition
-                    hover:bg-surface-hover
-                    no-underline!
-                    sm:min-h-40
-                    sm:grid-cols-[minmax(0,3fr)_minmax(12rem,2fr)]
-                "
+        target={newTabLabel ? "_blank" : undefined}
+        rel={newTabLabel ? "noopener noreferrer" : undefined}
+        aria-label={newTabLabel}
+        className={[
+          `
+            grid
+            min-h-32
+            overflow-hidden
+            rounded-xl
+            border
+            border-border
+            bg-surface
+            transition
+            hover:bg-surface-hover
+            no-underline!
+          `,
+          imageSrc
+            ? "sm:min-h-40 sm:grid-cols-[minmax(0,3fr)_minmax(12rem,2fr)]"
+            : undefined,
+        ]
+          .filter(Boolean)
+          .join(" ")}
       >
         <div className="flex min-w-0 flex-col p-4">
           <p className="text-base leading-snug font-semibold text-foreground">

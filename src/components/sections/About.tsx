@@ -1,18 +1,29 @@
 import { sectionIds } from "@/config/navigation";
-import { profile } from "@/content/profile";
-import type { Locale } from "@/i18n/config";
-import { ExternalLink } from "lucide-react";
+import { profileConfig } from "@/content/profile";
+import { ExternalLinkCard } from "../ui/ExternalLinkCard";
 
 type AboutProps = {
-  locale: Locale;
   heading: string;
-  dictionary: {
+  profile: {
     name: string;
     birthplace: string;
     birthDate: string;
     introduction: string;
-    filmPortfolio: string;
-    openFilmPortfolio: string;
+    hobbies: string[];
+  };
+  dictionary: {
+    labels: {
+      name: string;
+      birthplace: string;
+      birthDate: string;
+      hobbies: string;
+    };
+    filmPortfolio: {
+      heading: string;
+      title: string;
+      description: string;
+      openLabel: string;
+    };
   };
 };
 
@@ -22,9 +33,8 @@ type AboutProps = {
  * @param AboutProps props
  * @returns AboutセクションのJSX
  */
-export function About({ locale, heading, dictionary }: AboutProps) {
+export function About({ heading, profile, dictionary }: AboutProps) {
   const headingId = `${sectionIds.about}-heading`;
-  const localizedProfile = profile[locale];
 
   return (
     <section
@@ -39,60 +49,57 @@ export function About({ locale, heading, dictionary }: AboutProps) {
         {heading}
       </h2>
 
-      <div className="grid gap-8 md:grid-cols-[minmax(0,2fr)_minmax(16rem,1fr)] md:gap-12">
+      <div className="grid gap-6 md:grid-cols-[minmax(0,2fr)_minmax(16rem,1fr)] md:gap-10">
         <div>
-          <dl className="grid gap-4 sm:grid-cols-3">
-            <div>
-              <dt className="text-sm font-medium text-muted">
-                {dictionary.name}
-              </dt>
-              <dd className="mt-1 text-base text-foreground">
-                {localizedProfile.name}
-              </dd>
-            </div>
+          <dl className="grid grid-cols-[max-content_minmax(0,1fr)] items-baseline gap-x-6 gap-y-3">
+            <dt className="text-sm font-medium text-muted">
+              {dictionary.labels.name}
+            </dt>
+            <dd className="text-base text-foreground">{profile.name}</dd>
 
-            <div>
-              <dt className="text-sm font-medium text-muted">
-                {dictionary.birthplace}
-              </dt>
-              <dd className="mt-1 text-base text-foreground">
-                {localizedProfile.birthplace}
-              </dd>
-            </div>
+            <dt className="text-sm font-medium text-muted">
+              {dictionary.labels.birthDate}
+            </dt>
+            <dd className="text-base text-foreground">
+              <time dateTime={profileConfig.birthDate} className="tabular-nums">
+                {profile.birthDate}
+              </time>
+            </dd>
 
-            <div>
-              <dt className="text-sm font-medium text-muted">
-                {dictionary.birthDate}
-              </dt>
-              <dd className="mt-1 text-base text-foreground">
-                <time dateTime={profile.birthDate} className="tabular-nums">
-                  {localizedProfile.birthDate}
-                </time>
-              </dd>
-            </div>
+            <dt className="text-sm font-medium text-muted">
+              {dictionary.labels.birthplace}
+            </dt>
+            <dd className="text-base text-foreground">{profile.birthplace}</dd>
+
+            <dt className="text-sm font-medium text-muted">
+              {dictionary.labels.hobbies}
+            </dt>
+            <dd className="min-w-0">
+              <ul className="grid max-w-lg list-disc grid-cols-1 gap-x-8 gap-y-2 pl-5 text-sm leading-6 marker:text-muted sm:grid-cols-2">
+                {profile.hobbies.map((hobby) => (
+                  <li key={hobby}>{hobby}</li>
+                ))}
+              </ul>
+            </dd>
           </dl>
 
           <p className="mt-8 max-w-[68ch] text-base leading-7 text-muted">
-            {dictionary.introduction}
+            {profile.introduction}
           </p>
         </div>
 
-        <a
-          href={profile.links.filmPortfolio}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={dictionary.openFilmPortfolio}
-          className="group flex min-h-32 flex-col justify-between rounded-2xl border border-border bg-surface p-5 transition duration-200 hover:-translate-y-0.5 hover:bg-surface-hover hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0"
-        >
-          <span className="text-base font-semibold leading-snug text-foreground">
-            {dictionary.filmPortfolio}
-          </span>
-
-          <span className="mt-6 inline-flex items-center gap-1.5 text-sm text-muted group-hover:text-foreground">
-            mido-works.com
-            <ExternalLink aria-hidden="true" className="size-4 shrink-0" />
-          </span>
-        </a>
+        <div className="self-start">
+          <h3 className="mb-2 font-semibold">
+            {dictionary.filmPortfolio.heading}
+          </h3>
+          <ExternalLinkCard
+            href={profileConfig.filmPortfolio.url}
+            siteName={profileConfig.filmPortfolio.siteName}
+            title={dictionary.filmPortfolio.title}
+            description={dictionary.filmPortfolio.description}
+            newTabLabel={dictionary.filmPortfolio.openLabel}
+          />
+        </div>
       </div>
     </section>
   );

@@ -2,9 +2,11 @@ import { pageTopIds } from "@/config/navigation";
 import { SocialLinks } from "../ui/SocialLinks";
 
 type HeroProps = {
-  dictionary: {
+  profile: {
     name: string;
     role: string;
+  };
+  dictionary: {
     description: string;
   };
 };
@@ -15,7 +17,7 @@ type HeroProps = {
  * @param HeroProps props
  * @returns ヒーローセクションのJSX
  */
-export function Hero({ dictionary }: HeroProps) {
+export function Hero({ profile, dictionary }: HeroProps) {
   return (
     <section
       id={pageTopIds.section}
@@ -32,9 +34,9 @@ export function Hero({ dictionary }: HeroProps) {
         tabIndex={-1}
         className="mb-2 text-base font-bold leading-8 text-foreground sm:text-4xl"
       >
-        {dictionary.name}
+        {profile.name}
       </h1>
-      <p className="text-accent text-base sm:text-lg">{dictionary.role}</p>
+      <p className="text-accent text-base sm:text-lg">{profile.role}</p>
       <p className="mt-6 mb-4 max-w-[68ch] text-base leading-7 text-muted sm:text-lg">
         {dictionary.description}
       </p>

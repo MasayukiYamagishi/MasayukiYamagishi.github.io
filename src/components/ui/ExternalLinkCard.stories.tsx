@@ -1,15 +1,10 @@
 import storyImage from "@/stories/assets/assets.png";
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { expect, within } from "storybook/test";
-import {
-  ExternalLinkCard,
-  type ExternalLinkCardProps,
-} from "./ExternalLinkCard";
-
-const imageSrc = storyImage.src as ExternalLinkCardProps["imageSrc"];
+import { ExternalLinkCard } from "./ExternalLinkCard";
 
 const meta = {
-  title: "Posts/Embeds/ExternalLinkCard",
+  title: "UI/ExternalLinkCard",
   component: ExternalLinkCard,
   tags: ["autodocs"],
   parameters: {
@@ -29,7 +24,7 @@ const meta = {
     description:
       "セマンティックHTMLとキーボード操作を考慮した設計方法を紹介します。",
     publishedAt: "2026-08-18",
-    imageSrc,
+    imageSrc: storyImage,
   },
   argTypes: {
     imageSrc: {
@@ -59,6 +54,32 @@ export const Default: Story = {
     );
     await expect(image).toBeVisible();
     await expect(image).toHaveAttribute("alt", "");
+  },
+};
+
+export const WithoutImage: Story = {
+  args: {
+    imageSrc: undefined,
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+
+    await expect(canvas.queryByRole("img")).not.toBeInTheDocument();
+  },
+};
+
+export const OpenInNewTab: Story = {
+  args: {
+    newTabLabel: "外部サイトを新しいタブで開く",
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const link = canvas.getByRole("link", {
+      name: "外部サイトを新しいタブで開く",
+    });
+
+    await expect(link).toHaveAttribute("target", "_blank");
+    await expect(link).toHaveAttribute("rel", "noopener noreferrer");
   },
 };
 

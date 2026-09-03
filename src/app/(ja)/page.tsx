@@ -16,10 +16,10 @@ export default async function HomePage() {
   return (
     <>
       <main className="mx-auto w-full max-w-5xl px-6 sm:px-8">
-        <Hero dictionary={ja.hero}></Hero>
+        <Hero profile={ja.profile} dictionary={ja.hero}></Hero>
         <About
-          locale="ja"
           heading={ja.sections.about}
+          profile={ja.profile}
           dictionary={ja.about}
         ></About>
         <Posts

@@ -1,7 +1,7 @@
 import storyImage from "@/stories/assets/assets.png";
+import type { ExternalLinkCardProps } from "@/components/ui/ExternalLinkCard";
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { expect, within } from "storybook/test";
-import type { ExternalLinkCardProps } from "./ExternalLinkCard";
 import { ZennArticleCard } from "./ZennArticleCard";
 
 const imageSrc = storyImage.src as ExternalLinkCardProps["imageSrc"];
