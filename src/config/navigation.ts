@@ -6,6 +6,11 @@ export const sectionIds = {
   experience: "experience",
 } as const;
 
+export const pageTopIds = {
+  section: "hero",
+  heading: "hero-heading",
+} as const;
+
 export type SectionKey = keyof typeof sectionIds;
 
 export const navigationItems = [

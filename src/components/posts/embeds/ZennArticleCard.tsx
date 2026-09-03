@@ -1,7 +1,7 @@
 import {
   ExternalLinkCard,
   type ExternalLinkCardProps,
-} from "./ExternalLinkCard";
+} from "../../ui/ExternalLinkCard";
 
 type ZennArticleCardProps = Omit<
   ExternalLinkCardProps,

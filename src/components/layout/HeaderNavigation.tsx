@@ -36,7 +36,7 @@ function useActiveSection(items: ReadonlyArray<HeaderNavigationItem>) {
     const updateActiveSection = () => {
       frameId = null;
 
-      let nextActiveSectionId = sections[0].id;
+      let nextActiveSectionId = "";
 
       for (const section of sections) {
         const sectionTop = section.getBoundingClientRect().top;

@@ -1,6 +1,6 @@
 "use client";
 
-import { sectionIds } from "@/config/navigation";
+import { pageTopIds } from "@/config/navigation";
 import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 import { IconButton } from "../ui/Button";
@@ -20,9 +20,9 @@ export function ScrollToTopButton({ label }: ScrollTopToButtonProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const aboutSection = document.getElementById(sectionIds.about);
+    const heroSection = document.getElementById(pageTopIds.section);
 
-    if (!aboutSection) {
+    if (!heroSection) {
       return;
     }
 
@@ -36,7 +36,7 @@ export function ScrollToTopButton({ label }: ScrollTopToButtonProps) {
       },
     );
 
-    observer.observe(aboutSection);
+    observer.observe(heroSection);
 
     return () => {
       observer.disconnect();
@@ -53,7 +53,7 @@ export function ScrollToTopButton({ label }: ScrollTopToButtonProps) {
       behavior: prefersReduceMotion ? "auto" : "smooth",
     });
 
-    const topHeading = document.getElementById(`${sectionIds.about}-heading`);
+    const topHeading = document.getElementById(pageTopIds.heading);
 
     if (topHeading instanceof HTMLElement) {
       topHeading.focus({ preventScroll: true });

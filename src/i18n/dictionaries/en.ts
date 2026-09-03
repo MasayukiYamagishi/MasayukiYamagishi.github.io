@@ -18,17 +18,51 @@ export const en = {
   },
 
   sections: {
+    about: "About",
     skills: "Skills",
     posts: "Posts",
     projects: "Projects",
     experience: "Work Experience",
   },
 
-  hero: {
+  profile: {
     name: "Masayuki Yamagishi",
     role: "Frontend Engineer",
+    birthplace: "Yokohama, Kanagawa, Japan",
+    birthDate: "January 31, 1997",
+    introduction:
+      "I started creating videos in university after exhibiting at the FRENZ video event in 2016, which deepened my interest in design, motion graphics, and CG. Since 2021, I have worked as a system engineer across requirements, design, implementation, testing, and maintenance for business systems and web services. Today, I focus on frontend development, drawing on both my interest in visual expression developed through filmmaking and my experience in system design and operations to build web experiences with a strong emphasis on UI quality, accessibility, and performance.",
+    hobbies: [
+      "Filmmaking",
+      "Watching films",
+      "Listening to music",
+      "Art",
+      "Reading",
+      "Manga",
+      "Video games",
+      "Personal projects",
+    ],
+  },
+
+  hero: {
     description:
       "I build web products with a focus on UI quality, accessibility, and performance.",
+  },
+
+  about: {
+    labels: {
+      name: "Name",
+      birthplace: "Birthplace",
+      birthDate: "Date of birth",
+      hobbies: "Hobbies",
+    },
+    filmPortfolio: {
+      heading: "Filmmaking portfolio",
+      title: "Mido Works",
+      description:
+        'This is a portfolio of works I was involved in creating under the name "Mido."',
+      openLabel: "Open the filmmaking portfolio in a new tab",
+    },
   },
 
   skills: {

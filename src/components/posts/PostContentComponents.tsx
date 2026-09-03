@@ -1,8 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 import type { ComponentPropsWithoutRef } from "react";
 import { Icon } from "../ui/icons/Icon";
+import { ExternalLinkCard } from "../ui/ExternalLinkCard";
 import { Callout } from "./Callout";
-import { ExternalLinkCard } from "./embeds/ExternalLinkCard";
 import { YoutubeEmbed } from "./embeds/YoutubeEmbed";
 import { ZennArticleCard } from "./embeds/ZennArticleCard";
 import { InlineText } from "./InlineText";
