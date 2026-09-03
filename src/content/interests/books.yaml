@@ -1,0 +1,261 @@
+books:
+  - id: shippai-no-honshitsu
+    title: 失敗の本質 日本軍の組織論的研究
+    author: 戸部良一ほか
+    pages: 416
+    format: bunko
+    binding: paperback
+    status: completed
+    category: Organization
+    completedAt: "2026-07-18"
+    shelfId: shelf-3
+    actualWeightG: 229
+    weightSource: measured
+  - id: brave-new-world
+    title: すばらしい新世界（新訳版）
+    author: オルダス・ハクスリー
+    pages: 384
+    format: bunko
+    binding: paperback
+    status: completed
+    category: Fiction
+    completedAt: "2026-06-02"
+    shelfId: shelf-3
+    actualWeightG: 205
+    weightSource: measured
+  - id: ningen-shikkaku
+    title: 人間失格
+    author: 太宰治
+    pages: 208
+    format: bunko
+    binding: paperback
+    status: completed
+    category: Fiction
+    completedAt: "2026-04-21"
+    shelfId: shelf-3
+    actualWeightG: 130
+    weightSource: metadata
+  - id: project-hail-mary-1
+    title: プロジェクト・ヘイル・メアリー 上
+    author: アンディ・ウィアー
+    pages: 352
+    format: bunko
+    binding: paperback
+    status: completed
+    category: Science Fiction
+    completedAt: "2026-03-12"
+    shelfId: shelf-3
+    actualWeightG: 260
+    weightSource: metadata
+  - id: project-hail-mary-2
+    title: プロジェクト・ヘイル・メアリー 下
+    author: アンディ・ウィアー
+    pages: 352
+    format: bunko
+    binding: paperback
+    status: completed
+    category: Science Fiction
+    completedAt: "2026-03-20"
+    shelfId: shelf-3
+    actualWeightG: 260
+    weightSource: metadata
+  - id: design-no-design
+    title: デザインのデザイン
+    author: 原研哉
+    pages: 244
+    format: a5
+    binding: paperback
+    status: completed
+    category: Design
+    completedAt: "2026-02-08"
+    shelfId: shelf-3
+    actualWeightG: 520
+    weightSource: publisher
+  - id: algorithm-zukan
+    title: アルゴリズム図鑑
+    author: 石田保輝・宮崎修一
+    pages: 256
+    format: a5
+    binding: paperback
+    status: completed
+    category: Technology
+    completedAt: "2026-01-26"
+    shelfId: shelf-3
+    actualWeightG: 480
+    weightSource: publisher
+  - id: look-back
+    title: ルックバック
+    author: 藤本タツキ
+    pages: 144
+    format: comicLarge
+    binding: paperback
+    status: completed
+    category: Manga
+    completedAt: "2026-01-11"
+    shelfId: shelf-3
+    actualWeightG: 220
+    weightSource: metadata
+  - id: one-hundred-years-of-solitude
+    title: 百年の孤独
+    author: ガブリエル・ガルシア＝マルケス
+    pages: 672
+    format: bunko
+    binding: paperback
+    status: reading
+    startedAt: "2026-08-18"
+    shelfId: shelf-3
+    actualWeightG: 445
+    weightSource: publisher
+  - id: clean-architecture
+    title: Clean Architecture
+    author: Robert C. Martin
+    pages: 432
+    format: a5
+    binding: paperback
+    status: reading
+    startedAt: "2026-08-06"
+    shelfId: shelf-3
+    actualWeightG: 650
+    weightSource: metadata
+  - id: hima-to-taikutsu
+    title: 暇と退屈の倫理学
+    author: 國分功一郎
+    pages: 512
+    format: bunko
+    binding: paperback
+    status: reading
+    startedAt: "2026-07-29"
+    shelfId: shelf-3
+    actualWeightG: 360
+    weightSource: metadata
+  - id: pragmatic-programmer
+    title: 達人プログラマー
+    author: David Thomas・Andrew Hunt
+    pages: 352
+    format: a5
+    binding: paperback
+    status: reading
+    startedAt: "2026-07-17"
+    shelfId: shelf-3
+    actualWeightG: 620
+    weightSource: metadata
+  - id: convenience-store-woman
+    title: コンビニ人間
+    author: 村田沙耶香
+    pages: 168
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 115
+    weightSource: metadata
+  - id: fahrenheit-451
+    title: 華氏451度
+    author: レイ・ブラッドベリ
+    pages: 299
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 185
+    weightSource: metadata
+  - id: three-body-problem
+    title: 三体
+    author: 劉慈欣
+    pages: 448
+    format: shiroku
+    binding: hardcover
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 340
+    weightSource: metadata
+  - id: why-cant-we-read
+    title: なぜ働いていると本が読めなくなるのか
+    author: 三宅香帆
+    pages: 288
+    format: shinsho
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 225
+    weightSource: metadata
+  - id: ubik
+    title: ユービック
+    author: フィリップ・K・ディック
+    pages: 368
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 210
+    weightSource: metadata
+  - id: drive-my-car-book
+    title: 女のいない男たち
+    author: 村上春樹
+    pages: 208
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 145
+    weightSource: metadata
+  - id: the-martian-1
+    title: 火星の人 上
+    author: アンディ・ウィアー
+    pages: 384
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 240
+    weightSource: metadata
+  - id: the-martian-2
+    title: 火星の人 下
+    author: アンディ・ウィアー
+    pages: 384
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 240
+    weightSource: metadata
+  - id: solaris
+    title: ソラリス
+    author: スタニスワフ・レム
+    pages: 340
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 220
+    weightSource: metadata
+  - id: left-hand-of-darkness
+    title: 闇の左手
+    author: アーシュラ・K・ル＝グウィン
+    pages: 336
+    format: bunko
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 200
+    weightSource: metadata
+  - id: design-classroom
+    title: デザインの教室
+    author: 佐藤好彦
+    pages: 256
+    format: a5
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 430
+    weightSource: metadata
+  - id: web-app-accessibility
+    title: Webアプリケーションアクセシビリティ
+    author: 監修・伊原力也
+    pages: 464
+    format: b5
+    binding: paperback
+    status: backlog
+    shelfId: shelf-3
+    actualWeightG: 720
+    weightSource: publisher

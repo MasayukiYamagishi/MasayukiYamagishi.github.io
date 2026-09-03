@@ -1,0 +1,69 @@
+watches:
+  - id: watch-perfect-days-2
+    movieId: perfect-days
+    watchedAt: "2026-08-23"
+    location: home
+    favorite: true
+  - id: watch-dune-part-two
+    movieId: dune-part-two
+    watchedAt: "2026-07-11"
+    location: theater
+    favorite: true
+  - id: watch-godzilla-minus-one
+    movieId: godzilla-minus-one
+    watchedAt: "2026-05-03"
+    location: home
+  - id: watch-spider-verse
+    movieId: spider-verse
+    watchedAt: "2026-02-14"
+    location: home
+  - id: watch-perfect-days-1
+    movieId: perfect-days
+    watchedAt: "2025-12-29"
+    location: theater
+    favorite: true
+  - id: watch-boy-and-heron
+    movieId: boy-and-heron
+    watchedAt: "2025-10-05"
+    location: theater
+  - id: watch-past-lives
+    movieId: past-lives
+    watchedAt: "2025-08-16"
+    location: home
+  - id: watch-everything-everywhere
+    movieId: everything-everywhere
+    watchedAt: "2025-06-21"
+    location: theater
+  - id: watch-drive-my-car
+    movieId: drive-my-car
+    watchedAt: "2025-04-12"
+    location: home
+    favorite: true
+  - id: watch-parasite
+    movieId: parasite
+    watchedAt: "2025-02-07"
+    location: home
+    favorite: true
+  - id: watch-blade-runner-2
+    movieId: blade-runner-2049
+    watchedAt: "2024-11-17"
+    location: theater
+    favorite: true
+  - id: watch-arrival-2
+    movieId: arrival
+    watchedAt: "2024-08-10"
+    location: home
+    favorite: true
+  - id: watch-mad-max
+    movieId: mad-max-fury-road
+    watchedAt: "2024-05-01"
+    location: theater
+  - id: watch-blade-runner-1
+    movieId: blade-runner-2049
+    watchedAt: "2023-12-30"
+    location: home
+    favorite: true
+  - id: watch-arrival-1
+    movieId: arrival
+    location: other
+    favorite: true

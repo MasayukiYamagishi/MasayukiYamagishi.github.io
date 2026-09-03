@@ -1,0 +1,93 @@
+movies:
+  - id: perfect-days
+    title: PERFECT DAYS
+    releaseYear: 2023
+    runtimeMinutes: 124
+    directors: [Wim Wenders]
+    genres: [Drama]
+    countries: [Japan, Germany]
+  - id: dune-part-two
+    title: デューン 砂の惑星 PART2
+    originalTitle: "Dune: Part Two"
+    releaseYear: 2024
+    runtimeMinutes: 166
+    directors: [Denis Villeneuve]
+    genres: [Science Fiction, Drama]
+    countries: [United States, Canada]
+  - id: godzilla-minus-one
+    title: ゴジラ-1.0
+    releaseYear: 2023
+    runtimeMinutes: 125
+    directors: [山崎貴]
+    genres: [Action, Drama, Science Fiction]
+    countries: [Japan]
+  - id: spider-verse
+    title: スパイダーマン：アクロス・ザ・スパイダーバース
+    originalTitle: "Spider-Man: Across the Spider-Verse"
+    releaseYear: 2023
+    runtimeMinutes: 140
+    directors: [Joaquim Dos Santos, Kemp Powers, Justin K. Thompson]
+    genres: [Animation, Action, Science Fiction]
+    countries: [United States]
+  - id: boy-and-heron
+    title: 君たちはどう生きるか
+    releaseYear: 2023
+    runtimeMinutes: 124
+    directors: [宮﨑駿]
+    genres: [Animation, Fantasy, Drama]
+    countries: [Japan]
+  - id: past-lives
+    title: パスト ライブス／再会
+    originalTitle: Past Lives
+    releaseYear: 2023
+    runtimeMinutes: 106
+    directors: [Celine Song]
+    genres: [Drama, Romance]
+    countries: [United States, South Korea]
+  - id: everything-everywhere
+    title: エブリシング・エブリウェア・オール・アット・ワンス
+    originalTitle: Everything Everywhere All at Once
+    releaseYear: 2022
+    runtimeMinutes: 140
+    directors: [Daniel Kwan, Daniel Scheinert]
+    genres: [Action, Comedy, Science Fiction]
+    countries: [United States]
+  - id: drive-my-car
+    title: ドライブ・マイ・カー
+    releaseYear: 2021
+    runtimeMinutes: 179
+    directors: [濱口竜介]
+    genres: [Drama]
+    countries: [Japan]
+  - id: parasite
+    title: パラサイト 半地下の家族
+    originalTitle: 기생충
+    releaseYear: 2019
+    runtimeMinutes: 132
+    directors: [Bong Joon Ho]
+    genres: [Drama, Thriller, Comedy]
+    countries: [South Korea]
+  - id: blade-runner-2049
+    title: ブレードランナー 2049
+    originalTitle: Blade Runner 2049
+    releaseYear: 2017
+    runtimeMinutes: 164
+    directors: [Denis Villeneuve]
+    genres: [Science Fiction, Drama, Thriller]
+    countries: [United States, Canada]
+  - id: arrival
+    title: メッセージ
+    originalTitle: Arrival
+    releaseYear: 2016
+    runtimeMinutes: 116
+    directors: [Denis Villeneuve]
+    genres: [Science Fiction, Drama]
+    countries: [United States, Canada]
+  - id: mad-max-fury-road
+    title: マッドマックス 怒りのデス・ロード
+    originalTitle: "Mad Max: Fury Road"
+    releaseYear: 2015
+    runtimeMinutes: 120
+    directors: [George Miller]
+    genres: [Action, Science Fiction]
+    countries: [Australia, United States]
