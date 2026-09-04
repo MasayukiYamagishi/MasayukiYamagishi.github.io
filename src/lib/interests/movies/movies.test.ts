@@ -68,6 +68,7 @@ const popcornReference: PopcornReference = {
   size: "M",
   estimatedWeightG: 100,
   estimatedCaloriesKcal: 500,
+  bodyFatKcalPerKg: 7200,
 };
 
 describe("calculateWatchTime", () => {
@@ -131,7 +132,10 @@ describe("calculateFilmEquivalent", () => {
       filmReference.earthEquatorialCircumferenceM /
       filmReference.metersPerMinute;
 
-    expect(calculateFilmEquivalent(runtime, filmReference).earthLapEquivalent).toBeCloseTo(1);
+    const equivalent = calculateFilmEquivalent(runtime, filmReference);
+
+    expect(equivalent.earthCircumferenceKm).toBeCloseTo(40_075.036);
+    expect(equivalent.earthLapEquivalent).toBeCloseTo(1);
   });
 });
 
@@ -141,6 +145,7 @@ describe("calculatePopcornEstimate", () => {
       count: 0,
       weightKg: 0,
       caloriesKcal: 0,
+      bodyFatEquivalentKg: 0,
     });
   });
 
@@ -149,6 +154,7 @@ describe("calculatePopcornEstimate", () => {
       count: 2,
       weightKg: 0.2,
       caloriesKcal: 1000,
+      bodyFatEquivalentKg: 1000 / 7200,
     });
   });
 
@@ -157,8 +163,14 @@ describe("calculatePopcornEstimate", () => {
       calculatePopcornEstimate(watches, {
         size: "M",
         estimatedWeightG: 100,
+        bodyFatKcalPerKg: 7200,
       }),
-    ).toEqual({ count: 2, weightKg: 0.2, caloriesKcal: undefined });
+    ).toEqual({
+      count: 2,
+      weightKg: 0.2,
+      caloriesKcal: undefined,
+      bodyFatEquivalentKg: undefined,
+    });
   });
 });
 
@@ -181,12 +193,11 @@ describe("rankings", () => {
 });
 
 describe("calculateMovieSummary", () => {
-  it("counts repeat watches without exposing a rewatch rate", () => {
+  it("counts watches and unique movies", () => {
     expect(calculateMovieSummary(movies, watches, 2026)).toMatchObject({
       watchCount: 3,
       uniqueMovieCount: 2,
       thisYearCount: 1,
-      rewatchedMovieCount: 1,
     });
   });
 

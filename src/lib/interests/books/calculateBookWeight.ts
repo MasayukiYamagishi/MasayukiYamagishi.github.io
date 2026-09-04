@@ -23,11 +23,12 @@ const PAPER_GSM_BY_FORMAT = {
   custom: 70,
 } as const satisfies Record<Book["format"], number>;
 
-export function calculateBookWeight(book: Book) {
-  if (book.actualWeightG) {
-    return book.actualWeightG;
-  }
+type WeightInput = Pick<
+  Book,
+  "id" | "pages" | "format" | "binding" | "widthMm" | "heightMm"
+>;
 
+function estimateVolumeWeight(book: WeightInput) {
   const fallbackSize =
     book.format === "custom" ? undefined : BOOK_SIZE_PROFILES[book.format];
   const widthMm = book.widthMm ?? fallbackSize?.widthMm;
@@ -47,4 +48,28 @@ export function calculateBookWeight(book: Book) {
   }
 
   return Math.round(bodyPaperWeightG * 1.15);
+}
+
+export function calculateBookWeight(book: Book) {
+  if (book.actualWeightG) {
+    return book.actualWeightG;
+  }
+
+  if (book.volumes) {
+    return book.volumes.reduce(
+      (total, volume) =>
+        total +
+        estimateVolumeWeight({
+          id: `${book.id}-${volume.label}`,
+          pages: volume.pages,
+          format: volume.format ?? book.format,
+          binding: volume.binding ?? book.binding,
+          widthMm: book.widthMm,
+          heightMm: book.heightMm,
+        }),
+      0,
+    );
+  }
+
+  return estimateVolumeWeight(book);
 }

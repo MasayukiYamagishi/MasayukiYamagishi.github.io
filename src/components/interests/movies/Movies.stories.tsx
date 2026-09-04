@@ -24,7 +24,6 @@ const watch: WatchEntry = {
   movieId: "arrival",
   watchedAt: "2026-08-10",
   location: "home",
-  favorite: true,
 };
 
 const meta = {
@@ -38,8 +37,6 @@ const meta = {
       totalHours: 34.2,
       thisYearCount: 4,
       theaterCount: 6,
-      rewatchedMovieCount: 3,
-      favoriteCount: 6,
     },
     dictionary: ja.interests.movies,
   },
@@ -57,6 +54,7 @@ export const WatchTime: Story = {
       film={{
         filmLengthM: 56291,
         reel2000FtEquivalent: 92.3,
+        earthCircumferenceKm: 40075.036,
         earthLapEquivalent: 0.0014,
       }}
       dictionary={ja.interests.movies}
@@ -76,7 +74,12 @@ export const WithoutCalories: Story = {
 export const WithCalories: Story = {
   render: () => (
     <PopcornMetric
-      estimate={{ count: 6, weightKg: 0.6, caloriesKcal: 3000 }}
+      estimate={{
+        count: 6,
+        weightKg: 0.6,
+        caloriesKcal: 3000,
+        bodyFatEquivalentKg: 3000 / 7200,
+      }}
       dictionary={ja.interests.movies.popcorn}
     />
   ),
@@ -85,7 +88,12 @@ export const WithCalories: Story = {
 export const LargeEstimate: Story = {
   render: () => (
     <PopcornMetric
-      estimate={{ count: 137, weightKg: 13.7, caloriesKcal: 68500 }}
+      estimate={{
+        count: 137,
+        weightKg: 13.7,
+        caloriesKcal: 68500,
+        bodyFatEquivalentKg: 68500 / 7200,
+      }}
       dictionary={ja.interests.movies.popcorn}
     />
   ),
@@ -121,8 +129,10 @@ export const HistoryTable: Story = {
   render: () => (
     <MovieHistory
       movies={[movie]}
+      directorNames={{ "Denis Villeneuve": "Denis Villeneuve" }}
       watches={[watch]}
       locale="ja"
+      pagination={ja.interests.common.pagination}
       dictionary={ja.interests.movies}
     />
   ),

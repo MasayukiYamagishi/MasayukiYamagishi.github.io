@@ -2,6 +2,7 @@ export * from "./books/calculateBookWeight";
 export * from "./books/calculateReadingSummary";
 export * from "./books/calculateShelfLoad";
 export * from "./books/getReadingWarning";
+export * from "./localizeInterestData";
 export * from "./movies/calculateFilmEquivalent";
 export * from "./movies/calculateMovieSummary";
 export * from "./movies/calculatePopcornEstimate";

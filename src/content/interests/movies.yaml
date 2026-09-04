@@ -1,93 +1,4005 @@
-movies:
-  - id: perfect-days
-    title: PERFECT DAYS
-    releaseYear: 2023
-    runtimeMinutes: 124
-    directors: [Wim Wenders]
-    genres: [Drama]
-    countries: [Japan, Germany]
-  - id: dune-part-two
-    title: デューン 砂の惑星 PART2
-    originalTitle: "Dune: Part Two"
-    releaseYear: 2024
-    runtimeMinutes: 166
-    directors: [Denis Villeneuve]
-    genres: [Science Fiction, Drama]
-    countries: [United States, Canada]
-  - id: godzilla-minus-one
-    title: ゴジラ-1.0
-    releaseYear: 2023
-    runtimeMinutes: 125
-    directors: [山崎貴]
-    genres: [Action, Drama, Science Fiction]
-    countries: [Japan]
-  - id: spider-verse
-    title: スパイダーマン：アクロス・ザ・スパイダーバース
-    originalTitle: "Spider-Man: Across the Spider-Verse"
-    releaseYear: 2023
-    runtimeMinutes: 140
-    directors: [Joaquim Dos Santos, Kemp Powers, Justin K. Thompson]
-    genres: [Animation, Action, Science Fiction]
-    countries: [United States]
-  - id: boy-and-heron
-    title: 君たちはどう生きるか
-    releaseYear: 2023
-    runtimeMinutes: 124
-    directors: [宮﨑駿]
-    genres: [Animation, Fantasy, Drama]
-    countries: [Japan]
-  - id: past-lives
-    title: パスト ライブス／再会
-    originalTitle: Past Lives
-    releaseYear: 2023
-    runtimeMinutes: 106
-    directors: [Celine Song]
-    genres: [Drama, Romance]
-    countries: [United States, South Korea]
-  - id: everything-everywhere
-    title: エブリシング・エブリウェア・オール・アット・ワンス
-    originalTitle: Everything Everywhere All at Once
-    releaseYear: 2022
-    runtimeMinutes: 140
-    directors: [Daniel Kwan, Daniel Scheinert]
-    genres: [Action, Comedy, Science Fiction]
-    countries: [United States]
-  - id: drive-my-car
-    title: ドライブ・マイ・カー
-    releaseYear: 2021
-    runtimeMinutes: 179
-    directors: [濱口竜介]
-    genres: [Drama]
-    countries: [Japan]
-  - id: parasite
-    title: パラサイト 半地下の家族
-    originalTitle: 기생충
-    releaseYear: 2019
-    runtimeMinutes: 132
-    directors: [Bong Joon Ho]
-    genres: [Drama, Thriller, Comedy]
-    countries: [South Korea]
-  - id: blade-runner-2049
-    title: ブレードランナー 2049
-    originalTitle: Blade Runner 2049
-    releaseYear: 2017
-    runtimeMinutes: 164
-    directors: [Denis Villeneuve]
-    genres: [Science Fiction, Drama, Thriller]
-    countries: [United States, Canada]
-  - id: arrival
-    title: メッセージ
-    originalTitle: Arrival
-    releaseYear: 2016
-    runtimeMinutes: 116
-    directors: [Denis Villeneuve]
-    genres: [Science Fiction, Drama]
-    countries: [United States, Canada]
-  - id: mad-max-fury-road
-    title: マッドマックス 怒りのデス・ロード
-    originalTitle: "Mad Max: Fury Road"
-    releaseYear: 2015
-    runtimeMinutes: 120
-    directors: [George Miller]
-    genres: [Action, Science Fiction]
-    countries: [Australia, United States]
+"asOfDate": "2026-09-04"
+"bestMovieIds":
+  - "movie-0271"
+  - "movie-0044"
+  - "movie-0111"
+  - "movie-0004"
+  - "movie-0093"
+"movies":
+  - "id": "movie-0001"
+    "title": "チャイナタウン"
+    "originalTitle": "Chinatown"
+    "releaseYear": 1974
+    "runtimeMinutes": 131
+    "directors":
+      - "ロマン・ポランスキー"
+    "genres":
+      - "Crime"
+      - "Mystery"
+      - "Thriller"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q644987"
+  - "id": "movie-0002"
+    "title": "マグノリア"
+    "originalTitle": "Magnolia"
+    "releaseYear": 1999
+    "runtimeMinutes": 188
+    "directors":
+      - "ポール・トーマス・アンダーソン"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q588420"
+  - "id": "movie-0003"
+    "title": "コールドマウンテン"
+    "originalTitle": "Cold Mountain"
+    "releaseYear": 2003
+    "runtimeMinutes": 150
+    "directors":
+      - "アンソニー・ミンゲラ"
+    "genres":
+      - "War"
+      - "Romance"
+      - "Drama"
+    "countries":
+      - "Italy"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q390097"
+  - "id": "movie-0004"
+    "title": "アメリカン・ビューティー"
+    "originalTitle": "American Beauty"
+    "releaseYear": 1999
+    "runtimeMinutes": 121
+    "directors":
+      - "サム・メンデス"
+    "genres":
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q25139"
+  - "id": "movie-0005"
+    "title": "コラテラル"
+    "originalTitle": "Collateral"
+    "releaseYear": 2004
+    "runtimeMinutes": 120
+    "directors":
+      - "マイケル・マン"
+    "genres":
+      - "Crime"
+      - "Thriller"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q110203"
+  - "id": "movie-0006"
+    "title": "アウトレイジ"
+    "titleEn": "Outrage"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q537026"
+    "releaseYear": 2010
+    "runtimeMinutes": 105
+    "directors":
+      - "北野武"
+    "genres":
+      - "Crime"
+      - "Action"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q537026"
+  - "id": "movie-0007"
+    "title": "アウトレイジ ビヨンド"
+    "titleEn": "Beyond Outrage"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1059416"
+    "releaseYear": 2012
+    "runtimeMinutes": 110
+    "directors":
+      - "北野武"
+    "genres":
+      - "Thriller"
+      - "Action"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1059416"
+  - "id": "movie-0008"
+    "title": "アウトレイジ 最終章"
+    "titleEn": "Outrage: Final Chapter"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q29825890"
+    "releaseYear": 2017
+    "runtimeMinutes": 100
+    "directors":
+      - "北野武"
+    "genres":
+      - "Action"
+      - "Mystery"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q29825890"
+  - "id": "movie-0009"
+    "title": "マザー！"
+    "originalTitle": "Mother!"
+    "releaseYear": 2017
+    "runtimeMinutes": 121
+    "directors":
+      - "ダーレン・アロノフスキー"
+    "genres":
+      - "Mystery"
+      - "Drama"
+      - "Horror"
+      - "Thriller"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q25339558"
+  - "id": "movie-0010"
+    "title": "菊次郎の夏"
+    "titleEn": "Kikujiro"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1091097"
+    "releaseYear": 1999
+    "runtimeMinutes": 117
+    "directors":
+      - "北野武"
+    "genres":
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1091097"
+  - "id": "movie-0011"
+    "title": "惑星ソラリス"
+    "titleEn": "Solaris"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q125772"
+    "originalTitle": "Солярис"
+    "releaseYear": 1972
+    "runtimeMinutes": 160
+    "directors":
+      - "アンドレイ・タルコフスキー"
+    "genres":
+      - "Science Fiction"
+      - "Adventure"
+      - "Drama"
+    "countries":
+      - "Soviet Union"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q125772"
+  - "id": "movie-0012"
+    "title": "白鯨"
+    "originalTitle": "Moby Dick"
+    "releaseYear": 1956
+    "runtimeMinutes": 116
+    "directors":
+      - "ジョン・ヒューストン"
+    "genres":
+      - "Adventure"
+      - "Drama"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1423235"
+  - "id": "movie-0013"
+    "title": "オズの魔法使"
+    "originalTitle": "The Wizard of Oz"
+    "releaseYear": 1939
+    "runtimeMinutes": 98
+    "directors":
+      - "ヴィクター・フレミング"
+    "genres":
+      - "Fantasy"
+      - "Musical"
+      - "Adventure"
+      - "Family"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q193695"
+  - "id": "movie-0014"
+    "title": "アマデウス"
+    "originalTitle": "Amadeus"
+    "releaseYear": 1984
+    "runtimeMinutes": 161
+    "directors":
+      - "ミロス・フォアマン"
+    "genres":
+      - "Biography"
+      - "Musical"
+      - "Drama"
+    "countries":
+      - "United States"
+      - "Czechoslovakia"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q190956"
+  - "id": "movie-0015"
+    "title": "仮面/ペルソナ"
+    "originalTitle": "Persona"
+    "releaseYear": 1966
+    "runtimeMinutes": 84
+    "directors":
+      - "イングマール・ベルイマン"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Sweden"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q695255"
+  - "id": "movie-0016"
+    "title": "パラサイト 半地下の家族"
+    "titleEn": "Parasite"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q61448040"
+    "originalTitle": "기생충"
+    "releaseYear": 2019
+    "runtimeMinutes": 132
+    "directors":
+      - "ポン・ジュノ"
+    "genres":
+      - "Comedy"
+      - "Drama"
+      - "Thriller"
+    "countries":
+      - "South Korea"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q61448040"
+  - "id": "movie-0017"
+    "title": "ストーカー"
+    "titleEn": "Stalker"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q200437"
+    "originalTitle": "Сталкер"
+    "releaseYear": 1979
+    "runtimeMinutes": 163
+    "directors":
+      - "アンドレイ・タルコフスキー"
+    "genres":
+      - "Science Fiction"
+      - "Drama"
+    "countries":
+      - "Soviet Union"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q200437"
+  - "id": "movie-0018"
+    "title": "鏡"
+    "titleEn": "The Mirror"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q838149"
+    "originalTitle": "Зеркало"
+    "releaseYear": 1975
+    "runtimeMinutes": 108
+    "directors":
+      - "アンドレイ・タルコフスキー"
+    "genres":
+      - "Experimental"
+      - "Drama"
+      - "Biography"
+    "countries":
+      - "Soviet Union"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q838149"
+  - "id": "movie-0019"
+    "title": "市民ケーン"
+    "originalTitle": "Citizen Kane"
+    "releaseYear": 1941
+    "runtimeMinutes": 119
+    "directors":
+      - "オーソン・ウェルズ"
+    "genres":
+      - "Drama"
+      - "Biography"
+      - "Mystery"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q24815"
+  - "id": "movie-0020"
+    "title": "北北西に進路を取れ"
+    "originalTitle": "North by Northwest"
+    "releaseYear": 1959
+    "runtimeMinutes": 136
+    "directors":
+      - "アルフレッド・ヒッチコック"
+    "genres":
+      - "Crime"
+      - "Thriller"
+      - "Mystery"
+      - "Action"
+      - "Drama"
+      - "Adventure"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q223139"
+  - "id": "movie-0021"
+    "title": "レベッカ"
+    "originalTitle": "Rebecca"
+    "releaseYear": 1940
+    "runtimeMinutes": 126
+    "directors":
+      - "アルフレッド・ヒッチコック"
+    "genres":
+      - "Mystery"
+      - "Drama"
+      - "Romance"
+      - "Thriller"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q204212"
+  - "id": "movie-0022"
+    "title": "君の膵臓をたべたい"
+    "titleEn": "I Want to Eat Your Pancreas"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q56421709"
+    "releaseYear": 2018
+    "runtimeMinutes": 108
+    "directors":
+      - "牛嶋新一郎"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q56421709"
+  - "id": "movie-0023"
+    "title": "天使にラブソングを…"
+    "originalTitle": "Sister Act"
+    "releaseYear": 1992
+    "runtimeMinutes": 101
+    "directors":
+      - "エミール・アルドリーノ"
+    "genres":
+      - "Comedy"
+      - "Musical"
+      - "Crime"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.disneyplus.com/browse/entity-64a57a99-3834-4891-8bf5-b104f1e65d48"
+  - "id": "movie-0024"
+    "title": "ラ・ラ・ランド"
+    "originalTitle": "La La Land"
+    "releaseYear": 2016
+    "runtimeMinutes": 128
+    "directors":
+      - "デミアン・チャゼル"
+    "genres":
+      - "Romance"
+      - "Comedy"
+      - "Drama"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q20856802"
+  - "id": "movie-0025"
+    "title": "オールド・ボーイ"
+    "titleEn": "Oldboy"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q475693"
+    "originalTitle": "올드보이"
+    "releaseYear": 2003
+    "runtimeMinutes": 116
+    "directors":
+      - "パク・チャヌク"
+    "genres":
+      - "Drama"
+      - "Thriller"
+      - "Mystery"
+      - "Action"
+    "countries":
+      - "South Korea"
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q475693"
+  - "id": "movie-0026"
+    "title": "万引き家族"
+    "titleEn": "Shoplifters"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q48765577"
+    "releaseYear": 2018
+    "runtimeMinutes": 121
+    "directors":
+      - "是枝裕和"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q48765577"
+  - "id": "movie-0027"
+    "title": "カサブランカ"
+    "originalTitle": "Casablanca"
+    "releaseYear": 1942
+    "runtimeMinutes": 102
+    "directors":
+      - "マイケル・カーティス"
+    "genres":
+      - "Romance"
+      - "War"
+      - "Drama"
+      - "Crime"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q132689"
+  - "id": "movie-0028"
+    "title": "シャイニング"
+    "originalTitle": "The Shining"
+    "releaseYear": 1980
+    "runtimeMinutes": 144
+    "directors":
+      - "スタンリー・キューブリック"
+    "genres":
+      - "Horror"
+      - "Drama"
+      - "Mystery"
+      - "Thriller"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q186341"
+  - "id": "movie-0029"
+    "title": "ロリータ"
+    "originalTitle": "Lolita"
+    "releaseYear": 1962
+    "runtimeMinutes": 152
+    "directors":
+      - "スタンリー・キューブリック"
+    "genres":
+      - "Romance"
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q536560"
+  - "id": "movie-0030"
+    "title": "博士の異常な愛情 または私は如何にして心配するのを止めて水爆を愛するようになったか"
+    "originalTitle": "Dr. Strangelove"
+    "releaseYear": 1964
+    "runtimeMinutes": 93
+    "directors":
+      - "スタンリー・キューブリック"
+    "genres":
+      - "Comedy"
+      - "War"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q105702"
+  - "id": "movie-0031"
+    "title": "ジョーズ"
+    "originalTitle": "Jaws"
+    "releaseYear": 1975
+    "runtimeMinutes": 124
+    "directors":
+      - "スティーヴン・スピルバーグ"
+    "genres":
+      - "Thriller"
+      - "Horror"
+      - "Adventure"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q189505"
+  - "id": "movie-0032"
+    "title": "フルメタル・ジャケット"
+    "originalTitle": "Full Metal Jacket"
+    "releaseYear": 1987
+    "runtimeMinutes": 116
+    "directors":
+      - "スタンリー・キューブリック"
+    "genres":
+      - "War"
+      - "Drama"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q243439"
+  - "id": "movie-0033"
+    "title": "時計じかけのオレンジ"
+    "originalTitle": "A Clockwork Orange"
+    "releaseYear": 1971
+    "runtimeMinutes": 136
+    "directors":
+      - "スタンリー・キューブリック"
+    "genres":
+      - "Drama"
+      - "Crime"
+      - "Science Fiction"
+      - "Thriller"
+      - "Mystery"
+      - "Comedy"
+      - "Action"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q181086"
+  - "id": "movie-0034"
+    "title": "フィクサー"
+    "originalTitle": "Michael Clayton"
+    "releaseYear": 2007
+    "runtimeMinutes": 119
+    "directors":
+      - "トニー・ギルロイ"
+    "genres":
+      - "Thriller"
+      - "Drama"
+      - "Mystery"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q694140"
+  - "id": "movie-0035"
+    "title": "レイダース / 失われたアーク《聖櫃》"
+    "originalTitle": "Raiders of the Lost Ark"
+    "releaseYear": 1981
+    "runtimeMinutes": 115
+    "directors":
+      - "スティーヴン・スピルバーグ"
+    "genres":
+      - "Action"
+      - "Adventure"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.paramountpictures.com/movies/indiana-jones-and-the-raiders-of-the-lost-ark"
+  - "id": "movie-0036"
+    "title": "ワンダとダイヤと優しい奴ら"
+    "originalTitle": "A Fish Called Wanda"
+    "releaseYear": 1988
+    "runtimeMinutes": 108
+    "directors":
+      - "チャールズ・クライトン"
+    "genres":
+      - "Comedy"
+      - "Crime"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://en.wikipedia.org/wiki/A_Fish_Called_Wanda"
+  - "id": "movie-0037"
+    "title": "十二人の怒れる男"
+    "originalTitle": "12 Angry Men"
+    "releaseYear": 1957
+    "runtimeMinutes": 95
+    "directors":
+      - "シドニー・ルメット"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q2345"
+  - "id": "movie-0038"
+    "title": "摩天楼を夢みて"
+    "originalTitle": "Glengarry Glen Ross"
+    "releaseYear": 1992
+    "runtimeMinutes": 96
+    "directors":
+      - "ジェームズ・フォーリー"
+    "genres":
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q844068"
+  - "id": "movie-0039"
+    "title": "戦艦ポチョムキン"
+    "titleEn": "Battleship Potemkin"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q152350"
+    "originalTitle": "Броненосец «Потёмкин»"
+    "releaseYear": 1925
+    "runtimeMinutes": 74
+    "directors":
+      - "セルゲイ・エイゼンシュテイン"
+    "genres":
+      - "Drama"
+      - "History"
+    "countries":
+      - "Soviet Union"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q152350"
+  - "id": "movie-0040"
+    "title": "メリー・ポピンズ"
+    "originalTitle": "Mary Poppins"
+    "releaseYear": 1964
+    "runtimeMinutes": 140
+    "directors":
+      - "ロバート・スティーヴン"
+    "genres":
+      - "Fantasy"
+      - "Musical"
+      - "Comedy"
+      - "Family"
+      - "Animation"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q209170"
+  - "id": "movie-0041"
+    "title": "フィッシャー・キング"
+    "originalTitle": "The Fisher King"
+    "releaseYear": 1991
+    "runtimeMinutes": 137
+    "directors":
+      - "テリー・ギリアム"
+    "genres":
+      - "Fantasy"
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q466297"
+  - "id": "movie-0042"
+    "title": "テルマ&ルイーズ"
+    "originalTitle": "Thelma & Louise"
+    "releaseYear": 1991
+    "runtimeMinutes": 129
+    "directors":
+      - "リドリー・スコット"
+    "genres":
+      - "Comedy"
+      - "Drama"
+      - "Crime"
+      - "Adventure"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q658041"
+  - "id": "movie-0043"
+    "title": "駅馬車"
+    "originalTitle": "Stagecoach"
+    "releaseYear": 1939
+    "runtimeMinutes": 97
+    "directors":
+      - "ジョン・フォード"
+    "genres":
+      - "Western"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q50714"
+  - "id": "movie-0044"
+    "title": "雨に唄えば"
+    "originalTitle": "Singin' in the Rain"
+    "releaseYear": 1952
+    "runtimeMinutes": 103
+    "directors":
+      - "ジーン・ケリー"
+      - "スタンリー・ドーネン"
+    "genres":
+      - "Comedy"
+      - "Romance"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q309153"
+  - "id": "movie-0045"
+    "title": "グランド・ホテル"
+    "originalTitle": "Grand Hotel"
+    "releaseYear": 1932
+    "runtimeMinutes": 113
+    "directors":
+      - "エドマンド・グールディング"
+    "genres":
+      - "Drama"
+      - "Romance"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q246656"
+  - "id": "movie-0046"
+    "title": "叫びとささやき"
+    "titleEn": "Cries and Whispers"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q830874"
+    "originalTitle": "Viskningar och rop"
+    "releaseYear": 1973
+    "runtimeMinutes": 90
+    "directors":
+      - "イングマール・ベルイマン"
+    "genres":
+      - "Drama"
+      - "History"
+    "countries":
+      - "Sweden"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q830874"
+  - "id": "movie-0047"
+    "title": "欲望という名の電車"
+    "originalTitle": "A Streetcar Named Desire"
+    "releaseYear": 1951
+    "runtimeMinutes": 120
+    "directors":
+      - "エリア・カザン"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q212129"
+  - "id": "movie-0048"
+    "title": "フォレスト・ガンプ / 一期一会"
+    "originalTitle": "Forrest Gump"
+    "releaseYear": 1994
+    "runtimeMinutes": 142
+    "directors":
+      - "ロバート・ゼメキス"
+    "genres":
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.paramountpictures.com/movies/forrest-gump"
+  - "id": "movie-0049"
+    "title": "泣きたい私は猫をかぶる"
+    "titleEn": "A Whisker Away"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q85881910"
+    "releaseYear": 2020
+    "runtimeMinutes": 104
+    "directors":
+      - "佐藤順一"
+      - "柴山智隆"
+    "genres":
+      - "Animation"
+      - "Drama"
+      - "Fantasy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q85881910"
+  - "id": "movie-0050"
+    "title": "クレイマー、クレイマー"
+    "originalTitle": "Kramer vs. Kramer"
+    "releaseYear": 1979
+    "runtimeMinutes": 100
+    "directors":
+      - "ロバート・ベントン"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q193577"
+  - "id": "movie-0051"
+    "title": "シービスケット"
+    "originalTitle": "Seabiscuit"
+    "releaseYear": 2003
+    "runtimeMinutes": 134
+    "directors":
+      - "ゲイリー・ロス"
+    "genres":
+      - "Sports"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q179018"
+  - "id": "movie-0052"
+    "title": "花とアリス殺人事件"
+    "titleEn": "The Case of Hana & Alice"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q18389392"
+    "releaseYear": 2015
+    "runtimeMinutes": 100
+    "directors":
+      - "岩井俊二"
+    "genres":
+      - "Animation"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/title/5609"
+  - "id": "movie-0053"
+    "title": "打ち上げ花火、下から見るか？横から見るか？"
+    "titleEn": "Fireworks, Should We See It from the Side or the Bottom?"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q30601864"
+    "releaseYear": 2017
+    "runtimeMinutes": 90
+    "directors":
+      - "武内宣之"
+    "genres":
+      - "Animation"
+      - "Drama"
+      - "Romance"
+      - "Fantasy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/en/title/7855"
+  - "id": "movie-0054"
+    "title": "ボーン・スプレマシー"
+    "originalTitle": "The Bourne Supremacy"
+    "releaseYear": 2004
+    "runtimeMinutes": 108
+    "directors":
+      - "ポール・グリーングラス"
+    "genres":
+      - "Thriller"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q156608"
+  - "id": "movie-0055"
+    "title": "タクシードライバー"
+    "originalTitle": "Taxi Driver"
+    "releaseYear": 1976
+    "runtimeMinutes": 114
+    "directors":
+      - "マーティン・スコセッシ"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Action"
+      - "Thriller"
+      - "Adventure"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q47221"
+  - "id": "movie-0056"
+    "title": "アメリカン・スナイパー"
+    "originalTitle": "American Sniper"
+    "releaseYear": 2014
+    "runtimeMinutes": 132
+    "directors":
+      - "クリント・イーストウッド"
+    "genres":
+      - "Action"
+      - "War"
+      - "Biography"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q16970789"
+  - "id": "movie-0057"
+    "title": "インセプション"
+    "originalTitle": "Inception"
+    "releaseYear": 2010
+    "runtimeMinutes": 148
+    "directors":
+      - "クリストファー・ノーラン"
+    "genres":
+      - "Crime"
+      - "Science Fiction"
+      - "Thriller"
+      - "Action"
+      - "Adventure"
+      - "Drama"
+      - "Mystery"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q25188"
+  - "id": "movie-0058"
+    "title": "プライベート・ライアン"
+    "originalTitle": "Saving Private Ryan"
+    "releaseYear": 1998
+    "runtimeMinutes": 169
+    "directors":
+      - "スティーヴン・スピルバーグ"
+    "genres":
+      - "War"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q165817"
+  - "id": "movie-0059"
+    "title": "スイス・アーミー・マン"
+    "originalTitle": "Swiss Army Man"
+    "releaseYear": 2016
+    "runtimeMinutes": 97
+    "directors":
+      - "ダニエル・シャイナート"
+      - "ダニエル・クワン"
+    "genres":
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21528092"
+  - "id": "movie-0060"
+    "title": "英国王のスピーチ"
+    "originalTitle": "The King's Speech"
+    "releaseYear": 2010
+    "runtimeMinutes": 118
+    "directors":
+      - "トム・フーパ―"
+    "genres":
+      - "Biography"
+      - "Drama"
+      - "History"
+    "countries":
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q160060"
+  - "id": "movie-0061"
+    "title": "イコライザ―２"
+    "originalTitle": "The Equalizer 2"
+    "releaseYear": 2018
+    "runtimeMinutes": 121
+    "directors":
+      - "アントワーン・フークア"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Crime"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.sonypictures.jp/he/1273785"
+  - "id": "movie-0062"
+    "title": "夜は短し歩けよ乙女"
+    "titleEn": "Night Is Short, Walk On Girl"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q30300951"
+    "releaseYear": 2017
+    "runtimeMinutes": 93
+    "directors":
+      - "湯浅政明"
+    "genres":
+      - "Animation"
+      - "Comedy"
+      - "Romance"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q30300951"
+  - "id": "movie-0063"
+    "title": "七人の侍"
+    "titleEn": "Seven Samurai"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q189540"
+    "releaseYear": 1954
+    "runtimeMinutes": 207
+    "directors":
+      - "黒澤明"
+    "genres":
+      - "Drama"
+      - "Action"
+      - "History"
+      - "Adventure"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q189540"
+  - "id": "movie-0064"
+    "title": "羅生門"
+    "titleEn": "Rashomon"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q135465"
+    "releaseYear": 1950
+    "runtimeMinutes": 88
+    "directors":
+      - "黒澤明"
+    "genres":
+      - "Drama"
+      - "Crime"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q135465"
+  - "id": "movie-0065"
+    "title": "ゼロ・グラビティ"
+    "originalTitle": "Gravity"
+    "releaseYear": 2013
+    "runtimeMinutes": 91
+    "directors":
+      - "アルフォンソ・キュアロン"
+    "genres":
+      - "Drama"
+      - "Thriller"
+      - "Horror"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q2579784"
+  - "id": "movie-0066"
+    "title": "キャプテン・アメリカ / ザ・ファースト・アベンジャー"
+    "originalTitle": "Captain America: The First Avenger"
+    "releaseYear": 2011
+    "runtimeMinutes": 124
+    "directors":
+      - "ジョー・ジョンストン"
+    "genres":
+      - "Action"
+      - "Adventure"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://marvel.disney.co.jp/movie/captain-america1/products"
+  - "id": "movie-0067"
+    "title": "オールド・ガード"
+    "originalTitle": "The Old Guard"
+    "releaseYear": 2020
+    "runtimeMinutes": 125
+    "directors":
+      - "ジーナ・プリンス=バイスウッド"
+    "genres":
+      - "Action"
+      - "Mystery"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q65065595"
+  - "id": "movie-0068"
+    "title": "モンティ・パイソン・アンド・ホーリー・グレイル"
+    "originalTitle": "Monty Python and the Holy Grail"
+    "releaseYear": 1975
+    "runtimeMinutes": 91
+    "directors":
+      - "テリー・ギリアム"
+      - "テリー・ジョーンズ"
+    "genres":
+      - "Fantasy"
+      - "Adventure"
+      - "Drama"
+      - "Comedy"
+    "countries":
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q25043"
+  - "id": "movie-0069"
+    "title": "アンタッチャブル"
+    "originalTitle": "The Untouchables"
+    "releaseYear": 1987
+    "runtimeMinutes": 119
+    "directors":
+      - "ブライアン・デ・パルマ"
+    "genres":
+      - "Crime"
+      - "History"
+      - "Action"
+      - "Biography"
+      - "Drama"
+      - "Thriller"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q108525"
+  - "id": "movie-0070"
+    "title": "ヒッチコック / トリュフォー"
+    "originalTitle": "Hitchcock/Truffaut"
+    "releaseYear": 2015
+    "runtimeMinutes": 80
+    "directors":
+      - "ケント・ジョーンズ"
+    "genres":
+      - "Documentary"
+    "countries":
+      - "France"
+      - "United States"
+    "sourceUrl": "https://www.festival-cannes.com/en/f/hitchcock-truffaut/"
+  - "id": "movie-0071"
+    "title": "シェイプ・オブ・ウォーター"
+    "originalTitle": "The Shape of Water"
+    "releaseYear": 2017
+    "runtimeMinutes": 123
+    "directors":
+      - "ギレルモ・デル・トロ"
+    "genres":
+      - "Drama"
+      - "Thriller"
+      - "Fantasy"
+      - "Romance"
+    "countries":
+      - "United States"
+      - "Mexico"
+    "sourceUrl": "https://www.20thcenturystudios.jp/movies/shape-of-water"
+  - "id": "movie-0072"
+    "title": "グリンチ"
+    "originalTitle": "Dr. Seuss' How the Grinch Stole Christmas"
+    "releaseYear": 2000
+    "runtimeMinutes": 101
+    "directors":
+      - "ロン・ハワード"
+    "genres":
+      - "Comedy"
+      - "Family"
+      - "Fantasy"
+      - "Adventure"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q131864"
+  - "id": "movie-0073"
+    "title": "狼 男たちの挽歌・最終章"
+    "titleEn": "The Killer"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q269326"
+    "originalTitle": "喋血双雄"
+    "releaseYear": 1989
+    "runtimeMinutes": 107
+    "directors":
+      - "ジョン・ウー"
+    "genres":
+      - "Action"
+      - "Crime"
+    "countries":
+      - "Hong Kong"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q269326"
+  - "id": "movie-0074"
+    "title": "アンドレイ・ルブリョフ"
+    "titleEn": "Andrei Rublev"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q503046"
+    "originalTitle": "Андрей Рублёв"
+    "releaseYear": 1971
+    "runtimeMinutes": 185
+    "directors":
+      - "アンドレイ・タルコフスキー"
+    "genres":
+      - "History"
+      - "Biography"
+    "countries":
+      - "Soviet Union"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q503046"
+  - "id": "movie-0075"
+    "title": "サイコ"
+    "originalTitle": "Psycho"
+    "releaseYear": 1960
+    "runtimeMinutes": 109
+    "directors":
+      - "アルフレッド・ヒッチコック"
+    "genres":
+      - "Thriller"
+      - "Horror"
+      - "Mystery"
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q163038"
+  - "id": "movie-0076"
+    "title": "洗骨"
+    "titleEn": "Born Bone Born"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q85881934"
+    "releaseYear": 2019
+    "runtimeMinutes": 111
+    "directors":
+      - "照屋年之"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q85881934"
+  - "id": "movie-0077"
+    "title": "鳥"
+    "originalTitle": "The Birds"
+    "releaseYear": 1963
+    "runtimeMinutes": 119
+    "directors":
+      - "アルフレッド・ヒッチコック"
+    "genres":
+      - "Adventure"
+      - "Horror"
+      - "Mystery"
+      - "Thriller"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q110043"
+  - "id": "movie-0078"
+    "title": "波止場"
+    "originalTitle": "On the Waterfront"
+    "releaseYear": 1954
+    "runtimeMinutes": 108
+    "directors":
+      - "エリア・カザン"
+    "genres":
+      - "Drama"
+      - "Crime"
+      - "Thriller"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q211372"
+  - "id": "movie-0079"
+    "title": "君の名前で僕を呼んで"
+    "originalTitle": "Call Me by Your Name"
+    "releaseYear": 2017
+    "runtimeMinutes": 132
+    "directors":
+      - "ルカ・グァダニーノ"
+    "genres":
+      - "Drama"
+      - "Romance"
+    "countries":
+      - "Italy"
+      - "United States"
+      - "Brazil"
+      - "France"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q25136757"
+  - "id": "movie-0080"
+    "title": "ウォレスとグルミット ペンギンに気をつけろ！"
+    "originalTitle": "Wallace and Gromit in The Wrong Trousers"
+    "releaseYear": 1993
+    "runtimeMinutes": 30
+    "directors":
+      - "ニック・パーク"
+    "genres":
+      - "Crime"
+      - "Comedy"
+    "countries":
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1969617"
+  - "id": "movie-0081"
+    "title": "センター・オブ・ジ・アース"
+    "originalTitle": "Journey to the Center of the Earth"
+    "releaseYear": 2008
+    "runtimeMinutes": 92
+    "directors":
+      - "エリック・ブレヴィグ"
+    "genres":
+      - "Science Fiction"
+      - "Fantasy"
+      - "Adventure"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q250770"
+  - "id": "movie-0082"
+    "title": "センター・オブ・ジ・アース２ 神秘の島"
+    "originalTitle": "Journey 2: The Mysterious Island"
+    "releaseYear": 2012
+    "runtimeMinutes": 94
+    "directors":
+      - "ブラッド・ペイトン"
+    "genres":
+      - "Fantasy"
+      - "Adventure"
+      - "Science Fiction"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q211545"
+  - "id": "movie-0083"
+    "title": "ハンナ・アーレント"
+    "originalTitle": "Hannah Arendt"
+    "releaseYear": 2012
+    "runtimeMinutes": 113
+    "directors":
+      - "マルガレーテ・フォン・トロッタ"
+    "genres":
+      - "Drama"
+      - "Biography"
+    "countries":
+      - "France"
+      - "Germany"
+      - "Luxembourg"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1575773"
+  - "id": "movie-0084"
+    "title": "新聞記者"
+    "titleEn": "The Journalist"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q65269837"
+    "releaseYear": 2019
+    "runtimeMinutes": 113
+    "directors":
+      - "藤井道人"
+    "genres":
+      - "Drama"
+      - "Thriller"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/title/8941"
+  - "id": "movie-0085"
+    "title": "サブウェイ・パニック"
+    "originalTitle": "The Taking of Pelham One Two Three"
+    "releaseYear": 1974
+    "runtimeMinutes": 100
+    "directors":
+      - "ジョセフ・サージェント"
+    "genres":
+      - "Crime"
+      - "Action"
+      - "Thriller"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q633171"
+  - "id": "movie-0086"
+    "title": "パーフェクトブルー"
+    "titleEn": "Perfect Blue"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1205051"
+    "releaseYear": 1997
+    "runtimeMinutes": 81
+    "directors":
+      - "今敏"
+    "genres":
+      - "Animation"
+      - "Thriller"
+      - "Mystery"
+      - "Crime"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1205051"
+  - "id": "movie-0087"
+    "title": "MEMORIES"
+    "titleEn": "Memories"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q564403"
+    "releaseYear": 1995
+    "runtimeMinutes": 113
+    "directors":
+      - "森本晃司"
+      - "岡村天斎"
+      - "大友克洋"
+    "genres":
+      - "Action"
+      - "Science Fiction"
+      - "Fantasy"
+      - "Adventure"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q564403"
+  - "id": "movie-0088"
+    "title": "パルプ・フィクション"
+    "originalTitle": "Pulp Fiction"
+    "releaseYear": 1994
+    "runtimeMinutes": 154
+    "directors":
+      - "クエンティン・タランティーノ"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Thriller"
+      - "Action"
+      - "Comedy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q104123"
+  - "id": "movie-0089"
+    "title": "イングリッシュ・ペイシェント"
+    "originalTitle": "The English Patient"
+    "releaseYear": 1996
+    "runtimeMinutes": 162
+    "directors":
+      - "アンソニー・ミンゲラ"
+    "genres":
+      - "Romance"
+      - "War"
+      - "Drama"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q63026"
+  - "id": "movie-0090"
+    "title": "ソフィーの選択"
+    "originalTitle": "Sophie's Choice"
+    "releaseYear": 1982
+    "runtimeMinutes": 144
+    "directors":
+      - "アラン・J・パクラ"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q165627"
+  - "id": "movie-0091"
+    "title": "奇跡の人"
+    "originalTitle": "The Miracle Worker"
+    "releaseYear": 1962
+    "runtimeMinutes": 107
+    "directors":
+      - "アーサー・ペン"
+    "genres":
+      - "Biography"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q287536"
+  - "id": "movie-0092"
+    "title": "いとこ同志"
+    "titleEn": "The Cousins"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q141557"
+    "originalTitle": "Les Cousins"
+    "releaseYear": 1959
+    "runtimeMinutes": 108
+    "directors":
+      - "クロード・シャブロル"
+    "genres":
+      - "Drama"
+    "countries":
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q141557"
+  - "id": "movie-0093"
+    "title": "生きる"
+    "titleEn": "Ikiru"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q152105"
+    "releaseYear": 1952
+    "runtimeMinutes": 143
+    "directors":
+      - "黒澤明"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q152105"
+  - "id": "movie-0094"
+    "title": "ブンミおじさんの森"
+    "titleEn": "Uncle Boonmee Who Can Recall His Past Lives"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q553901"
+    "originalTitle": "ลุงบุญมีระลึกชาติ"
+    "releaseYear": 2010
+    "runtimeMinutes": 113
+    "directors":
+      - "アピチャートポン・ウィーラセータクン"
+    "genres":
+      - "Comedy"
+      - "Drama"
+      - "Fantasy"
+    "countries":
+      - "Thailand"
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q553901"
+  - "id": "movie-0095"
+    "title": "酒とバラの日々"
+    "originalTitle": "Days of Wine and Roses"
+    "releaseYear": 1962
+    "runtimeMinutes": 117
+    "directors":
+      - "ブレイク・エドワーズ"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1216682"
+  - "id": "movie-0096"
+    "title": "赤い風船"
+    "titleEn": "The Red Balloon"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1199519"
+    "originalTitle": "Le Ballon rouge"
+    "releaseYear": 1956
+    "runtimeMinutes": 34
+    "directors":
+      - "アルベール・ラモリス"
+    "genres":
+      - "Fantasy"
+      - "Family"
+    "countries":
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1199519"
+  - "id": "movie-0097"
+    "title": "白い馬"
+    "originalTitle": "Crin-Blanc"
+    "releaseYear": 1953
+    "runtimeMinutes": 47
+    "directors":
+      - "アルベール・ラモリス"
+    "genres":
+      - "Family"
+      - "Drama"
+    "countries":
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1199820"
+  - "id": "movie-0098"
+    "title": "雨月物語"
+    "titleEn": "Ugetsu"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1076605"
+    "releaseYear": 1953
+    "runtimeMinutes": 96
+    "directors":
+      - "溝口健二"
+    "genres":
+      - "Fantasy"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1076605"
+  - "id": "movie-0099"
+    "title": "熱いトタン屋根の猫"
+    "originalTitle": "Cat on a Hot Tin Roof"
+    "releaseYear": 1958
+    "runtimeMinutes": 104
+    "directors":
+      - "リチャード・ブルックス"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q713979"
+  - "id": "movie-0100"
+    "title": "栞"
+    "releaseYear": 2018
+    "runtimeMinutes": 118
+    "directors":
+      - "榊原有佑"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://lp.p.pia.jp/event/movie/29074/index.html"
+  - "id": "movie-0101"
+    "title": "イレイザーヘッド"
+    "originalTitle": "Eraserhead"
+    "releaseYear": 1977
+    "runtimeMinutes": 89
+    "directors":
+      - "デヴィッド・リンチ"
+    "genres":
+      - "Horror"
+      - "Experimental"
+      - "Thriller"
+      - "Drama"
+      - "Fantasy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q11618"
+  - "id": "movie-0102"
+    "title": "メメント"
+    "originalTitle": "Memento"
+    "releaseYear": 2000
+    "runtimeMinutes": 113
+    "directors":
+      - "クリストファー・ノーラン"
+    "genres":
+      - "Crime"
+      - "Mystery"
+      - "Drama"
+      - "Thriller"
+      - "Horror"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q190525"
+  - "id": "movie-0103"
+    "title": "ヒトラー ～最期の１２日間～"
+    "originalTitle": "Der Untergang"
+    "releaseYear": 2004
+    "runtimeMinutes": 155
+    "directors":
+      - "オリヴァー・ヒルシュビーゲル"
+    "genres":
+      - "Biography"
+      - "War"
+      - "Drama"
+      - "History"
+    "countries":
+      - "Germany"
+      - "Austria"
+      - "Italy"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q152857"
+  - "id": "movie-0104"
+    "title": "トレインスポッティング"
+    "originalTitle": "Trainspotting"
+    "releaseYear": 1996
+    "runtimeMinutes": 94
+    "directors":
+      - "ダニー・ボイル"
+    "genres":
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q109135"
+  - "id": "movie-0105"
+    "title": "古都"
+    "titleEn": "Koto"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q60176291"
+    "releaseYear": 2016
+    "runtimeMinutes": 117
+    "directors":
+      - "Yuki Saito"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q60176291"
+  - "id": "movie-0106"
+    "title": "青の帰り道"
+    "releaseYear": 2018
+    "runtimeMinutes": 120
+    "directors":
+      - "藤井道人"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://eiga.com/movie/89199/"
+  - "id": "movie-0107"
+    "title": "Daughters"
+    "titleEn": "Daughters"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q120333319"
+    "releaseYear": 2020
+    "runtimeMinutes": 104
+    "directors":
+      - "津田肇"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/title/9259"
+  - "id": "movie-0108"
+    "title": "TENET"
+    "originalTitle": "Tenet"
+    "releaseYear": 2020
+    "runtimeMinutes": 150
+    "directors":
+      - "クリストファー・ノーラン"
+    "genres":
+      - "Thriller"
+      - "Science Fiction"
+      - "Action"
+    "countries":
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q63985561"
+  - "id": "movie-0109"
+    "title": "ミッドナイトスワン"
+    "titleEn": "Midnight Swan"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q105661959"
+    "releaseYear": 2020
+    "runtimeMinutes": 124
+    "directors":
+      - "内田英治"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/title/9344"
+  - "id": "movie-0110"
+    "title": "狂った一頁"
+    "titleEn": "A Page of Madness"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1165285"
+    "originalTitle": "狂つた一頁"
+    "releaseYear": 1926
+    "runtimeMinutes": 71
+    "directors":
+      - "衣笠貞之助"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1165285"
+  - "id": "movie-0111"
+    "title": "セノーテ"
+    "originalTitle": "CENOTE"
+    "releaseYear": 2020
+    "runtimeMinutes": 75
+    "directors":
+      - "小田香"
+    "genres":
+      - "Documentary"
+    "countries":
+      - "Japan"
+      - "Mexico"
+    "sourceUrl": "https://natalie.mu/eiga/film/184323"
+  - "id": "movie-0112"
+    "title": "殺人の告白"
+    "titleEn": "Confession of Murder"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q28289"
+    "originalTitle": "내가 살인범이다"
+    "releaseYear": 2013
+    "runtimeMinutes": 119
+    "directors":
+      - "チョン・ビョンギル"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Crime"
+    "countries":
+      - "South Korea"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q28289"
+  - "id": "movie-0113"
+    "title": "タクシー運転手 ～約束は海を越えて～"
+    "originalTitle": "택시운전사"
+    "releaseYear": 2017
+    "runtimeMinutes": 137
+    "directors":
+      - "チャン・フン"
+    "genres":
+      - "Drama"
+      - "History"
+    "countries":
+      - "South Korea"
+    "sourceUrl": "https://www.tc-ent.co.jp/products/tced-4196"
+  - "id": "movie-0114"
+    "title": "ボヘミアン・ラプソディ"
+    "originalTitle": "Bohemian Rhapsody"
+    "releaseYear": 2018
+    "runtimeMinutes": 134
+    "directors":
+      - "ブライアン・シンガー"
+    "genres":
+      - "Biography"
+      - "Drama"
+      - "Musical"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q27894574"
+  - "id": "movie-0115"
+    "title": "帰ってきたヒトラー"
+    "titleEn": "Look Who's Back"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q21065355"
+    "originalTitle": "Er ist wieder da"
+    "releaseYear": 2015
+    "runtimeMinutes": 116
+    "directors":
+      - "ダーヴィト・ヴネント"
+    "genres":
+      - "Comedy"
+    "countries":
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q21065355"
+  - "id": "movie-0116"
+    "title": "ウィンストン・チャーチル / ヒトラーから世界を救った男"
+    "originalTitle": "Darkest Hour"
+    "releaseYear": 2017
+    "runtimeMinutes": 125
+    "directors":
+      - "ジョー・ライト"
+    "genres":
+      - "Drama"
+      - "History"
+      - "War"
+    "countries":
+      - "United Kingdom"
+    "sourceUrl": "https://www.allcinema.net/cinema/pdf/362605"
+  - "id": "movie-0117"
+    "title": "ゴッドファーザー PART Ⅱ"
+    "originalTitle": "The Godfather Part II"
+    "releaseYear": 1974
+    "runtimeMinutes": 202
+    "directors":
+      - "フランシス・フォード・コッポラ"
+    "genres":
+      - "Drama"
+      - "Crime"
+      - "Thriller"
+      - "History"
+      - "Mystery"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q184768"
+  - "id": "movie-0118"
+    "title": "ゴッドファーザー PART Ⅲ"
+    "originalTitle": "The Godfather Part III"
+    "releaseYear": 1990
+    "runtimeMinutes": 162
+    "directors":
+      - "フランシス・フォード・コッポラ"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Thriller"
+      - "Mystery"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q202326"
+  - "id": "movie-0119"
+    "title": "チョコレートドーナツ"
+    "originalTitle": "Any Day Now"
+    "releaseYear": 2012
+    "runtimeMinutes": 97
+    "directors":
+      - "トラヴィス・ファイン"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q2752839"
+  - "id": "movie-0120"
+    "title": "モダン・タイムス"
+    "originalTitle": "Modern Times"
+    "releaseYear": 1936
+    "runtimeMinutes": 99
+    "directors":
+      - "チャールズ・チャップリン"
+    "genres":
+      - "Comedy"
+      - "Romance"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q45602"
+  - "id": "movie-0121"
+    "title": "スワロウテイル"
+    "titleEn": "Swallowtail"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1036921"
+    "releaseYear": 1996
+    "runtimeMinutes": 148
+    "directors":
+      - "岩井俊二"
+    "genres":
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1036921"
+  - "id": "movie-0122"
+    "title": "トータル・リコール"
+    "originalTitle": "Total Recall"
+    "releaseYear": 2012
+    "runtimeMinutes": 118
+    "directors":
+      - "レン・ワイズマン"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q634810"
+  - "id": "movie-0123"
+    "title": "オブリビオン"
+    "originalTitle": "Oblivion"
+    "releaseYear": 2013
+    "runtimeMinutes": 125
+    "directors":
+      - "ジョセフ・コシンスキー"
+    "genres":
+      - "Science Fiction"
+      - "Thriller"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q638544"
+  - "id": "movie-0124"
+    "title": "キャッチ・ミー・イフ・ユー・キャン"
+    "originalTitle": "Catch Me If You Can"
+    "releaseYear": 2002
+    "runtimeMinutes": 135
+    "directors":
+      - "スティーヴン・スピルバーグ"
+    "genres":
+      - "Crime"
+      - "Comedy"
+      - "Drama"
+      - "Biography"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q208108"
+  - "id": "movie-0125"
+    "title": "戦場のピアニスト"
+    "originalTitle": "The Pianist"
+    "releaseYear": 2002
+    "runtimeMinutes": 149
+    "directors":
+      - "ロマン・ポランスキー"
+    "genres":
+      - "Musical"
+      - "Drama"
+      - "Biography"
+      - "History"
+      - "War"
+    "countries":
+      - "France"
+      - "Germany"
+      - "United Kingdom"
+      - "Poland"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q150804"
+  - "id": "movie-0126"
+    "title": "2001年宇宙の旅"
+    "originalTitle": "2001: A Space Odyssey"
+    "releaseYear": 1968
+    "runtimeMinutes": 143
+    "directors":
+      - "スタンリー・キューブリック"
+    "genres":
+      - "Adventure"
+      - "Mystery"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q103474"
+  - "id": "movie-0127"
+    "title": "インターステラー"
+    "originalTitle": "Interstellar"
+    "releaseYear": 2014
+    "runtimeMinutes": 169
+    "directors":
+      - "クリストファー・ノーラン"
+    "genres":
+      - "Science Fiction"
+      - "Adventure"
+      - "Drama"
+      - "Thriller"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q13417189"
+  - "id": "movie-0128"
+    "title": "黄金"
+    "originalTitle": "The Treasure of the Sierra Madre"
+    "releaseYear": 1948
+    "runtimeMinutes": 126
+    "directors":
+      - "ジョン・ヒューストン"
+    "genres":
+      - "Drama"
+      - "Western"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q251559"
+  - "id": "movie-0129"
+    "title": "カリガリ博士"
+    "titleEn": "The Cabinet of Dr. Caligari"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q153886"
+    "originalTitle": "Das Cabinet des Dr. Caligari"
+    "releaseYear": 1920
+    "runtimeMinutes": 77
+    "directors":
+      - "ローベルト・ヴィーネ"
+    "genres":
+      - "Horror"
+      - "Crime"
+      - "Fantasy"
+      - "Experimental"
+    "countries":
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q153886"
+  - "id": "movie-0130"
+    "title": "宇宙ショーへようこそ"
+    "titleEn": "Welcome to the Space Show"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1085819"
+    "releaseYear": 2010
+    "runtimeMinutes": 136
+    "directors":
+      - "舛成孝二"
+    "genres":
+      - "Animation"
+      - "Science Fiction"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1085819"
+  - "id": "movie-0131"
+    "title": "シン・エヴァンゲリオン劇場版 :||"
+    "originalTitle": "EVANGELION:3.0+1.01 THRICE UPON A TIME"
+    "releaseYear": 2021
+    "runtimeMinutes": 155
+    "directors":
+      - "庵野秀明"
+      - "鶴巻和哉"
+      - "中山勝一"
+      - "前田真宏"
+    "genres":
+      - "Drama"
+      - "Action"
+      - "Animation"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.evangelion.jp/news/shineva-2/"
+  - "id": "movie-0132"
+    "title": "新世紀エヴァンゲリオン劇場版 Air/まごころを、君に"
+    "titleEn": "The End of Evangelion"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1151814"
+    "releaseYear": 1997
+    "runtimeMinutes": 87
+    "directors":
+      - "庵野秀明"
+      - "鶴巻和哉"
+    "genres":
+      - "Science Fiction"
+      - "Drama"
+      - "Animation"
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1151814"
+  - "id": "movie-0133"
+    "title": "クレヨンしんちゃん 嵐を呼ぶ モーレツ！オトナ帝国の逆襲"
+    "titleEn": "Crayon Shin-chan: Fierceness That Invites Storm! The Adult Empire Strikes Back"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1186464"
+    "releaseYear": 2001
+    "runtimeMinutes": 90
+    "directors":
+      - "原恵一"
+    "genres":
+      - "Comedy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1186464"
+  - "id": "movie-0134"
+    "title": "東京物語"
+    "titleEn": "Tokyo Story"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q26060"
+    "releaseYear": 1953
+    "runtimeMinutes": 136
+    "directors":
+      - "小津安二郎"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q26060"
+  - "id": "movie-0135"
+    "title": "ミナリ"
+    "originalTitle": "Minari"
+    "releaseYear": 2020
+    "runtimeMinutes": 115
+    "directors":
+      - "リー・アイザック・チョン"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q65679599"
+  - "id": "movie-0136"
+    "title": "大人は判ってくれない"
+    "titleEn": "The 400 Blows"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q162331"
+    "originalTitle": "Les Quatre Cents Coups"
+    "releaseYear": 1959
+    "runtimeMinutes": 99
+    "directors":
+      - "フランソワ・トリュフォー"
+    "genres":
+      - "Drama"
+      - "Crime"
+    "countries":
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q162331"
+  - "id": "movie-0137"
+    "title": "アド・アストラ"
+    "originalTitle": "Ad Astra"
+    "releaseYear": 2019
+    "runtimeMinutes": 123
+    "directors":
+      - "ジェームズ・グレイ"
+    "genres":
+      - "Science Fiction"
+      - "Thriller"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q38774788"
+  - "id": "movie-0138"
+    "title": "ミッドサマー"
+    "originalTitle": "Midsommar"
+    "releaseYear": 2019
+    "runtimeMinutes": 147
+    "directors":
+      - "アリ・アスター"
+    "genres":
+      - "Horror"
+      - "Drama"
+    "countries":
+      - "United States"
+      - "Sweden"
+    "sourceUrl": "https://www.imdb.com/title/tt8772262/"
+  - "id": "movie-0139"
+    "title": "アニー・ホール"
+    "originalTitle": "Annie Hall"
+    "releaseYear": 1977
+    "runtimeMinutes": 93
+    "directors":
+      - "ウディ・アレン"
+    "genres":
+      - "Comedy"
+      - "Romance"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q233464"
+  - "id": "movie-0140"
+    "title": "ノーマル・ハート"
+    "originalTitle": "The Normal Heart"
+    "releaseYear": 2014
+    "runtimeMinutes": 132
+    "directors":
+      - "ライアン・マーフィー"
+    "genres":
+      - "Drama"
+      - "Romance"
+      - "Biography"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://tv.apple.com/us/movie/the-normal-heart/umc.cmc.2wdj1jfeavjqrzzs1sqxy1yux"
+  - "id": "movie-0141"
+    "title": "デッドプール"
+    "originalTitle": "Deadpool"
+    "releaseYear": 2016
+    "runtimeMinutes": 108
+    "directors":
+      - "ティム・ミラー"
+    "genres":
+      - "Action"
+      - "Comedy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q19347291"
+  - "id": "movie-0142"
+    "title": "フェリスはある朝突然に"
+    "originalTitle": "Ferris Bueller's Day Off"
+    "releaseYear": 1986
+    "runtimeMinutes": 103
+    "directors":
+      - "ジョン・ヒューズ"
+    "genres":
+      - "Drama"
+      - "Comedy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q498906"
+  - "id": "movie-0143"
+    "title": "ワンス・アポン・ア・タイム・イン・ハリウッド"
+    "originalTitle": "Once Upon a Time in Hollywood"
+    "releaseYear": 2019
+    "runtimeMinutes": 161
+    "directors":
+      - "クエンティン・タランティーノ"
+    "genres":
+      - "Comedy"
+      - "Drama"
+      - "Crime"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q47300912"
+  - "id": "movie-0144"
+    "title": "ファイト・クラブ"
+    "originalTitle": "Fight Club"
+    "releaseYear": 1999
+    "runtimeMinutes": 139
+    "directors":
+      - "デヴィッド・フィンチャー"
+    "genres":
+      - "Drama"
+      - "Thriller"
+    "countries":
+      - "United States"
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q190050"
+  - "id": "movie-0145"
+    "title": "トゥルーマン・ショー"
+    "originalTitle": "The Truman Show"
+    "releaseYear": 1998
+    "runtimeMinutes": 99
+    "directors":
+      - "ピーター・ウィアー"
+    "genres":
+      - "Science Fiction"
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q214801"
+  - "id": "movie-0146"
+    "title": "紅の豚"
+    "originalTitle": "Porco Rosso"
+    "releaseYear": 1992
+    "runtimeMinutes": 92
+    "directors":
+      - "宮崎駿"
+    "genres":
+      - "Fantasy"
+      - "Animation"
+      - "Adventure"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q498375"
+  - "id": "movie-0147"
+    "title": "空の境界 殺人考察（後）"
+    "releaseYear": 2009
+    "runtimeMinutes": 119
+    "directors":
+      - "瀧沢進介"
+    "genres":
+      - "Animation"
+      - "Mystery"
+      - "Thriller"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.sonymusic.co.jp/Animation/lineup/anime/karanokyoukai/blu_ray.html"
+  - "id": "movie-0148"
+    "title": "コーヒー＆シガレッツ"
+    "originalTitle": "Coffee and Cigarettes"
+    "releaseYear": 2003
+    "runtimeMinutes": 96
+    "directors":
+      - "ジム・ジャームッシュ"
+    "genres":
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+      - "Italy"
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1106851"
+  - "id": "movie-0149"
+    "title": "ドライブ・マイ・カー"
+    "titleEn": "Drive My Car"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q107107865"
+    "releaseYear": 2021
+    "runtimeMinutes": 179
+    "directors":
+      - "濱口竜介"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q107107865"
+  - "id": "movie-0150"
+    "title": "コンスタンティン"
+    "originalTitle": "Constantine"
+    "releaseYear": 2005
+    "runtimeMinutes": 116
+    "directors":
+      - "フランシス・ローレンス"
+    "genres":
+      - "Action"
+      - "Horror"
+      - "Fantasy"
+      - "Drama"
+    "countries":
+      - "United States"
+      - "Australia"
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q219150"
+  - "id": "movie-0151"
+    "title": "ディアボロス / 悪魔の扉"
+    "originalTitle": "The Devil's Advocate"
+    "releaseYear": 1997
+    "runtimeMinutes": 144
+    "directors":
+      - "テイラー・ハックフォード"
+    "genres":
+      - "Horror"
+      - "Thriller"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://eiga.com/movie/46872/"
+  - "id": "movie-0152"
+    "title": "ライ麦畑の反逆児 ひとりぼっちのサリンジャー"
+    "originalTitle": "Rebel in the Rye"
+    "releaseYear": 2017
+    "runtimeMinutes": 106
+    "directors":
+      - "ダニー・ストロング"
+    "genres":
+      - "Drama"
+      - "Biography"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q23999294"
+  - "id": "movie-0153"
+    "title": "映画 すみっコぐらし とびだす絵本とひみつのコ"
+    "titleEn": "Sumikko Gurashi the Movie: The Unexpected Picture Book and the Secret Child"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q136309212"
+    "releaseYear": 2019
+    "runtimeMinutes": 65
+    "directors":
+      - "まんきゅう"
+    "genres":
+      - "Animation"
+      - "Fantasy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/en/title/8994"
+  - "id": "movie-0154"
+    "title": "フランシス・ハ"
+    "originalTitle": "Frances Ha"
+    "releaseYear": 2012
+    "runtimeMinutes": 86
+    "directors":
+      - "ノア・バームバック"
+    "genres":
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q5478692"
+  - "id": "movie-0155"
+    "title": "ザ・ディスカバリー"
+    "originalTitle": "The Discovery"
+    "releaseYear": 2017
+    "runtimeMinutes": 110
+    "directors":
+      - "チャーリー・マクダウェル"
+    "genres":
+      - "Science Fiction"
+      - "Romance"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q23035769"
+  - "id": "movie-0156"
+    "title": "コララインとボタンの魔女"
+    "originalTitle": "Coraline"
+    "releaseYear": 2009
+    "runtimeMinutes": 101
+    "directors":
+      - "ヘンリー・セリック"
+    "genres":
+      - "Horror"
+      - "Fantasy"
+      - "Family"
+      - "Thriller"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q632668"
+  - "id": "movie-0157"
+    "title": "ブレードランナー"
+    "originalTitle": "Blade Runner"
+    "releaseYear": 1982
+    "runtimeMinutes": 112
+    "directors":
+      - "リドリー・スコット"
+    "genres":
+      - "Crime"
+      - "Science Fiction"
+      - "Thriller"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "United States"
+      - "Hong Kong"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q184843"
+  - "id": "movie-0158"
+    "title": "EVA"
+    "originalTitle": "Eva"
+    "releaseYear": 2011
+    "runtimeMinutes": 95
+    "directors":
+      - "キケ・マイーリュ"
+    "genres":
+      - "Science Fiction"
+      - "Drama"
+    "countries":
+      - "Spain"
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q519910"
+  - "id": "movie-0159"
+    "title": "つみきのいえ"
+    "titleEn": "The House of Small Cubes"
+    "titleEnSourceUrl": "https://play.google.com/store/movies/details/The_House_of_Small_Cubes?hl=en_US&id=E4B4F6CEA554C989MV"
+    "releaseYear": 2008
+    "runtimeMinutes": 12
+    "directors":
+      - "加藤久仁生"
+    "genres":
+      - "Family"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1236589"
+  - "id": "movie-0160"
+    "title": "ソナチネ"
+    "titleEn": "Sonatine"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1339178"
+    "releaseYear": 1993
+    "runtimeMinutes": 94
+    "directors":
+      - "北野武"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1339178"
+  - "id": "movie-0161"
+    "title": "HANA-BI"
+    "titleEn": "Hana-bi"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1125897"
+    "releaseYear": 1998
+    "runtimeMinutes": 103
+    "directors":
+      - "北野武"
+    "genres":
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1125897"
+  - "id": "movie-0162"
+    "title": "バブル"
+    "titleEn": "Bubble"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q109965531"
+    "releaseYear": 2022
+    "runtimeMinutes": 100
+    "directors":
+      - "荒木哲郎"
+    "genres":
+      - "Animation"
+      - "Science Fiction"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q109965531"
+  - "id": "movie-0163"
+    "title": "あの夏、いちばん静かな海。"
+    "titleEn": "A Scene at the Sea"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1157019"
+    "releaseYear": 1991
+    "runtimeMinutes": 101
+    "directors":
+      - "北野武"
+    "genres":
+      - "Romance"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1157019"
+  - "id": "movie-0164"
+    "title": "BROTHER"
+    "titleEn": "Brother"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q961235"
+    "releaseYear": 2000
+    "runtimeMinutes": 114
+    "directors":
+      - "北野武"
+    "genres":
+      - "Crime"
+      - "Action"
+      - "Drama"
+    "countries":
+      - "Japan"
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q961235"
+  - "id": "movie-0165"
+    "title": "シン・ウルトラマン"
+    "titleEn": "Shin Ultraman"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q77948675"
+    "releaseYear": 2022
+    "runtimeMinutes": 112
+    "directors":
+      - "樋口真嗣"
+    "genres":
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q77948675"
+  - "id": "movie-0166"
+    "title": "グッドフェローズ"
+    "originalTitle": "Goodfellas"
+    "releaseYear": 1990
+    "runtimeMinutes": 146
+    "directors":
+      - "マーティン・スコセッシ"
+    "genres":
+      - "Biography"
+      - "Crime"
+      - "Thriller"
+      - "Drama"
+      - "History"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q42047"
+  - "id": "movie-0167"
+    "title": "トップガン マーヴェリック"
+    "originalTitle": "Top Gun: Maverick"
+    "releaseYear": 2022
+    "runtimeMinutes": 130
+    "directors":
+      - "ジョセフ・コシンスキー"
+    "genres":
+      - "Action"
+      - "Drama"
+      - "Adventure"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q31202708"
+  - "id": "movie-0168"
+    "title": "千年女優"
+    "originalTitle": "Millennium Actress"
+    "releaseYear": 2001
+    "runtimeMinutes": 83
+    "directors":
+      - "今敏"
+    "genres":
+      - "Fantasy"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q939736"
+  - "id": "movie-0169"
+    "title": "スラムドッグ＄ミリオネア"
+    "originalTitle": "Slumdog Millionaire"
+    "releaseYear": 2008
+    "runtimeMinutes": 120
+    "directors":
+      - "ダニー・ボイル"
+    "genres":
+      - "Romance"
+      - "Drama"
+      - "Crime"
+    "countries":
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q125076"
+  - "id": "movie-0170"
+    "title": "ディパーテッド"
+    "originalTitle": "The Departed"
+    "releaseYear": 2006
+    "runtimeMinutes": 151
+    "directors":
+      - "マーティン・スコセッシ"
+    "genres":
+      - "Thriller"
+      - "Crime"
+      - "Drama"
+      - "Mystery"
+    "countries":
+      - "United States"
+      - "Hong Kong"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q172975"
+  - "id": "movie-0171"
+    "title": "トーテム"
+    "originalTitle": "Totems"
+    "releaseYear": 2015
+    "runtimeMinutes": 9
+    "directors":
+      - "ポール・ジャドゥール"
+    "genres":
+      - "Animation"
+      - "Fantasy"
+      - "Short"
+    "countries":
+      - "France"
+      - "Belgium"
+    "sourceUrl": "https://www.lesfilmsdunord.com/paul-jadoul"
+  - "id": "movie-0172"
+    "title": "雨を告げる漂流団地"
+    "titleEn": "Drifting Home"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q109602795"
+    "releaseYear": 2022
+    "runtimeMinutes": 119
+    "directors":
+      - "石田祐康"
+    "genres":
+      - "Animation"
+      - "Adventure"
+      - "Drama"
+      - "Fantasy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q109602795"
+  - "id": "movie-0173"
+    "title": "DUNE / デューン 砂の惑星"
+    "originalTitle": "Dune"
+    "releaseYear": 2021
+    "runtimeMinutes": 155
+    "directors":
+      - "ドゥニ・ヴィルヌーヴ"
+    "genres":
+      - "Science Fiction"
+      - "Adventure"
+      - "Drama"
+    "countries":
+      - "United States"
+      - "Canada"
+    "sourceUrl": "https://www.classification.gov.au/titles/dune-13"
+  - "id": "movie-0174"
+    "title": "残穢 - 住んではいけない部屋 -"
+    "originalTitle": "The Inerasable"
+    "releaseYear": 2016
+    "runtimeMinutes": 107
+    "directors":
+      - "中村義洋"
+    "genres":
+      - "Horror"
+      - "Mystery"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://eiga.com/movie/82365/"
+  - "id": "movie-0175"
+    "title": "RRR"
+    "titleEn": "RRR"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q60424165"
+    "releaseYear": 2022
+    "runtimeMinutes": 187
+    "directors":
+      - "S・S・ラージャマウリ"
+    "genres":
+      - "Action"
+    "countries":
+      - "India"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q60424165"
+  - "id": "movie-0176"
+    "title": "ジョン・ウィック"
+    "originalTitle": "John Wick: Chapter 3 – Parabellum"
+    "releaseYear": 2019
+    "runtimeMinutes": 131
+    "directors":
+      - "チャド・スタエルスキ"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Crime"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q52951815"
+  - "id": "movie-0177"
+    "title": "すずめの戸締まり"
+    "titleEn": "Suzume"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q110126272"
+    "releaseYear": 2022
+    "runtimeMinutes": 122
+    "directors":
+      - "新海誠"
+    "genres":
+      - "Adventure"
+      - "Animation"
+      - "Fantasy"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q110126272"
+  - "id": "movie-0178"
+    "title": "仁義なき戦い"
+    "titleEn": "Battles Without Honor and Humanity"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q2517358"
+    "releaseYear": 1973
+    "runtimeMinutes": 99
+    "directors":
+      - "深作欣二"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q2517358"
+  - "id": "movie-0179"
+    "title": "懲役十八年"
+    "titleEn": "Eighteen Years in Prison"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q120335071"
+    "releaseYear": 1967
+    "runtimeMinutes": 91
+    "directors":
+      - "加藤泰"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://nfad.nfaj.go.jp/det.php?data_id=78888&mode=0"
+  - "id": "movie-0180"
+    "title": "恋愛小説家"
+    "originalTitle": "As Good as It Gets"
+    "releaseYear": 1997
+    "runtimeMinutes": 133
+    "directors":
+      - "ジェームズ・L・ブルックス"
+    "genres":
+      - "Comedy"
+      - "Romance"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q221594"
+  - "id": "movie-0181"
+    "title": "ラーゲリより愛を込めて"
+    "releaseYear": 2022
+    "runtimeMinutes": 133
+    "directors":
+      - "瀬々敬久"
+    "genres":
+      - "Drama"
+      - "Biography"
+      - "War"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://eiga.com/movie/95937/"
+  - "id": "movie-0182"
+    "title": "テンダー・マーシー"
+    "originalTitle": "Tender Mercies"
+    "releaseYear": 1983
+    "runtimeMinutes": 89
+    "directors":
+      - "ブルース・ベレスフォード"
+    "genres":
+      - "Drama"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1113987"
+  - "id": "movie-0183"
+    "title": "イニシェリン島の精霊"
+    "originalTitle": "The Banshees of Inisherin"
+    "releaseYear": 2022
+    "runtimeMinutes": 114
+    "directors":
+      - "マーティン・マクドナー"
+    "genres":
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "Ireland"
+      - "United Kingdom"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q108314506"
+  - "id": "movie-0184"
+    "title": "ワンダーウォール 劇場版"
+    "releaseYear": 2019
+    "runtimeMinutes": 68
+    "directors":
+      - "前田悠希"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://andpremium.jp/article/wonderwall/"
+  - "id": "movie-0185"
+    "title": "フェイブルマンズ"
+    "originalTitle": "The Fabelmans"
+    "releaseYear": 2022
+    "runtimeMinutes": 151
+    "directors":
+      - "スティーヴン・スピルバーグ"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q107710009"
+  - "id": "movie-0186"
+    "title": "エブリシング・エブリウェア・オール・アット・ワンス"
+    "originalTitle": "Everything Everywhere All at Once"
+    "releaseYear": 2022
+    "runtimeMinutes": 139
+    "directors":
+      - "ダニエル・クワン＆ダニエル・シャイナート"
+    "genres":
+      - "Action"
+      - "Science Fiction"
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.bbfc.co.uk/release/everything-everywhere-all-at-once-q29sbgvjdglvbjpwwc0xmdaznzg0"
+  - "id": "movie-0187"
+    "title": "逆転のトライアングル"
+    "originalTitle": "Triangle of Sadness"
+    "releaseYear": 2022
+    "runtimeMinutes": 149
+    "directors":
+      - "リューベン・オストルンド"
+    "genres":
+      - "Drama"
+      - "Comedy"
+    "countries":
+      - "Sweden"
+      - "Germany"
+      - "United Kingdom"
+      - "France"
+      - "Denmark"
+      - "United States"
+      - "Greece"
+      - "Turkey"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q97304180"
+  - "id": "movie-0188"
+    "title": "シン・仮面ライダー"
+    "titleEn": "Shin Kamen Rider"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q106364049"
+    "releaseYear": 2023
+    "runtimeMinutes": 121
+    "directors":
+      - "庵野秀明"
+    "genres":
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q106364049"
+  - "id": "movie-0189"
+    "title": "生きる LIVING"
+    "originalTitle": "Living"
+    "releaseYear": 2022
+    "runtimeMinutes": 102
+    "directors":
+      - "オリヴァー・ハーマナス"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q107304169"
+  - "id": "movie-0190"
+    "title": "最強のふたり"
+    "titleEn": "The Intouchables"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q595"
+    "originalTitle": "Intouchables"
+    "releaseYear": 2011
+    "runtimeMinutes": 112
+    "directors":
+      - "エリック・トレダノ"
+      - "オリヴィエ・ナカシュ"
+    "genres":
+      - "Comedy"
+      - "Biography"
+      - "Drama"
+    "countries":
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q595"
+  - "id": "movie-0191"
+    "title": "Coda コーダ あいのうた"
+    "originalTitle": "CODA"
+    "releaseYear": 2021
+    "runtimeMinutes": 111
+    "directors":
+      - "シアン・ヘダー"
+    "genres":
+      - "Drama"
+      - "Comedy"
+      - "Musical"
+    "countries":
+      - "France"
+      - "United States"
+    "sourceUrl": "https://tv.apple.com/us/movie/coda/umc.cmc.3eh9r5iz32ggdm4ccvw5igiir"
+  - "id": "movie-0192"
+    "title": "夢と狂気の王国"
+    "releaseYear": 2013
+    "runtimeMinutes": 118
+    "directors":
+      - "砂田麻美"
+    "genres":
+      - "Documentary"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q15020884"
+  - "id": "movie-0193"
+    "title": "マーダーボール"
+    "originalTitle": "Murderball"
+    "releaseYear": 2005
+    "runtimeMinutes": 88
+    "directors":
+      - "ヘンリー＝アレックス・ルビン"
+      - "ダナ・アダム・シャビ―ロ"
+    "genres":
+      - "Documentary"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q4385060"
+  - "id": "movie-0194"
+    "title": "だれもが愛しいチャンピオン"
+    "titleEn": "Champions"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q51543325"
+    "originalTitle": "Campeones"
+    "releaseYear": 2018
+    "runtimeMinutes": 124
+    "directors":
+      - "ハビエル・フェセル"
+    "genres":
+      - "Comedy"
+      - "Drama"
+      - "Sports"
+    "countries":
+      - "Spain"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q51543325"
+  - "id": "movie-0195"
+    "title": "特殊じゃない、異なりもしない、だれもが愛しいチャンピオン"
+    "releaseYear": 2018
+    "runtimeMinutes": 87
+    "directors":
+      - "アルバロ・ロンゴリア"
+    "genres":
+      - "Documentary"
+    "countries":
+      - "Spain"
+    "sourceUrl": "https://www.video.unext.jp/title/SID0074233"
+  - "id": "movie-0196"
+    "title": "怪物"
+    "titleEn": "Monster"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q116687945"
+    "releaseYear": 2023
+    "runtimeMinutes": 127
+    "directors":
+      - "是枝裕和"
+    "genres":
+      - "Drama"
+      - "Thriller"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q116687945"
+  - "id": "movie-0197"
+    "title": "いまを生きる"
+    "originalTitle": "Dead Poets Society"
+    "releaseYear": 1989
+    "runtimeMinutes": 123
+    "directors":
+      - "ピーター・ウィアー"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q106316"
+  - "id": "movie-0198"
+    "title": "NOPE"
+    "releaseYear": 2022
+    "runtimeMinutes": 130
+    "directors":
+      - "ジョーダン・ピール"
+    "genres":
+      - "Horror"
+      - "Thriller"
+      - "Mystery"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+      - "Japan"
+      - "Canada"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q107176162"
+  - "id": "movie-0199"
+    "title": "Mank/マンク"
+    "originalTitle": "Mank"
+    "releaseYear": 2020
+    "runtimeMinutes": 131
+    "directors":
+      - "デヴィッド・フィンチャー"
+    "genres":
+      - "Biography"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.ifco.ie/en/ifco/pages/2D8AD7FD00464017"
+  - "id": "movie-0200"
+    "title": "スパイダーマン：アクロス・ザ・スパイダーバース"
+    "titleEn": "Spider-Man: Across the Spider-Verse"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q76448600"
+    "originalTitle": "Spider-Man"
+    "releaseYear": 2023
+    "runtimeMinutes": 140
+    "directors":
+      - "ホアキン・ドス・サントス"
+      - "ケンプ・パワーズ"
+      - "ジャスティン・トンプソン"
+    "genres":
+      - "Action"
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q76448600"
+  - "id": "movie-0201"
+    "title": "君たちはどう生きるか"
+    "titleEn": "The Boy and the Heron"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q47482560"
+    "releaseYear": 2023
+    "runtimeMinutes": 124
+    "directors":
+      - "宮崎駿"
+    "genres":
+      - "Adventure"
+      - "Drama"
+      - "Fantasy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q47482560"
+  - "id": "movie-0202"
+    "title": "ジョン・ウィック：コンセクエンス"
+    "originalTitle": "John Wick: Chapter 4"
+    "releaseYear": 2023
+    "runtimeMinutes": 169
+    "directors":
+      - "チャド・スタエルスキ"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Crime"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.bbfc.co.uk/release/john-wick-chapter-4-q29sbgvjdglvbjpwwc0xmda4mdc3"
+  - "id": "movie-0203"
+    "title": "イコライザ― THE FINAL"
+    "originalTitle": "The Equalizer 3"
+    "releaseYear": 2023
+    "runtimeMinutes": 109
+    "directors":
+      - "アントワーン・フークア"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Crime"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.sonypictures.com/movies/theequalizer3"
+  - "id": "movie-0204"
+    "title": "ヘンリー・シュガーのワンダフルな物語"
+    "originalTitle": "The Wonderful Story of Henry Sugar"
+    "releaseYear": 2023
+    "runtimeMinutes": 37
+    "directors":
+      - "ウェス・アンダーソン"
+    "genres":
+      - "Comedy"
+      - "Drama"
+      - "Adventure"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q110519496"
+  - "id": "movie-0205"
+    "title": "マルセル・マルソー 沈黙のアート"
+    "originalTitle": "L'art du silence"
+    "releaseYear": 2022
+    "runtimeMinutes": 85
+    "directors":
+      - "モーリジウス・スタークル・ドルックス"
+    "genres":
+      - "Documentary"
+    "countries":
+      - "Switzerland"
+      - "Germany"
+    "sourceUrl": "https://eiga.com/movie/99739/"
+  - "id": "movie-0206"
+    "title": "アステロイド・シティ"
+    "originalTitle": "Asteroid City"
+    "releaseYear": 2023
+    "runtimeMinutes": 105
+    "directors":
+      - "ウェス・アンダーソン"
+    "genres":
+      - "Comedy"
+      - "Romance"
+      - "Science Fiction"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q108086029"
+  - "id": "movie-0207"
+    "title": "首"
+    "titleEn": "Kubi"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q117717959"
+    "releaseYear": 2023
+    "runtimeMinutes": 131
+    "directors":
+      - "北野武"
+    "genres":
+      - "History"
+      - "Action"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q117717959"
+  - "id": "movie-0208"
+    "title": "[窓] MADO"
+    "releaseYear": 2022
+    "runtimeMinutes": 82
+    "directors":
+      - "麻王"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://eiga.com/movie/98260/"
+  - "id": "movie-0209"
+    "title": "PERFECT DAYS"
+    "titleEn": "Perfect Days"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q117663112"
+    "releaseYear": 2023
+    "runtimeMinutes": 123
+    "directors":
+      - "ヴィム・ヴェンダース"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q117663112"
+  - "id": "movie-0210"
+    "title": "リバー・オブ・グラス"
+    "originalTitle": "River of Grass"
+    "releaseYear": 1994
+    "runtimeMinutes": 76
+    "directors":
+      - "ケリー・ライカート"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q7338020"
+  - "id": "movie-0211"
+    "title": "ゴジラ キング・オブ・モンスターズ"
+    "originalTitle": "Godzilla: King of the Monsters"
+    "releaseYear": 2019
+    "runtimeMinutes": 132
+    "directors":
+      - "マイケル・ドハティ"
+    "genres":
+      - "Action"
+      - "Adventure"
+      - "Fantasy"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.dolby.com/experience/godzilla-king-of-the-monsters/"
+  - "id": "movie-0212"
+    "title": "哀れなるものたち"
+    "originalTitle": "Poor Things"
+    "releaseYear": 2023
+    "runtimeMinutes": 141
+    "directors":
+      - "ヨルゴス・ランティモス"
+    "genres":
+      - "Thriller"
+      - "Fantasy"
+      - "Science Fiction"
+      - "Comedy"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+      - "Ireland"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q108760382"
+  - "id": "movie-0213"
+    "title": "ボーはおそれている"
+    "originalTitle": "Beau Is Afraid"
+    "releaseYear": 2023
+    "runtimeMinutes": 179
+    "directors":
+      - "アリ・アスター"
+    "genres":
+      - "Horror"
+      - "Comedy"
+      - "Adventure"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q106817801"
+  - "id": "movie-0214"
+    "title": "落下の解剖学"
+    "titleEn": "Anatomy of a Fall"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q117037697"
+    "originalTitle": "Anatomie d'une chute"
+    "releaseYear": 2023
+    "runtimeMinutes": 150
+    "directors":
+      - "ジュスティーヌ・トリエ"
+    "genres":
+      - "Thriller"
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q117037697"
+  - "id": "movie-0215"
+    "title": "オッペンハイマー"
+    "originalTitle": "Oppenheimer"
+    "releaseYear": 2023
+    "runtimeMinutes": 180
+    "directors":
+      - "クリストファー・ノーラン"
+    "genres":
+      - "History"
+      - "Biography"
+      - "Thriller"
+      - "Drama"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q108839994"
+  - "id": "movie-0216"
+    "title": "関心領域"
+    "originalTitle": "The Zone of Interest"
+    "releaseYear": 2023
+    "runtimeMinutes": 106
+    "directors":
+      - "ジョナサン・グレイザー"
+    "genres":
+      - "Drama"
+      - "History"
+      - "War"
+    "countries":
+      - "United Kingdom"
+      - "Poland"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q115993222"
+  - "id": "movie-0217"
+    "title": "マッドマックス：フュリオサ"
+    "titleEn": "Furiosa: A Mad Max Saga"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q100361125"
+    "originalTitle": "Furiosa"
+    "releaseYear": 2024
+    "runtimeMinutes": 148
+    "directors":
+      - "ジョージ・ミラー"
+    "genres":
+      - "Action"
+      - "Science Fiction"
+      - "Adventure"
+    "countries":
+      - "Australia"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q100361125"
+  - "id": "movie-0218"
+    "title": "孤狼の血"
+    "titleEn": "The Blood of Wolves"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q48747708"
+    "releaseYear": 2018
+    "runtimeMinutes": 125
+    "directors":
+      - "白石和彌"
+    "genres":
+      - "Crime"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q48747708"
+  - "id": "movie-0219"
+    "title": "ルックバック"
+    "titleEn": "Look Back"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q127526724"
+    "releaseYear": 2024
+    "runtimeMinutes": 60
+    "directors":
+      - "押山清高"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q127526724"
+  - "id": "movie-0220"
+    "title": "孤狼の血 LEVEL2"
+    "titleEn": "Last of the Wolves"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q107475275"
+    "releaseYear": 2021
+    "runtimeMinutes": 139
+    "directors":
+      - "白石和彌"
+    "genres":
+      - "Thriller"
+      - "Crime"
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/title/9514"
+  - "id": "movie-0221"
+    "title": "新幹線大爆破"
+    "titleEn": "The Bullet Train"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q1856233"
+    "releaseYear": 1975
+    "runtimeMinutes": 115
+    "directors":
+      - "佐藤純彌"
+    "genres":
+      - "Action"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1856233"
+  - "id": "movie-0222"
+    "title": "温泉シャーク"
+    "titleEn": "Hot Spring Shark Attack"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q124482832"
+    "releaseYear": 2024
+    "runtimeMinutes": 77
+    "directors":
+      - "井上森人"
+    "genres":
+      - "Action"
+      - "Comedy"
+      - "Horror"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.morc-asagaya.com/film/hotspringshark-2/"
+  - "id": "movie-0223"
+    "title": "フェラーリ"
+    "originalTitle": "Ferrari"
+    "releaseYear": 2023
+    "runtimeMinutes": 130
+    "directors":
+      - "マイケル・マン"
+    "genres":
+      - "Drama"
+      - "Biography"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+      - "Italy"
+      - "People's Republic of China"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q113043714"
+  - "id": "movie-0224"
+    "title": "ピエロがお前を嘲笑う"
+    "titleEn": "Who Am I – No System is Safe"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q17851365"
+    "originalTitle": "Who Am I – Kein System ist sicher"
+    "releaseYear": 2014
+    "runtimeMinutes": 102
+    "directors":
+      - "バラン・ボー・オダー"
+    "genres":
+      - "Thriller"
+    "countries":
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q17851365"
+  - "id": "movie-0225"
+    "title": "フライ・ミー・トゥ・ザ・ムーン"
+    "originalTitle": "Fly Me to the Moon"
+    "releaseYear": 2024
+    "runtimeMinutes": 132
+    "directors":
+      - "グレッグ・バーランティ"
+    "genres":
+      - "Drama"
+      - "Comedy"
+      - "Romance"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.sonypictures.com/movies/flymetothemoon"
+  - "id": "movie-0226"
+    "title": "マトリックス"
+    "originalTitle": "The Matrix"
+    "releaseYear": 1999
+    "runtimeMinutes": 136
+    "directors":
+      - "リリー・ウォシャウスキー"
+      - "ラナ・ウォシャウスキー"
+    "genres":
+      - "Thriller"
+      - "Science Fiction"
+      - "Action"
+      - "Crime"
+    "countries":
+      - "United States"
+      - "Australia"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q83495"
+  - "id": "movie-0227"
+    "title": "マトリックス リローデット"
+    "originalTitle": "The Matrix Reloaded"
+    "releaseYear": 2003
+    "runtimeMinutes": 138
+    "directors":
+      - "リリー・ウォシャウスキー"
+      - "ラナ・ウォシャウスキー"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Science Fiction"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q189600"
+  - "id": "movie-0228"
+    "title": "マトリックス レボリューションズ"
+    "originalTitle": "The Matrix Revolutions"
+    "releaseYear": 2003
+    "runtimeMinutes": 129
+    "directors":
+      - "リリー・ウォシャウスキー"
+      - "ラナ・ウォシャウスキー"
+    "genres":
+      - "Science Fiction"
+      - "Action"
+    "countries":
+      - "United States"
+      - "Australia"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q207536"
+  - "id": "movie-0229"
+    "title": "電気海月のインシデント"
+    "releaseYear": 2019
+    "runtimeMinutes": 97
+    "directors":
+      - "萱野孝幸"
+    "genres":
+      - "Thriller"
+      - "Science Fiction"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://eiga.com/movie/91119/"
+  - "id": "movie-0230"
+    "title": "グランド・イリュージョン"
+    "originalTitle": "Now You See Me"
+    "releaseYear": 2013
+    "runtimeMinutes": 116
+    "directors":
+      - "ルイ・レテリエ"
+    "genres":
+      - "Crime"
+    "countries":
+      - "United States"
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q499851"
+  - "id": "movie-0231"
+    "title": "ユージュアル・サスペクツ"
+    "originalTitle": "The Usual Suspects"
+    "releaseYear": 1995
+    "runtimeMinutes": 106
+    "directors":
+      - "ブライアン・シンガー"
+    "genres":
+      - "Crime"
+      - "Mystery"
+      - "Thriller"
+      - "Drama"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q132351"
+  - "id": "movie-0232"
+    "title": "スティング"
+    "originalTitle": "The Sting"
+    "releaseYear": 1973
+    "runtimeMinutes": 129
+    "directors":
+      - "ジョージ・ロイ・ヒル"
+    "genres":
+      - "Crime"
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q62665"
+  - "id": "movie-0233"
+    "title": "コードネーム U.N.C.L.E."
+    "originalTitle": "The Man from U.N.C.L.E."
+    "releaseYear": 2014
+    "runtimeMinutes": 116
+    "directors":
+      - "ガイ・リッチー"
+    "genres":
+      - "Action"
+      - "Comedy"
+      - "Crime"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q14488725"
+  - "id": "movie-0234"
+    "title": "シャーロック・ホームズ"
+    "originalTitle": "Sherlock Holmes"
+    "releaseYear": 2009
+    "runtimeMinutes": 128
+    "directors":
+      - "ガイ・リッチー"
+    "genres":
+      - "Adventure"
+      - "Thriller"
+      - "Crime"
+      - "Action"
+      - "Mystery"
+    "countries":
+      - "United Kingdom"
+      - "Australia"
+      - "United States"
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q200396"
+  - "id": "movie-0235"
+    "title": "羊たちの沈黙"
+    "originalTitle": "The Silence of the Lambs"
+    "releaseYear": 1990
+    "runtimeMinutes": 118
+    "directors":
+      - "ジョナサン・デミ"
+    "genres":
+      - "Thriller"
+      - "Horror"
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q133654"
+  - "id": "movie-0236"
+    "title": "スタンド・バイ・ミー"
+    "originalTitle": "Stand by Me"
+    "releaseYear": 1986
+    "runtimeMinutes": 89
+    "directors":
+      - "ロブ・ライナー"
+    "genres":
+      - "Drama"
+      - "Adventure"
+      - "Comedy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q494722"
+  - "id": "movie-0237"
+    "title": "戦場のメリークリスマス"
+    "originalTitle": "Merry Christmas, Mr. Lawrence"
+    "releaseYear": 1983
+    "runtimeMinutes": 123
+    "directors":
+      - "大島渚"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United Kingdom"
+      - "Japan"
+      - "New Zealand"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q696855"
+  - "id": "movie-0238"
+    "title": "ブルース・ブラザース"
+    "originalTitle": "The Blues Brothers"
+    "releaseYear": 1980
+    "runtimeMinutes": 148
+    "directors":
+      - "ジョン・ランディス"
+    "genres":
+      - "Musical"
+      - "Comedy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q109767"
+  - "id": "movie-0239"
+    "title": "ケープタウン"
+    "originalTitle": "Zulu"
+    "releaseYear": 2013
+    "runtimeMinutes": 111
+    "directors":
+      - "ジェローム・サル"
+    "genres":
+      - "Crime"
+      - "Drama"
+    "countries":
+      - "France"
+      - "South Africa"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q3576280"
+  - "id": "movie-0240"
+    "title": "シカゴ"
+    "originalTitle": "Chicago"
+    "releaseYear": 2002
+    "runtimeMinutes": 113
+    "directors":
+      - "ロブ・マーシャル"
+    "genres":
+      - "Musical"
+      - "Comedy"
+      - "Drama"
+      - "Crime"
+      - "Mystery"
+    "countries":
+      - "United States"
+      - "Canada"
+      - "Germany"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q189889"
+  - "id": "movie-0241"
+    "title": "ぼくのお日さま"
+    "titleEn": "My Sunshine"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q125411917"
+    "releaseYear": 2024
+    "runtimeMinutes": 90
+    "directors":
+      - "奥山大史"
+    "genres":
+      - "Sports"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q125411917"
+  - "id": "movie-0242"
+    "title": "ナミビアの砂漠"
+    "titleEn": "Desert of Namibia"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q126959352"
+    "releaseYear": 2024
+    "runtimeMinutes": 137
+    "directors":
+      - "山中瑶子"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/en/title/10094"
+  - "id": "movie-0243"
+    "title": "レザボア・ドッグス"
+    "originalTitle": "Reservoir Dogs"
+    "releaseYear": 1992
+    "runtimeMinutes": 99
+    "directors":
+      - "クエンティン・タランティーノ"
+    "genres":
+      - "Crime"
+      - "Thriller"
+      - "Drama"
+      - "Action"
+      - "Comedy"
+      - "Adventure"
+      - "Mystery"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q72962"
+  - "id": "movie-0244"
+    "title": "ジョーカー：フォリ・ア・ドゥ"
+    "originalTitle": "Joker: Folie à Deux"
+    "releaseYear": 2024
+    "runtimeMinutes": 138
+    "directors":
+      - "トッド・フィリップス"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.bbfc.co.uk/release/joker-folie-a-deux-q29sbgvjdglvbjpwwc0xmdiwndy5"
+  - "id": "movie-0245"
+    "title": "エリジウム"
+    "originalTitle": "Elysium"
+    "releaseYear": 2013
+    "runtimeMinutes": 109
+    "directors":
+      - "ニール・ブロムカンプ"
+    "genres":
+      - "Thriller"
+      - "Action"
+      - "Science Fiction"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q80959"
+  - "id": "movie-0246"
+    "title": "48時間"
+    "originalTitle": "48 Hrs."
+    "releaseYear": 1982
+    "runtimeMinutes": 96
+    "directors":
+      - "ウォルター・ヒル"
+    "genres":
+      - "Action"
+      - "Thriller"
+      - "Comedy"
+      - "Crime"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q844887"
+  - "id": "movie-0247"
+    "title": "おかしな二人"
+    "originalTitle": "The Odd Couple"
+    "releaseYear": 1968
+    "runtimeMinutes": 101
+    "directors":
+      - "ジーン・サックス"
+    "genres":
+      - "Comedy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q1077690"
+  - "id": "movie-0248"
+    "title": "スリー・ビルボード"
+    "originalTitle": "Three Billboards Outside Ebbing, Missouri"
+    "releaseYear": 2017
+    "runtimeMinutes": 115
+    "directors":
+      - "マーティン・マクドナー"
+    "genres":
+      - "Drama"
+      - "Comedy"
+      - "Mystery"
+      - "Crime"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q24053277"
+  - "id": "movie-0249"
+    "title": "レオン 完全版"
+    "originalTitle": "Leon The Professional: Uncut International Version"
+    "releaseYear": 1994
+    "runtimeMinutes": 133
+    "directors":
+      - "リュック・ベッソン"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "Thriller"
+    "countries":
+      - "France"
+      - "United States"
+    "sourceUrl": "https://www.asmik-ace.co.jp/works/lineup/1525/"
+  - "id": "movie-0250"
+    "title": "レナードの朝"
+    "originalTitle": "Awakenings"
+    "releaseYear": 1990
+    "runtimeMinutes": 116
+    "directors":
+      - "ペニー・マーシャル"
+    "genres":
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q842073"
+  - "id": "movie-0251"
+    "title": "ゾディアック"
+    "originalTitle": "Zodiac"
+    "releaseYear": 2007
+    "runtimeMinutes": 158
+    "directors":
+      - "デヴィッド・フィンチャー"
+    "genres":
+      - "Thriller"
+      - "Crime"
+      - "Drama"
+      - "Mystery"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q218172"
+  - "id": "movie-0252"
+    "title": "敵"
+    "titleEn": "Teki Cometh"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q135939341"
+    "releaseYear": 2025
+    "runtimeMinutes": 108
+    "directors":
+      - "吉田大八"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/title/10189"
+  - "id": "movie-0253"
+    "title": "マルホランド・ドライブ"
+    "originalTitle": "Mulholland Drive"
+    "releaseYear": 2001
+    "runtimeMinutes": 147
+    "directors":
+      - "デヴィッド・リンチ"
+    "genres":
+      - "Mystery"
+      - "Thriller"
+      - "Crime"
+      - "Drama"
+      - "Horror"
+      - "Experimental"
+      - "Romance"
+      - "Fantasy"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q272608"
+  - "id": "movie-0254"
+    "title": "search/サーチ"
+    "originalTitle": "Searching"
+    "releaseYear": 2018
+    "runtimeMinutes": 102
+    "directors":
+      - "アニーシュ・チャガンティ"
+    "genres":
+      - "Drama"
+      - "Thriller"
+      - "Mystery"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q48674419"
+  - "id": "movie-0255"
+    "title": "ヴィキッド ふたりの魔女"
+    "originalTitle": "Wicked"
+    "releaseYear": 2024
+    "runtimeMinutes": 160
+    "directors":
+      - "ジョン・M・チュウ"
+    "genres":
+      - "Fantasy"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q24797403"
+  - "id": "movie-0256"
+    "title": "スノーデン"
+    "originalTitle": "Snowden"
+    "releaseYear": 2016
+    "runtimeMinutes": 134
+    "directors":
+      - "オリヴァー・ストーン"
+    "genres":
+      - "Biography"
+      - "Drama"
+      - "Thriller"
+      - "Action"
+    "countries":
+      - "United States"
+      - "Germany"
+      - "France"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q19315473"
+  - "id": "movie-0257"
+    "title": "アナと雪の女王２"
+    "originalTitle": "Frozen 2"
+    "releaseYear": 2019
+    "runtimeMinutes": 103
+    "directors":
+      - "クリス・バック"
+      - "ジェニファー・リー"
+    "genres":
+      - "Family"
+      - "Fantasy"
+      - "Adventure"
+      - "Drama"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q24733929"
+  - "id": "movie-0258"
+    "title": "ウィッシュ"
+    "originalTitle": "Wish"
+    "releaseYear": 2023
+    "runtimeMinutes": 95
+    "directors":
+      - "クリス・バック"
+      - "ファウン・ヴィーラスンソーン"
+    "genres":
+      - "Adventure"
+      - "Family"
+      - "Fantasy"
+      - "Musical"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q113883193"
+  - "id": "movie-0259"
+    "title": "塔の上のラプンツェル"
+    "originalTitle": "Tangled"
+    "releaseYear": 2010
+    "runtimeMinutes": 100
+    "directors":
+      - "ネイサン・グレノ"
+      - "パイロン・ハワード"
+    "genres":
+      - "Musical"
+      - "Fantasy"
+      - "Comedy"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q188439"
+  - "id": "movie-0260"
+    "title": "ドールハウス"
+    "releaseYear": 2025
+    "runtimeMinutes": 110
+    "directors":
+      - "矢口史靖"
+    "genres":
+      - "Horror"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q133728943"
+  - "id": "movie-0261"
+    "title": "劇場版チェンソーマン レゼ篇"
+    "originalTitle": "Chainsaw Man – The Movie: Reze Arc"
+    "releaseYear": 2025
+    "runtimeMinutes": 99
+    "directors":
+      - "𠮷原達矢"
+    "genres":
+      - "Animation"
+      - "Action"
+      - "Fantasy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://chainsawman.dog/news/260116_01/"
+  - "id": "movie-0262"
+    "title": "国宝"
+    "titleEn": "Kokuho"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q134906322"
+    "releaseYear": 2025
+    "runtimeMinutes": 175
+    "directors":
+      - "李相日"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q134906322"
+  - "id": "movie-0263"
+    "title": "超かぐや姫！"
+    "originalTitle": "Cosmic Princess Kaguya!"
+    "releaseYear": 2026
+    "runtimeMinutes": 142
+    "directors":
+      - "山下清悟"
+    "genres":
+      - "Animation"
+      - "Fantasy"
+      - "Drama"
+      - "Musical"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.cho-kaguyahime.com/"
+  - "id": "movie-0264"
+    "title": "Michael/マイケル"
+    "originalTitle": "Michael"
+    "releaseYear": 2026
+    "runtimeMinutes": 127
+    "directors":
+      - "アントワーン・フークア"
+    "genres":
+      - "Biography"
+      - "Drama"
+      - "Musical"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+    "sourceUrl": "https://filmarks.com/movies/117556"
+  - "id": "movie-0265"
+    "title": "名無し"
+    "releaseYear": 2026
+    "runtimeMinutes": 81
+    "directors":
+      - "城定秀夫"
+    "genres":
+      - "Thriller"
+      - "Crime"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.allcinema.net/cinema/402863"
+  - "id": "movie-0266"
+    "title": "セブン"
+    "originalTitle": "Seven"
+    "releaseYear": 1995
+    "runtimeMinutes": 127
+    "directors":
+      - "デヴィッド・フィンチャー"
+    "genres":
+      - "Crime"
+      - "Mystery"
+      - "Drama"
+      - "Thriller"
+      - "Horror"
+      - "Action"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q190908"
+  - "id": "movie-0267"
+    "title": "時には懺悔を"
+    "releaseYear": 2026
+    "runtimeMinutes": 128
+    "directors":
+      - "中島哲也"
+    "genres":
+      - "Drama"
+      - "Mystery"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://filmarks.com/movies/120463"
+  - "id": "movie-0268"
+    "title": "シン・ゴジラ"
+    "titleEn": "Shin Godzilla"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q20899737"
+    "originalTitle": "Godzilla Resurgence"
+    "releaseYear": 2016
+    "runtimeMinutes": 118
+    "directors":
+      - "庵野秀明"
+      - "樋口真嗣"
+    "genres":
+      - "Science Fiction"
+      - "Action"
+      - "Drama"
+      - "Horror"
+      - "Adventure"
+    "countries":
+      - "Japan"
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q20899737"
+  - "id": "movie-0269"
+    "title": "ゴジラ -1.0"
+    "originalTitle": "GODZILLA MINUS ONE"
+    "releaseYear": 2023
+    "runtimeMinutes": 125
+    "directors":
+      - "山崎貴"
+    "genres":
+      - "Science Fiction"
+      - "Drama"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://jfdb.jp/title/9957"
+  - "id": "movie-0270"
+    "title": "ジョーカー"
+    "originalTitle": "Joker"
+    "releaseYear": 2019
+    "runtimeMinutes": 122
+    "directors":
+      - "トッド・フィリップス"
+    "genres":
+      - "Crime"
+      - "Thriller"
+      - "Drama"
+    "countries":
+      - "United States"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q42759035"
+  - "id": "movie-0271"
+    "title": "ニュー・シネマ・パラダイス"
+    "titleEn": "Cinema Paradiso"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q464032"
+    "originalTitle": "Nuovo Cinema Paradiso"
+    "releaseYear": 1989
+    "runtimeMinutes": 155
+    "directors":
+      - "ジュゼッペ・トルナトーレ"
+    "genres":
+      - "Drama"
+    "countries":
+      - "France"
+      - "Italy"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q464032"
+  - "id": "movie-0272"
+    "title": "プロメア"
+    "titleEn": "Promare"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q59683349"
+    "releaseYear": 2019
+    "runtimeMinutes": 111
+    "directors":
+      - "今石洋之"
+    "genres":
+      - "Science Fiction"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q59683349"
+  - "id": "movie-0273"
+    "title": "ブレードランナー2049"
+    "originalTitle": "Blade Runner 2049"
+    "releaseYear": 2017
+    "runtimeMinutes": 164
+    "directors":
+      - "ドゥニ・ヴィルヌーヴ"
+    "genres":
+      - "Science Fiction"
+      - "Thriller"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+      - "Canada"
+      - "Hungary"
+    "sourceUrl": "https://filmsandfestivals.britishcouncil.org/projects/blade-runner-2049"
+  - "id": "movie-0274"
+    "title": "ゴッドファーザー"
+    "originalTitle": "The Godfather"
+    "releaseYear": 1972
+    "runtimeMinutes": 175
+    "directors":
+      - "フランシス・フォード・コッポラ"
+    "genres":
+      - "Crime"
+      - "Drama"
+      - "History"
+      - "Thriller"
+    "countries":
+      - "United States"
+      - "Italy"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q47703"
+  - "id": "movie-0275"
+    "title": "劇場版メイドインアビス 深き魂の黎明"
+    "titleEn": "Made in Abyss: Dawn of the Deep Soul"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q100156151"
+    "releaseYear": 2020
+    "runtimeMinutes": 113
+    "directors":
+      - "小島正幸"
+    "genres":
+      - "Animation"
+      - "Adventure"
+      - "Fantasy"
+    "countries":
+      - "Japan"
+    "sourceUrl": "https://www.wikidata.org/wiki/Q100156151"

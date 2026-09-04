@@ -10,6 +10,7 @@ type WatchTimeMetricProps = {
   film: {
     filmLengthM: number;
     reel2000FtEquivalent: number;
+    earthCircumferenceKm: number;
     earthLapEquivalent: number;
   };
   dictionary: InterestsDictionary["movies"];
@@ -24,6 +25,12 @@ export function WatchTimeMetric({
     film.filmLengthM >= 1000
       ? `${(film.filmLengthM / 1000).toFixed(1)} km`
       : `${Math.round(film.filmLengthM)} m`;
+  const earthLabel = dictionary.film.earth.map((line) =>
+    line.replace(
+      "{distance}",
+      Math.round(film.earthCircumferenceKm).toLocaleString(),
+    ),
+  );
 
   return (
     <section className="grid gap-3 lg:grid-cols-2">
@@ -56,15 +63,19 @@ export function WatchTimeMetric({
         <p className="mt-3 text-sm leading-6 text-muted">
           {dictionary.film.description}
         </p>
-        <dl className="mt-7 grid gap-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
-          <div>
-            <dt className="text-xs text-muted">{dictionary.film.length}</dt>
+        <dl className="mt-7 grid gap-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,0.8fr)_minmax(0,1.4fr)]">
+          <div className="min-w-0">
+            <dt className="flex items-end whitespace-nowrap text-xs text-muted sm:min-h-8 lg:min-h-0 xl:min-h-8">
+              {dictionary.film.length}
+            </dt>
             <dd className="mt-1 text-xl font-semibold tabular-nums">
               {filmLength}
             </dd>
           </div>
-          <div>
-            <dt className="text-xs text-muted">{dictionary.film.reels}</dt>
+          <div className="min-w-0">
+            <dt className="flex items-end whitespace-nowrap text-xs text-muted sm:min-h-8 lg:min-h-0 xl:min-h-8">
+              {dictionary.film.reels}
+            </dt>
             <dd className="mt-1 text-xl font-semibold tabular-nums">
               {Math.round(film.reel2000FtEquivalent).toLocaleString()}{" "}
               <span className="text-xs font-normal text-muted">
@@ -72,8 +83,14 @@ export function WatchTimeMetric({
               </span>
             </dd>
           </div>
-          <div>
-            <dt className="text-xs text-muted">{dictionary.film.earth}</dt>
+          <div className="min-w-0">
+            <dt className="flex flex-col justify-end break-keep text-xs text-muted sm:min-h-8 lg:min-h-0 xl:min-h-8">
+              {earthLabel.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </dt>
             <dd className="mt-1 text-xl font-semibold tabular-nums">
               {film.earthLapEquivalent.toFixed(3)}{" "}
               <span className="text-xs font-normal text-muted">

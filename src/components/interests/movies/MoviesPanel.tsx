@@ -1,8 +1,13 @@
-import type { RankedValue } from "@/lib/interests";
-import type { Movie, WatchEntry } from "@/schemas/interests";
+import {
+  createDirectorNameLookup,
+  localizeTaxonomyValue,
+} from "@/lib/interests/localizeInterestData";
+import type { RankedValue } from "@/lib/interests/movies/rankings";
+import type { Director, Movie, WatchEntry } from "@/schemas/interests";
 import { MetricCard } from "../MetricCard";
 import { SectionHeading } from "../SectionHeading";
 import type { InterestsDictionary } from "../types";
+import { BestMovies } from "./BestMovies";
 import { CountryRanking } from "./CountryRanking";
 import { DecadeRanking } from "./DecadeRanking";
 import { DirectorRanking } from "./DirectorRanking";
@@ -15,14 +20,14 @@ import { WatchTimeMetric } from "./WatchTimeMetric";
 type MoviesPanelProps = {
   locale: "ja" | "en";
   movies: readonly Movie[];
+  bestMovies: readonly Movie[];
+  directors: readonly Director[];
   watches: readonly WatchEntry[];
   summary: {
     watchCount: number;
     totalHours: number;
     thisYearCount: number;
     theaterCount: number;
-    rewatchedMovieCount: number;
-    favoriteCount: number;
   };
   watchTime: {
     days: number;
@@ -33,12 +38,14 @@ type MoviesPanelProps = {
   film: {
     filmLengthM: number;
     reel2000FtEquivalent: number;
+    earthCircumferenceKm: number;
     earthLapEquivalent: number;
   };
   popcorn: {
     count: number;
     weightKg: number;
     caloriesKcal?: number;
+    bodyFatEquivalentKg?: number;
   };
   rankings: {
     genres: readonly RankedValue[];
@@ -51,12 +58,15 @@ type MoviesPanelProps = {
     count: number;
     rate: number;
   }[];
+  pagination: InterestsDictionary["common"]["pagination"];
   dictionary: InterestsDictionary["movies"];
 };
 
 export function MoviesPanel({
   locale,
   movies,
+  bestMovies,
+  directors,
   watches,
   summary,
   watchTime,
@@ -64,12 +74,26 @@ export function MoviesPanel({
   popcorn,
   rankings,
   locationRates,
+  pagination,
   dictionary,
 }: MoviesPanelProps) {
   const theaterRate =
     locationRates.find((entry) => entry.location === "theater")?.rate ?? 0;
   const homeRate =
     locationRates.find((entry) => entry.location === "home")?.rate ?? 0;
+  const localizedGenres = rankings.genres.map((entry) => ({
+    ...entry,
+    label: localizeTaxonomyValue(entry.label, dictionary.taxonomy.genres),
+  }));
+  const localizedCountries = rankings.countries.map((entry) => ({
+    ...entry,
+    label: localizeTaxonomyValue(entry.label, dictionary.taxonomy.countries),
+  }));
+  const directorNames = createDirectorNameLookup(directors, locale);
+  const localizedDirectors = rankings.directors.map((entry) => ({
+    ...entry,
+    label: directorNames[entry.label] ?? entry.label,
+  }));
 
   return (
     <div className="space-y-14 sm:space-y-16">
@@ -81,6 +105,13 @@ export function MoviesPanel({
         dictionary={dictionary}
       />
       <PopcornMetric estimate={popcorn} dictionary={dictionary.popcorn} />
+      <BestMovies
+        movies={bestMovies}
+        directorNames={directorNames}
+        genreNames={dictionary.taxonomy.genres}
+        locale={locale}
+        dictionary={dictionary.bestMovies}
+      />
 
       <section aria-labelledby="movie-patterns-heading">
         <div className="mb-4 flex items-baseline justify-between gap-4">
@@ -92,11 +123,11 @@ export function MoviesPanel({
           <GenreRanking
             heading={dictionary.rankings.genres}
             note={dictionary.rankings.genreNote}
-            values={rankings.genres}
+            values={localizedGenres}
           />
           <DirectorRanking
             heading={dictionary.rankings.directors}
-            values={rankings.directors}
+            values={localizedDirectors}
           />
           <DecadeRanking
             heading={dictionary.rankings.decades}
@@ -104,7 +135,7 @@ export function MoviesPanel({
           />
           <CountryRanking
             heading={dictionary.rankings.countries}
-            values={rankings.countries}
+            values={localizedCountries}
           />
           <MetricCard
             label={dictionary.rankings.location}
@@ -116,8 +147,10 @@ export function MoviesPanel({
 
       <MovieHistory
         movies={movies}
+        directorNames={directorNames}
         watches={watches}
         locale={locale}
+        pagination={pagination}
         dictionary={dictionary}
       />
     </div>

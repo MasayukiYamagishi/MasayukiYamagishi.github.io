@@ -14,17 +14,22 @@ export function calculateShelfLoad(
   shelf: Shelf,
   books: readonly Book[],
 ) {
-  const currentWeightKg =
-    books
-      .filter((book) => book.shelfId === shelf.id)
-      .reduce((sum, book) => sum + calculateBookWeight(book), 0) / 1000;
-  const loadPercentage =
-    (currentWeightKg / shelf.referenceCapacityKg) * 100;
+  const completedWeightG = books
+    .filter((book) => book.status === "completed")
+    .reduce((sum, book) => sum + calculateBookWeight(book), 0);
+  const referenceCapacityG = shelf.referenceCapacityKg * 1000;
+  const destroyedShelfCount = Math.floor(
+    completedWeightG / referenceCapacityG,
+  );
+  const currentShelfWeightG =
+    completedWeightG - destroyedShelfCount * referenceCapacityG;
+  const damagePercentage =
+    (currentShelfWeightG / referenceCapacityG) * 100;
 
   return {
-    currentWeightKg,
-    loadPercentage,
-    stage: getShelfStage(loadPercentage),
-    exceeded: loadPercentage >= 100,
+    completedWeightKg: completedWeightG / 1000,
+    destroyedShelfCount,
+    damagePercentage,
+    stage: getShelfStage(damagePercentage),
   };
 }

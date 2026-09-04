@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 import type { Book } from "@/schemas/interests";
 import { calculateBookWeight } from "./calculateBookWeight";
-import { getShelfStage } from "./calculateShelfLoad";
+import { calculateReadingSummary } from "./calculateReadingSummary";
+import { calculateShelfLoad, getShelfStage } from "./calculateShelfLoad";
 import { getReadingWarnings } from "./getReadingWarning";
 
 const baseBook: Book = {
@@ -43,6 +44,50 @@ describe("calculateBookWeight", () => {
       }),
     ).toBe(229);
   });
+
+  it("estimates every volume independently for a combined series row", () => {
+    expect(
+      calculateBookWeight({
+        ...baseBook,
+        pages: 5,
+        volumes: [
+          { label: "1", pages: 2 },
+          { label: "2", pages: 3 },
+        ],
+      }),
+    ).toBe(8);
+  });
+});
+
+describe("calculateReadingSummary", () => {
+  it("counts a combined series as one reading-log row", () => {
+    const summary = calculateReadingSummary([
+      {
+        ...baseBook,
+        status: "completed",
+        pages: 5,
+        volumes: [
+          { label: "1", pages: 2 },
+          { label: "2", pages: 3 },
+        ],
+      },
+    ]);
+
+    expect(summary.completedCount).toBe(1);
+    expect(summary.completedPages).toBe(5);
+  });
+
+  it("keeps the summary counts aligned with the two visible table statuses", () => {
+    const summary = calculateReadingSummary([
+      { ...baseBook, id: "completed", status: "completed" },
+      { ...baseBook, id: "reading", status: "reading" },
+      { ...baseBook, id: "backlog", status: "backlog" },
+    ]);
+
+    expect(summary.completedCount).toBe(1);
+    expect(summary.readingCount).toBe(1);
+    expect(summary).not.toHaveProperty("backlogCount");
+  });
 });
 
 describe("getShelfStage", () => {
@@ -64,23 +109,71 @@ describe("getShelfStage", () => {
   });
 });
 
+describe("calculateShelfLoad", () => {
+  const shelf = {
+    id: "shelf-1",
+    label: "1枚目の棚板",
+    referenceCapacityKg: 15,
+    capacitySource: "user-assumption",
+    status: "active",
+  } as const;
+
+  it("converts full 15 kg loads into broken shelves and keeps the remainder as damage", () => {
+    const load = calculateShelfLoad(shelf, [
+      {
+        ...baseBook,
+        status: "completed",
+        actualWeightG: 37_500,
+        weightSource: "measured",
+      },
+    ]);
+
+    expect(load).toEqual({
+      completedWeightKg: 37.5,
+      destroyedShelfCount: 2,
+      damagePercentage: 50,
+      stage: 2,
+    });
+  });
+
+  it("starts the next shelf at zero damage on an exact multiple of 15 kg", () => {
+    const load = calculateShelfLoad(shelf, [
+      {
+        ...baseBook,
+        status: "completed",
+        actualWeightG: 30_000,
+        weightSource: "measured",
+      },
+    ]);
+
+    expect(load.destroyedShelfCount).toBe(2);
+    expect(load.damagePercentage).toBe(0);
+    expect(load.stage).toBe(1);
+  });
+
+  it("does not include unfinished books in shelf damage", () => {
+    const load = calculateShelfLoad(shelf, [
+      {
+        ...baseBook,
+        status: "backlog",
+        actualWeightG: 30_000,
+        weightSource: "measured",
+      },
+    ]);
+
+    expect(load.completedWeightKg).toBe(0);
+    expect(load.destroyedShelfCount).toBe(0);
+    expect(load.damagePercentage).toBe(0);
+  });
+});
+
 describe("getReadingWarnings", () => {
   it.each([
-    [4, []],
-    [5, ["backlogGrowing"]],
-    [9, ["backlogGrowing"]],
-    [10, ["stopBuying"]],
-    [19, ["stopBuying"]],
-    [20, ["criticalBacklog"]],
-  ] as const)("returns the expected backlog warning for %s books", (count, value) => {
-    expect(getReadingWarnings(count, 0)).toEqual(value);
-  });
-
-  it("adds a parallel-reading warning at four books", () => {
-    expect(getReadingWarnings(0, 4)).toEqual(["parallelReading"]);
-  });
-
-  it("asks for one book at a time at six books", () => {
-    expect(getReadingWarnings(0, 6)).toEqual(["oneAtATime"]);
+    [0, []],
+    [1, []],
+    [2, ["parallelReading"]],
+    [6, ["parallelReading"]],
+  ] as const)("returns the expected warning for %s concurrent books", (count, value) => {
+    expect(getReadingWarnings(count)).toEqual(value);
   });
 });

@@ -4,29 +4,26 @@ import type { InterestsDictionary } from "../types";
 import { ShelfLoadIllustration } from "./ShelfLoadIllustration";
 
 type ShelfStatusProps = {
-  locale: "ja" | "en";
   shelf: Shelf;
-  destroyedShelfCount: number;
   load: {
-    currentWeightKg: number;
-    loadPercentage: number;
+    completedWeightKg: number;
+    destroyedShelfCount: number;
+    damagePercentage: number;
     stage: ShelfStage;
-    exceeded: boolean;
   };
   dictionary: InterestsDictionary["books"]["shelf"];
 };
 
 export function ShelfStatus({
-  locale,
   shelf,
-  destroyedShelfCount,
   load,
   dictionary,
 }: ShelfStatusProps) {
-  const shelfNumber = shelf.id.match(/\d+$/)?.[0];
-  const shelfLabel =
-    locale === "en" && shelfNumber ? `Shelf #${shelfNumber}` : shelf.label;
-  const percentage = Math.round(load.loadPercentage);
+  const shelfLabel = dictionary.currentShelf.replace(
+    "{count}",
+    String(load.destroyedShelfCount + 1),
+  );
+  const percentage = Math.round(load.damagePercentage);
 
   return (
     <section
@@ -57,54 +54,56 @@ export function ShelfStatus({
               aria-label={dictionary.damage}
               aria-valuemin={0}
               aria-valuemax={100}
-              aria-valuenow={Math.min(percentage, 100)}
+              aria-valuenow={percentage}
               className="mt-4 h-2 overflow-hidden rounded-full bg-border"
             >
               <span
                 className="block h-full rounded-full bg-foreground"
-                style={{ width: `${Math.min(percentage, 100)}%` }}
+                style={{ width: `${percentage}%` }}
               />
             </div>
             <p className="mt-3 text-sm font-semibold text-foreground">
-              {load.exceeded
-                ? dictionary.exceeded
-                : load.stage === 4
-                  ? dictionary.nearLimit
-                  : dictionary.stageMessages[load.stage]}
-            </p>
-            <p className="mt-2 text-sm leading-6 text-muted">
-              {load.stage >= 4 && !load.exceeded
-                ? dictionary.stageMessages[load.stage]
-                : null}
+              {dictionary.stageMessages[load.stage]}
             </p>
           </div>
 
-          <dl className="mt-8 border-t border-border pt-5 text-sm">
+          <dl className="mt-8 grid gap-5 border-t border-border pt-5 text-sm sm:grid-cols-2">
             <div>
-              <dt className="text-muted">{dictionary.currentWeight}</dt>
+              <dt className="break-keep text-muted">
+                {dictionary.completedWeight.map((line) => (
+                  <span key={line} className="block whitespace-nowrap">
+                    {line}
+                  </span>
+                ))}
+              </dt>
               <dd className="mt-1 font-semibold tabular-nums">
-                {load.currentWeightKg.toFixed(1)} kg
+                {load.completedWeightKg.toFixed(1)} kg
+              </dd>
+            </div>
+            <div>
+              <dt className="break-keep text-muted">
+                {dictionary.destroyedCount.map((line) => (
+                  <span key={line} className="block whitespace-nowrap">
+                    {line}
+                  </span>
+                ))}
+              </dt>
+              <dd className="mt-1 font-semibold tabular-nums">
+                {dictionary.destroyedValue.replace(
+                  "{count}",
+                  String(load.destroyedShelfCount),
+                )}
               </dd>
             </div>
           </dl>
         </div>
       </div>
-      <div className="grid gap-2 border-t border-border px-6 py-4 text-xs leading-5 text-muted sm:px-8 lg:grid-cols-2">
-        <p className="font-medium text-foreground">
-          {dictionary.destroyedCopy.replace(
-            "{count}",
-            String(destroyedShelfCount),
+      <div className="border-t border-border px-6 py-4 text-xs leading-5 text-muted sm:px-8">
+        <p>
+          {dictionary.referenceCapacity.replace(
+            "{capacity}",
+            shelf.referenceCapacityKg.toFixed(0),
           )}
-        </p>
-        <p className="lg:text-right">
-          {shelf.capacitySource === "manufacturer"
-            ? dictionary.sourceManufacturer
-            : dictionary.sourceAssumption.replace(
-                "{capacity}",
-                shelf.referenceCapacityKg.toFixed(0),
-              )}
-          {" · "}
-          {dictionary.disclaimer}
         </p>
       </div>
     </section>

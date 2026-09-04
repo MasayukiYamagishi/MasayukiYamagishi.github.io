@@ -36,9 +36,6 @@ export async function InterestsPage({ locale }: InterestsPageProps) {
   }
 
   const shelfLoad = calculateShelfLoad(activeShelf, data.books);
-  const destroyedShelfCount = data.shelves.filter(
-    (shelf) => shelf.status === "retired",
-  ).length;
   const movieSummary = calculateMovieSummary(
     data.movies,
     data.watches,
@@ -82,11 +79,8 @@ export async function InterestsPage({ locale }: InterestsPageProps) {
               shelf={activeShelf}
               summary={readingSummary}
               load={shelfLoad}
-              destroyedShelfCount={destroyedShelfCount}
-              warnings={getReadingWarnings(
-                readingSummary.backlogCount,
-                readingSummary.readingCount,
-              )}
+              warnings={getReadingWarnings(readingSummary.readingCount)}
+              pagination={dictionary.interests.common.pagination}
               dictionary={dictionary.interests.books}
             />
           }
@@ -94,6 +88,8 @@ export async function InterestsPage({ locale }: InterestsPageProps) {
             <MoviesPanel
               locale={locale}
               movies={data.movies}
+              bestMovies={data.bestMovies}
+              directors={data.directors}
               watches={data.watches}
               summary={movieSummary}
               watchTime={watchTime}
@@ -112,6 +108,7 @@ export async function InterestsPage({ locale }: InterestsPageProps) {
                 countries: calculateCountryRanking(data.movies),
               }}
               locationRates={calculateLocationRates(data.watches)}
+              pagination={dictionary.interests.common.pagination}
               dictionary={dictionary.interests.movies}
             />
           }

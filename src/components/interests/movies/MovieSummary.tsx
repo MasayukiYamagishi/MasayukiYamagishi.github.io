@@ -8,8 +8,6 @@ type MovieSummaryProps = {
     totalHours: number;
     thisYearCount: number;
     theaterCount: number;
-    rewatchedMovieCount: number;
-    favoriteCount: number;
   };
   dictionary: InterestsDictionary["movies"];
 };
@@ -29,7 +27,7 @@ export function MovieSummary({
       >
         {dictionary.summaryHeading}
       </h3>
-      <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <MetricCard
           label={dictionary.metrics.watched}
           value={format.format(summary.watchCount)}
@@ -49,16 +47,6 @@ export function MovieSummary({
         <MetricCard
           label={dictionary.metrics.theaters}
           value={format.format(summary.theaterCount)}
-          unit={dictionary.units.movies}
-        />
-        <MetricCard
-          label={dictionary.metrics.rewatched}
-          value={format.format(summary.rewatchedMovieCount)}
-          unit={dictionary.units.movies}
-        />
-        <MetricCard
-          label={dictionary.metrics.favorites}
-          value={format.format(summary.favoriteCount)}
           unit={dictionary.units.movies}
         />
       </div>

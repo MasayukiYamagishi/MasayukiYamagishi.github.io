@@ -7,6 +7,7 @@ import { parse } from "yaml";
 import type { z } from "zod";
 import {
   booksFileSchema,
+  directorsFileSchema,
   moviesFileSchema,
   referencesFileSchema,
   shelvesFileSchema,
@@ -74,11 +75,19 @@ function assertUniqueIds(
 }
 
 export const getInterestsData = cache(async () => {
-  const [booksFile, shelvesFile, moviesFile, watchesFile, references] =
+  const [
+    booksFile,
+    shelvesFile,
+    moviesFile,
+    directorsFile,
+    watchesFile,
+    references,
+  ] =
     await Promise.all([
       readYamlFile("books.yaml", booksFileSchema),
       readYamlFile("shelves.yaml", shelvesFileSchema),
       readYamlFile("movies.yaml", moviesFileSchema),
+      readYamlFile("directors.yaml", directorsFileSchema),
       readYamlFile("watches.yaml", watchesFileSchema),
       readYamlFile("references.yaml", referencesFileSchema),
     ]);
@@ -88,14 +97,34 @@ export const getInterestsData = cache(async () => {
   assertUniqueIds(moviesFile.movies, "映画");
   assertUniqueIds(watchesFile.watches, "鑑賞記録");
 
+  const duplicatedDirectorName = directorsFile.directors.find(
+    (director, index) =>
+      directorsFile.directors.findIndex(
+        (candidate) => candidate.nameJa === director.nameJa,
+      ) !== index,
+  )?.nameJa;
+
+  if (duplicatedDirectorName) {
+    throw new Error(`監督名が重複しています: ${duplicatedDirectorName}`);
+  }
+
   const shelfIds = new Set(shelvesFile.shelves.map((shelf) => shelf.id));
   const movieIds = new Set(moviesFile.movies.map((movie) => movie.id));
+  const directorNames = new Set(
+    directorsFile.directors.map((director) => director.nameJa),
+  );
   const unknownShelfId = booksFile.books.find(
     (book) => book.shelfId && !shelfIds.has(book.shelfId),
   )?.shelfId;
   const unknownMovieId = watchesFile.watches.find(
     (watch) => !movieIds.has(watch.movieId),
   )?.movieId;
+  const unknownBestMovieId = moviesFile.bestMovieIds.find(
+    (movieId) => !movieIds.has(movieId),
+  );
+  const unknownDirectorName = moviesFile.movies
+    .flatMap((movie) => movie.directors)
+    .find((director) => !directorNames.has(director));
 
   if (unknownShelfId) {
     throw new Error(`書籍が未定義の棚板を参照しています: ${unknownShelfId}`);
@@ -105,10 +134,26 @@ export const getInterestsData = cache(async () => {
     throw new Error(`鑑賞記録が未定義の映画を参照しています: ${unknownMovieId}`);
   }
 
+  if (unknownBestMovieId) {
+    throw new Error(
+      `マイベスト映画5選が未定義の映画を参照しています: ${unknownBestMovieId}`,
+    );
+  }
+
+  if (unknownDirectorName) {
+    throw new Error(`映画が未定義の監督を参照しています: ${unknownDirectorName}`);
+  }
+
   return {
     books: booksFile.books,
     shelves: shelvesFile.shelves,
     movies: moviesFile.movies,
+    bestMovies: moviesFile.bestMovieIds.flatMap((movieId) => {
+      const movie = moviesFile.movies.find((candidate) => candidate.id === movieId);
+
+      return movie ? [movie] : [];
+    }),
+    directors: directorsFile.directors,
     watches: watchesFile.watches,
     references,
   } as const;

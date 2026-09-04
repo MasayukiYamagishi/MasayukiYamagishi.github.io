@@ -42,9 +42,7 @@ const meta = {
       completedPages: 2356,
       completedWeightKg: 2.3,
       readingCount: 4,
-      backlogCount: 12,
     },
-    destroyedShelfCount: 2,
     dictionary: ja.interests.books,
   },
 } satisfies Meta<typeof ReadingSummary>;
@@ -57,33 +55,6 @@ export const Summary: Story = {};
 export const NoWarning: Story = {
   render: () => (
     <ReadingWarnings warnings={[]} dictionary={ja.interests.books} />
-  ),
-};
-
-export const BacklogGrowing: Story = {
-  render: () => (
-    <ReadingWarnings
-      warnings={["backlogGrowing"]}
-      dictionary={ja.interests.books}
-    />
-  ),
-};
-
-export const StopBuyingBooks: Story = {
-  render: () => (
-    <ReadingWarnings
-      warnings={["stopBuying"]}
-      dictionary={ja.interests.books}
-    />
-  ),
-};
-
-export const CriticalBacklog: Story = {
-  render: () => (
-    <ReadingWarnings
-      warnings={["criticalBacklog"]}
-      dictionary={ja.interests.books}
-    />
   ),
 };
 
@@ -110,14 +81,12 @@ export const ReadingTableStory: Story = {
 export const NormalShelf: Story = {
   render: () => (
     <ShelfStatus
-      locale="ja"
       shelf={sampleShelf}
-      destroyedShelfCount={2}
       load={{
-        currentWeightKg: 2.2,
-        loadPercentage: 15,
+        completedWeightKg: 2.2,
+        destroyedShelfCount: 0,
+        damagePercentage: 15,
         stage: 1,
-        exceeded: false,
       }}
       dictionary={ja.interests.books.shelf}
     />
@@ -127,14 +96,12 @@ export const NormalShelf: Story = {
 export const GettingHeavy: Story = {
   render: () => (
     <ShelfStatus
-      locale="ja"
       shelf={sampleShelf}
-      destroyedShelfCount={2}
       load={{
-        currentWeightKg: 8.7,
-        loadPercentage: 58,
+        completedWeightKg: 23.7,
+        destroyedShelfCount: 1,
+        damagePercentage: 58,
         stage: 2,
-        exceeded: false,
       }}
       dictionary={ja.interests.books.shelf}
     />
@@ -144,60 +111,44 @@ export const GettingHeavy: Story = {
 export const NearLimit: Story = {
   render: () => (
     <ShelfStatus
-      locale="ja"
       shelf={sampleShelf}
-      destroyedShelfCount={2}
       load={{
-        currentWeightKg: 13.1,
-        loadPercentage: 87,
+        completedWeightKg: 43.1,
+        destroyedShelfCount: 2,
+        damagePercentage: 87,
         stage: 4,
-        exceeded: false,
       }}
       dictionary={ja.interests.books.shelf}
     />
   ),
 };
 
-export const OverLine: Story = {
+export const FreshShelfAfterExactLoad: Story = {
   render: () => (
     <ShelfStatus
-      locale="ja"
       shelf={sampleShelf}
-      destroyedShelfCount={2}
       load={{
-        currentWeightKg: 15.8,
-        loadPercentage: 105,
-        stage: 4,
-        exceeded: true,
-      }}
-      dictionary={ja.interests.books.shelf}
-    />
-  ),
-};
-
-export const Retired: Story = {
-  render: () => (
-    <ShelfStatus
-      locale="ja"
-      shelf={{
-        ...sampleShelf,
-        id: "shelf-2",
-        label: "2枚目の棚板",
-        status: "retired",
-        retiredReason: "たわみが戻らなくなったため",
-      }}
-      destroyedShelfCount={2}
-      load={{
-        currentWeightKg: 0,
-        loadPercentage: 0,
+        completedWeightKg: 45,
+        destroyedShelfCount: 3,
+        damagePercentage: 0,
         stage: 1,
-        exceeded: false,
       }}
       dictionary={ja.interests.books.shelf}
     />
   ),
 };
 
-export const ShelfIllustration: Story = {
-  render: () => <ShelfLoadIllustration stage={4} />,
+export const ShelfIllustrationStages: Story = {
+  render: () => (
+    <div className="grid gap-4 md:grid-cols-2">
+      {([1, 2, 3, 4] as const).map((stage) => (
+        <figure key={stage} className="overflow-hidden rounded-2xl">
+          <ShelfLoadIllustration stage={stage} />
+          <figcaption className="bg-surface px-4 py-2 font-mono text-xs text-muted">
+            Stage {stage}
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  ),
 };

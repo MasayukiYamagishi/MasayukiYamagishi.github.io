@@ -25,10 +25,25 @@ export const weightSourceSchema = z.enum([
   "estimated",
 ]);
 
+const sourceUrlSchema = z.url();
+
+const bookVolumeSchema = z
+  .object({
+    label: z.string().trim().min(1),
+    pages: z.number().int().positive(),
+    isbn: z.string().trim().min(10).max(20).optional(),
+    format: bookFormatSchema.optional(),
+    binding: bookBindingSchema.optional(),
+    sourceUrl: sourceUrlSchema.optional(),
+  })
+  .strict();
+
 export const bookSchema = z
   .object({
     id: idSchema,
     title: z.string().trim().min(1),
+    titleEn: z.string().trim().min(1).optional(),
+    titleEnSourceUrl: sourceUrlSchema.optional(),
     author: z.string().trim().min(1),
     publisher: z.string().trim().min(1).optional(),
     isbn: z.string().trim().min(10).max(20).optional(),
@@ -44,6 +59,8 @@ export const bookSchema = z
     shelfId: idSchema.optional(),
     actualWeightG: z.number().positive().optional(),
     weightSource: weightSourceSchema,
+    sourceUrl: sourceUrlSchema.optional(),
+    volumes: z.array(bookVolumeSchema).min(2).optional(),
   })
   .strict()
   .superRefine((book, context) => {
@@ -55,21 +72,21 @@ export const bookSchema = z
       });
     }
 
-    if (book.status === "reading" && !book.startedAt) {
-      context.addIssue({
-        code: "custom",
-        path: ["startedAt"],
-        message: "読書中の本には開始日が必要です。",
-      });
+    if (book.volumes) {
+      const totalPages = book.volumes.reduce(
+        (total, volume) => total + volume.pages,
+        0,
+      );
+
+      if (book.pages !== totalPages) {
+        context.addIssue({
+          code: "custom",
+          path: ["pages"],
+          message: "複数巻のページ数は各巻の合計と一致する必要があります。",
+        });
+      }
     }
 
-    if (book.status === "completed" && !book.completedAt) {
-      context.addIssue({
-        code: "custom",
-        path: ["completedAt"],
-        message: "読了した本には読了日が必要です。",
-      });
-    }
   });
 
 export const shelfSchema = z
@@ -87,12 +104,23 @@ export const movieSchema = z
   .object({
     id: idSchema,
     title: z.string().trim().min(1),
+    titleEn: z.string().trim().min(1).optional(),
+    titleEnSourceUrl: sourceUrlSchema.optional(),
     originalTitle: z.string().trim().min(1).optional(),
     releaseYear: z.number().int().min(1888).max(2100),
     runtimeMinutes: z.number().int().positive(),
     directors: z.array(z.string().trim().min(1)).min(1),
     genres: z.array(z.string().trim().min(1)).min(1),
     countries: z.array(z.string().trim().min(1)).min(1),
+    sourceUrl: sourceUrlSchema.optional(),
+  })
+  .strict();
+
+export const directorSchema = z
+  .object({
+    nameJa: z.string().trim().min(1),
+    nameEn: z.string().trim().min(1),
+    sourceUrl: sourceUrlSchema,
   })
   .strict();
 
@@ -102,7 +130,6 @@ export const watchEntrySchema = z
     movieId: idSchema,
     watchedAt: dateSchema.optional(),
     location: z.enum(["theater", "home", "other"]),
-    favorite: z.boolean().optional(),
     note: z.string().trim().min(1).optional(),
   })
   .strict();
@@ -112,6 +139,7 @@ export const popcornReferenceSchema = z
     size: z.literal("M"),
     estimatedWeightG: z.number().positive(),
     estimatedCaloriesKcal: z.number().positive().optional(),
+    bodyFatKcalPerKg: z.number().positive(),
   })
   .strict();
 
@@ -125,15 +153,29 @@ export const filmReferenceSchema = z
   })
   .strict();
 
-export const booksFileSchema = z.object({ books: z.array(bookSchema) }).strict();
+export const booksFileSchema = z
+  .object({ asOfDate: dateSchema.optional(), books: z.array(bookSchema) })
+  .strict();
 export const shelvesFileSchema = z
   .object({ shelves: z.array(shelfSchema) })
   .strict();
 export const moviesFileSchema = z
-  .object({ movies: z.array(movieSchema) })
+  .object({
+    asOfDate: dateSchema.optional(),
+    bestMovieIds: z
+      .array(idSchema)
+      .length(5)
+      .refine((movieIds) => new Set(movieIds).size === movieIds.length, {
+        message: "マイベスト映画5選の映画IDは重複できません。",
+      }),
+    movies: z.array(movieSchema),
+  })
+  .strict();
+export const directorsFileSchema = z
+  .object({ directors: z.array(directorSchema) })
   .strict();
 export const watchesFileSchema = z
-  .object({ watches: z.array(watchEntrySchema) })
+  .object({ asOfDate: dateSchema.optional(), watches: z.array(watchEntrySchema) })
   .strict();
 export const referencesFileSchema = z
   .object({
@@ -145,6 +187,7 @@ export const referencesFileSchema = z
 export type Book = z.infer<typeof bookSchema>;
 export type Shelf = z.infer<typeof shelfSchema>;
 export type Movie = z.infer<typeof movieSchema>;
+export type Director = z.infer<typeof directorSchema>;
 export type WatchEntry = z.infer<typeof watchEntrySchema>;
 export type PopcornReference = z.infer<typeof popcornReferenceSchema>;
 export type FilmReference = z.infer<typeof filmReferenceSchema>;

@@ -9,6 +9,7 @@ export function calculateFilmEquivalent(
   return {
     filmLengthM,
     reel2000FtEquivalent: filmLengthM / reference.reel2000FtMeters,
+    earthCircumferenceKm: reference.earthEquatorialCircumferenceM / 1000,
     earthLapEquivalent:
       filmLengthM / reference.earthEquatorialCircumferenceM,
   };

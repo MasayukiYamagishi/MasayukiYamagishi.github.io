@@ -7,6 +7,7 @@ type PopcornMetricProps = {
     count: number;
     weightKg: number;
     caloriesKcal?: number;
+    bodyFatEquivalentKg?: number;
   };
   dictionary: InterestsDictionary["movies"]["popcorn"];
 };
@@ -55,6 +56,14 @@ export function PopcornMetric({
           )}
         </dl>
       </div>
+      {estimate.bodyFatEquivalentKg !== undefined && (
+        <p className="mt-6 rounded-2xl bg-background px-4 py-3 text-sm font-semibold text-foreground">
+          {dictionary.bodyFatEquivalent.replace(
+            "{weight}",
+            estimate.bodyFatEquivalentKg.toFixed(1),
+          )}
+        </p>
+      )}
       <p className="mt-6 border-t border-border pt-4 text-xs leading-5 text-muted">
         {dictionary.disclaimer}
       </p>

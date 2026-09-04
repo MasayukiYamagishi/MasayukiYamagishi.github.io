@@ -8,16 +8,13 @@ type ReadingSummaryProps = {
     completedPages: number;
     completedWeightKg: number;
     readingCount: number;
-    backlogCount: number;
   };
-  destroyedShelfCount: number;
   dictionary: InterestsDictionary["books"];
 };
 
 export function ReadingSummary({
   locale,
   summary,
-  destroyedShelfCount,
   dictionary,
 }: ReadingSummaryProps) {
   const numberFormat = new Intl.NumberFormat(locale === "ja" ? "ja-JP" : "en-US");
@@ -43,7 +40,15 @@ export function ReadingSummary({
           unit={dictionary.units.pages}
         />
         <MetricCard
-          label={dictionary.metrics.weight}
+          label={
+            <span>
+              {dictionary.metrics.weight.map((line) => (
+                <span key={line} className="block whitespace-nowrap">
+                  {line}
+                </span>
+              ))}
+            </span>
+          }
           value={summary.completedWeightKg.toFixed(1)}
           unit={dictionary.units.kilograms}
         />
@@ -51,16 +56,6 @@ export function ReadingSummary({
           label={dictionary.metrics.reading}
           value={numberFormat.format(summary.readingCount)}
           unit={dictionary.units.books}
-        />
-        <MetricCard
-          label={dictionary.metrics.backlog}
-          value={numberFormat.format(summary.backlogCount)}
-          unit={dictionary.units.books}
-        />
-        <MetricCard
-          label={dictionary.metrics.destroyed}
-          value={numberFormat.format(destroyedShelfCount)}
-          unit={dictionary.units.shelves}
         />
       </div>
     </section>

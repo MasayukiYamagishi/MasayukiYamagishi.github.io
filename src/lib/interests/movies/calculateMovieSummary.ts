@@ -21,10 +21,5 @@ export function calculateMovieSummary(
     ).length,
     theaterCount: watches.filter((watch) => watch.location === "theater")
       .length,
-    rewatchedMovieCount: [...watchCounts.values()].filter((count) => count > 1)
-      .length,
-    favoriteCount: new Set(
-      watches.filter((watch) => watch.favorite).map((watch) => watch.movieId),
-    ).size,
   };
 }

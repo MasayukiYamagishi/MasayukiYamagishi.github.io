@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 type MetricCardProps = {
-  label: string;
+  label: ReactNode;
   value: string;
   unit?: string;
   detail?: ReactNode;
@@ -26,7 +26,7 @@ export function MetricCard({
     >
       <p
         className={[
-          "text-xs font-medium tracking-[0.08em] uppercase",
+          "break-keep text-xs font-medium tracking-[0.08em] uppercase",
           accent ? "text-background/70" : "text-muted",
         ].join(" ")}
       >

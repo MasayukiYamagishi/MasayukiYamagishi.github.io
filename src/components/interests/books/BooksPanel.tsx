@@ -1,13 +1,10 @@
-import type { ShelfStage } from "@/lib/interests";
-import type { ReadingWarningKey } from "@/lib/interests";
+import type { ReadingWarningKey, ShelfStage } from "@/lib/interests";
 import type { Book, Shelf } from "@/schemas/interests";
 import { SectionHeading } from "../SectionHeading";
 import type { InterestsDictionary } from "../types";
 import { CurrentlyReading } from "./CurrentlyReading";
-import { ReadingBacklog } from "./ReadingBacklog";
 import { ReadingHistory } from "./ReadingHistory";
 import { ReadingSummary } from "./ReadingSummary";
-import { ReadingWarnings } from "./ReadingWarnings";
 import { ShelfStatus } from "./ShelfStatus";
 
 type BooksPanelProps = {
@@ -19,16 +16,15 @@ type BooksPanelProps = {
     completedPages: number;
     completedWeightKg: number;
     readingCount: number;
-    backlogCount: number;
   };
   load: {
-    currentWeightKg: number;
-    loadPercentage: number;
+    completedWeightKg: number;
+    destroyedShelfCount: number;
+    damagePercentage: number;
     stage: ShelfStage;
-    exceeded: boolean;
   };
-  destroyedShelfCount: number;
   warnings: readonly ReadingWarningKey[];
+  pagination: InterestsDictionary["common"]["pagination"];
   dictionary: InterestsDictionary["books"];
 };
 
@@ -38,12 +34,11 @@ export function BooksPanel({
   shelf,
   summary,
   load,
-  destroyedShelfCount,
   warnings,
+  pagination,
   dictionary,
 }: BooksPanelProps) {
   const currentlyReading = books.filter((book) => book.status === "reading");
-  const backlog = books.filter((book) => book.status === "backlog");
   const completed = books
     .filter((book) => book.status === "completed")
     .sort((left, right) =>
@@ -56,26 +51,23 @@ export function BooksPanel({
       <ReadingSummary
         locale={locale}
         summary={summary}
-        destroyedShelfCount={destroyedShelfCount}
         dictionary={dictionary}
       />
       <ShelfStatus
-        locale={locale}
         shelf={shelf}
-        destroyedShelfCount={destroyedShelfCount}
         load={load}
         dictionary={dictionary.shelf}
       />
-      <ReadingWarnings warnings={warnings} dictionary={dictionary} />
       <CurrentlyReading
         books={currentlyReading}
         locale={locale}
+        warnings={warnings}
         dictionary={dictionary}
       />
-      <ReadingBacklog books={backlog} locale={locale} dictionary={dictionary} />
       <ReadingHistory
         books={completed}
         locale={locale}
+        pagination={pagination}
         dictionary={dictionary}
       />
     </div>
