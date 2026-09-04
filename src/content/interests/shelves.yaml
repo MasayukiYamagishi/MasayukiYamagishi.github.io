@@ -1,0 +1,18 @@
+shelves:
+  - id: shelf-1
+    label: 1枚目の棚板
+    referenceCapacityKg: 15
+    capacitySource: user-assumption
+    status: retired
+    retiredReason: 本の重みで中央が割れたため
+  - id: shelf-2
+    label: 2枚目の棚板
+    referenceCapacityKg: 15
+    capacitySource: user-assumption
+    status: retired
+    retiredReason: たわみが戻らなくなったため
+  - id: shelf-3
+    label: 3枚目の棚板
+    referenceCapacityKg: 15
+    capacitySource: user-assumption
+    status: active

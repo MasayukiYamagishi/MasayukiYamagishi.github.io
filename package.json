@@ -16,6 +16,7 @@
     "post:new": "node scripts/create-post.mjs",
     "project:new": "node scripts/create-project.mjs",
     "test:scripts": "node --test tests/scripts/content-scaffolding.test.mjs",
+    "test:unit": "vitest run --project unit",
     "test:stories": "vitest run"
   },
   "dependencies": {

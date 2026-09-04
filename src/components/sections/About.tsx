@@ -1,8 +1,13 @@
 import { sectionIds } from "@/config/navigation";
 import { profileConfig } from "@/content/profile";
+import type { Locale } from "@/i18n/config";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 import { ExternalLinkCard } from "../ui/ExternalLinkCard";
+import { Icon } from "../ui/icons/Icon";
 
 type AboutProps = {
+  locale: Locale;
   heading: string;
   profile: {
     name: string;
@@ -24,6 +29,11 @@ type AboutProps = {
       description: string;
       openLabel: string;
     };
+    interests: {
+      heading: string;
+      description: string;
+      linkLabel: string;
+    };
   };
 };
 
@@ -33,7 +43,7 @@ type AboutProps = {
  * @param AboutProps props
  * @returns AboutセクションのJSX
  */
-export function About({ heading, profile, dictionary }: AboutProps) {
+export function About({ locale, heading, profile, dictionary }: AboutProps) {
   const headingId = `${sectionIds.about}-heading`;
 
   return (
@@ -86,6 +96,22 @@ export function About({ heading, profile, dictionary }: AboutProps) {
           <p className="mt-8 max-w-[68ch] text-base leading-7 text-muted">
             {profile.introduction}
           </p>
+
+          <div className="mt-8 max-w-[68ch] border-l-2 border-foreground pl-5">
+            <h3 className="font-semibold text-foreground">
+              {dictionary.interests.heading}
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-muted">
+              {dictionary.interests.description}
+            </p>
+            <Link
+              href={locale === "ja" ? "/interests" : "/en/interests"}
+              className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-foreground underline-offset-4 hover:underline"
+            >
+              {dictionary.interests.linkLabel}
+              <Icon icon={ArrowRight} size={16} />
+            </Link>
+          </div>
         </div>
 
         <div className="self-start">

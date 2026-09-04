@@ -1,0 +1,11 @@
+popcorn:
+  size: M
+  estimatedWeightG: 100
+  estimatedCaloriesKcal: 500
+  bodyFatKcalPerKg: 7200
+film:
+  format: 35mm 4-perf
+  fps: 24
+  metersPerMinute: 27.432
+  reel2000FtMeters: 609.6
+  earthEquatorialCircumferenceM: 40075036

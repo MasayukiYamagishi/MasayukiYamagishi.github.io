@@ -6,8 +6,20 @@ import { defineConfig } from "vitest/config";
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@": path.resolve(import.meta.dirname, "src"),
+    },
+  },
   test: {
     projects: [
+      {
+        test: {
+          name: "unit",
+          environment: "node",
+          include: ["src/lib/**/*.test.ts"],
+        },
+      },
       {
         extends: true,
         plugins: [

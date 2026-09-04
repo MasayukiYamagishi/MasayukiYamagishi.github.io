@@ -1,0 +1,658 @@
+directors:
+  - nameJa: S・S・ラージャマウリ
+    nameEn: S. S. Rajamouli
+    sourceUrl: https://www.wikidata.org/wiki/Q3521531
+  - nameJa: Yuki Saito
+    nameEn: Yuki Saito
+    sourceUrl: https://www.wikidata.org/wiki/Q24863829
+  - nameJa: アーサー・ペン
+    nameEn: Arthur Penn
+    sourceUrl: https://www.wikidata.org/wiki/Q41136
+  - nameJa: アニーシュ・チャガンティ
+    nameEn: Aneesh Chaganty
+    sourceUrl: https://www.wikidata.org/wiki/Q56104688
+  - nameJa: アピチャートポン・ウィーラセータクン
+    nameEn: Apichatpong Weerasethakul
+    sourceUrl: https://www.wikidata.org/wiki/Q445198
+  - nameJa: アラン・J・パクラ
+    nameEn: Alan J. Pakula
+    sourceUrl: https://www.wikidata.org/wiki/Q51519
+  - nameJa: アリ・アスター
+    nameEn: Ari Aster
+    sourceUrl: https://www.wikidata.org/wiki/Q54864392
+  - nameJa: アルバロ・ロンゴリア
+    nameEn: Álvaro Longoria
+    sourceUrl: https://www.wikidata.org/wiki/Q4737915
+  - nameJa: アルフォンソ・キュアロン
+    nameEn: Alfonso Cuarón
+    sourceUrl: https://www.wikidata.org/wiki/Q28028
+  - nameJa: アルフレッド・ヒッチコック
+    nameEn: Alfred Hitchcock
+    sourceUrl: https://www.wikidata.org/wiki/Q7374
+  - nameJa: アルベール・ラモリス
+    nameEn: Albert Lamorisse
+    sourceUrl: https://www.wikidata.org/wiki/Q727562
+  - nameJa: アンソニー・ミンゲラ
+    nameEn: Anthony Minghella
+    sourceUrl: https://www.wikidata.org/wiki/Q188726
+  - nameJa: アンドレイ・タルコフスキー
+    nameEn: Andrei Tarkovsky
+    sourceUrl: https://www.wikidata.org/wiki/Q853
+  - nameJa: アントワーン・フークア
+    nameEn: Antoine Fuqua
+    sourceUrl: https://www.wikidata.org/wiki/Q465139
+  - nameJa: イングマール・ベルイマン
+    nameEn: Ingmar Bergman
+    sourceUrl: https://www.wikidata.org/wiki/Q7546
+  - nameJa: ヴィクター・フレミング
+    nameEn: Victor Fleming
+    sourceUrl: https://www.wikidata.org/wiki/Q62503
+  - nameJa: ヴィム・ヴェンダース
+    nameEn: Wim Wenders
+    sourceUrl: https://www.wikidata.org/wiki/Q55411
+  - nameJa: ウェス・アンダーソン
+    nameEn: Wes Anderson
+    sourceUrl: https://www.wikidata.org/wiki/Q223687
+  - nameJa: ウォルター・ヒル
+    nameEn: Walter Hill
+    sourceUrl: https://www.wikidata.org/wiki/Q350422
+  - nameJa: ウディ・アレン
+    nameEn: Woody Allen
+    sourceUrl: https://www.wikidata.org/wiki/Q25089
+  - nameJa: エドマンド・グールディング
+    nameEn: Edmund Goulding
+    sourceUrl: https://www.wikidata.org/wiki/Q263022
+  - nameJa: エミール・アルドリーノ
+    nameEn: Emile Ardolino
+    sourceUrl: https://www.wikidata.org/wiki/Q490198
+  - nameJa: エリア・カザン
+    nameEn: Elia Kazan
+    sourceUrl: https://www.wikidata.org/wiki/Q72717
+  - nameJa: エリック・トレダノ
+    nameEn: Éric Toledano
+    sourceUrl: https://www.wikidata.org/wiki/Q2778106
+  - nameJa: エリック・ブレヴィグ
+    nameEn: Eric Brevig
+    sourceUrl: https://www.wikidata.org/wiki/Q1351142
+  - nameJa: オーソン・ウェルズ
+    nameEn: Orson Welles
+    sourceUrl: https://www.wikidata.org/wiki/Q24829
+  - nameJa: オリヴァー・ストーン
+    nameEn: Oliver Stone
+    sourceUrl: https://www.wikidata.org/wiki/Q179497
+  - nameJa: オリヴァー・ハーマナス
+    nameEn: Oliver Hermanus
+    sourceUrl: https://www.wikidata.org/wiki/Q13035667
+  - nameJa: オリヴァー・ヒルシュビーゲル
+    nameEn: Oliver Hirschbiegel
+    sourceUrl: https://www.wikidata.org/wiki/Q60634
+  - nameJa: オリヴィエ・ナカシュ
+    nameEn: Olivier Nakache
+    sourceUrl: https://www.wikidata.org/wiki/Q74428
+  - nameJa: ガイ・リッチー
+    nameEn: Guy Ritchie
+    sourceUrl: https://www.wikidata.org/wiki/Q192990
+  - nameJa: キケ・マイーリュ
+    nameEn: Kike Maíllo
+    sourceUrl: https://www.wikidata.org/wiki/Q970619
+  - nameJa: ギレルモ・デル・トロ
+    nameEn: Guillermo del Toro
+    sourceUrl: https://www.wikidata.org/wiki/Q219124
+  - nameJa: クエンティン・タランティーノ
+    nameEn: Quentin Tarantino
+    sourceUrl: https://www.wikidata.org/wiki/Q3772
+  - nameJa: クリス・バック
+    nameEn: Chris Buck
+    sourceUrl: https://www.wikidata.org/wiki/Q156596
+  - nameJa: クリストファー・ノーラン
+    nameEn: Christopher Nolan
+    sourceUrl: https://www.wikidata.org/wiki/Q25191
+  - nameJa: クリント・イーストウッド
+    nameEn: Clint Eastwood
+    sourceUrl: https://www.wikidata.org/wiki/Q43203
+  - nameJa: グレッグ・バーランティ
+    nameEn: Greg Berlanti
+    sourceUrl: https://www.wikidata.org/wiki/Q978649
+  - nameJa: クロード・シャブロル
+    nameEn: Claude Chabrol
+    sourceUrl: https://www.wikidata.org/wiki/Q55375
+  - nameJa: ゲイリー・ロス
+    nameEn: Gary Ross
+    sourceUrl: https://www.wikidata.org/wiki/Q598675
+  - nameJa: ケリー・ライカート
+    nameEn: Kelly Reichardt
+    sourceUrl: https://www.wikidata.org/wiki/Q436861
+  - nameJa: ケント・ジョーンズ
+    nameEn: Kent Jones
+    sourceUrl: https://www.wikidata.org/wiki/Q63258127
+  - nameJa: ケンプ・パワーズ
+    nameEn: Kemp Powers
+    sourceUrl: https://www.wikidata.org/wiki/Q79360684
+  - nameJa: サム・メンデス
+    nameEn: Sam Mendes
+    sourceUrl: https://www.wikidata.org/wiki/Q223233
+  - nameJa: シアン・ヘダー
+    nameEn: Siân Héder
+    sourceUrl: https://www.wikidata.org/wiki/Q7506788
+  - nameJa: ジーナ・プリンス=バイスウッド
+    nameEn: Gina Prince-Bythewood
+    sourceUrl: https://www.wikidata.org/wiki/Q3106705
+  - nameJa: ジーン・ケリー
+    nameEn: Gene Kelly
+    sourceUrl: https://www.wikidata.org/wiki/Q73089
+  - nameJa: ジーン・サックス
+    nameEn: Gene Saks
+    sourceUrl: https://www.wikidata.org/wiki/Q1388109
+  - nameJa: ジェームズ・L・ブルックス
+    nameEn: James L. Brooks
+    sourceUrl: https://www.wikidata.org/wiki/Q95125
+  - nameJa: ジェームズ・グレイ
+    nameEn: James Gray
+    sourceUrl: https://www.wikidata.org/wiki/Q630845
+  - nameJa: ジェームズ・フォーリー
+    nameEn: James Foley
+    sourceUrl: https://www.wikidata.org/wiki/Q721389
+  - nameJa: ジェニファー・リー
+    nameEn: Jennifer Lee
+    sourceUrl: https://www.wikidata.org/wiki/Q5929198
+  - nameJa: ジェローム・サル
+    nameEn: Jérôme Salle
+    sourceUrl: https://www.wikidata.org/wiki/Q290606
+  - nameJa: シドニー・ルメット
+    nameEn: Sidney Lumet
+    sourceUrl: https://www.wikidata.org/wiki/Q51559
+  - nameJa: ジム・ジャームッシュ
+    nameEn: Jim Jarmusch
+    sourceUrl: https://www.wikidata.org/wiki/Q191755
+  - nameJa: ジャスティン・トンプソン
+    nameEn: Justin K. Thompson
+    sourceUrl: https://www.wikidata.org/wiki/Q119243833
+  - nameJa: ジュスティーヌ・トリエ
+    nameEn: Justine Triet
+    sourceUrl: https://www.wikidata.org/wiki/Q15069938
+  - nameJa: ジュゼッペ・トルナトーレ
+    nameEn: Giuseppe Tornatore
+    sourceUrl: https://www.wikidata.org/wiki/Q53045
+  - nameJa: ジョー・ジョンストン
+    nameEn: Joe Johnston
+    sourceUrl: https://www.wikidata.org/wiki/Q352948
+  - nameJa: ジョー・ライト
+    nameEn: Joe Wright
+    sourceUrl: https://www.wikidata.org/wiki/Q118817
+  - nameJa: ジョージ・ミラー
+    nameEn: George Miller
+    sourceUrl: https://www.wikidata.org/wiki/Q446960
+  - nameJa: ジョージ・ロイ・ヒル
+    nameEn: George Roy Hill
+    sourceUrl: https://www.wikidata.org/wiki/Q51570
+  - nameJa: ジョーダン・ピール
+    nameEn: Jordan Peele
+    sourceUrl: https://www.wikidata.org/wiki/Q3371986
+  - nameJa: ジョセフ・コシンスキー
+    nameEn: Joseph Kosinski
+    sourceUrl: https://www.wikidata.org/wiki/Q2444076
+  - nameJa: ジョセフ・サージェント
+    nameEn: Joseph Sargent
+    sourceUrl: https://www.wikidata.org/wiki/Q1707954
+  - nameJa: ジョナサン・グレイザー
+    nameEn: Jonathan Glazer
+    sourceUrl: https://www.wikidata.org/wiki/Q1703182
+  - nameJa: ジョナサン・デミ
+    nameEn: Jonathan Demme
+    sourceUrl: https://www.wikidata.org/wiki/Q48987
+  - nameJa: ジョン・M・チュウ
+    nameEn: Jon M. Chu
+    sourceUrl: https://www.wikidata.org/wiki/Q1702754
+  - nameJa: ジョン・ウー
+    nameEn: John Woo
+    sourceUrl: https://www.wikidata.org/wiki/Q55432
+  - nameJa: ジョン・ヒューズ
+    nameEn: John Hughes
+    sourceUrl: https://www.wikidata.org/wiki/Q311263
+  - nameJa: ジョン・ヒューストン
+    nameEn: John Huston
+    sourceUrl: https://www.wikidata.org/wiki/Q51575
+  - nameJa: ジョン・フォード
+    nameEn: John Ford
+    sourceUrl: https://www.wikidata.org/wiki/Q51114
+  - nameJa: ジョン・ランディス
+    nameEn: John Landis
+    sourceUrl: https://www.wikidata.org/wiki/Q51564
+  - nameJa: スタンリー・キューブリック
+    nameEn: Stanley Kubrick
+    sourceUrl: https://www.wikidata.org/wiki/Q2001
+  - nameJa: スタンリー・ドーネン
+    nameEn: Stanley Donen
+    sourceUrl: https://www.wikidata.org/wiki/Q48765
+  - nameJa: スティーヴン・スピルバーグ
+    nameEn: Steven Spielberg
+    sourceUrl: https://www.wikidata.org/wiki/Q8877
+  - nameJa: セルゲイ・エイゼンシュテイン
+    nameEn: Sergei Eisenstein
+    sourceUrl: https://www.wikidata.org/wiki/Q8003
+  - nameJa: ダーヴィト・ヴネント
+    nameEn: David Wnendt
+    sourceUrl: https://www.wikidata.org/wiki/Q1177226
+  - nameJa: ダーレン・アロノフスキー
+    nameEn: Darren Aronofsky
+    sourceUrl: https://www.wikidata.org/wiki/Q192762
+  - nameJa: ダナ・アダム・シャビ―ロ
+    nameEn: Dana Adam Shapiro
+    sourceUrl: https://www.wikidata.org/wiki/Q5214665
+  - nameJa: ダニー・ストロング
+    nameEn: Danny Strong
+    sourceUrl: https://www.wikidata.org/wiki/Q784009
+  - nameJa: ダニー・ボイル
+    nameEn: Danny Boyle
+    sourceUrl: https://www.wikidata.org/wiki/Q134867
+  - nameJa: ダニエル・クワン
+    nameEn: Dan Kwan
+    sourceUrl: https://www.wikidata.org/wiki/Q28746830
+  - nameJa: ダニエル・クワン＆ダニエル・シャイナート
+    nameEn: Dan Kwan & Daniel Scheinert
+    sourceUrl: https://www.wikidata.org/wiki/Q83808444
+  - nameJa: ダニエル・シャイナート
+    nameEn: Daniel Scheinert
+    sourceUrl: https://www.wikidata.org/wiki/Q28746848
+  - nameJa: チャーリー・マクダウェル
+    nameEn: Charlie McDowell
+    sourceUrl: https://www.wikidata.org/wiki/Q21872603
+  - nameJa: チャールズ・クライトン
+    nameEn: Charles Crichton
+    sourceUrl: https://www.wikidata.org/wiki/Q727753
+  - nameJa: チャールズ・チャップリン
+    nameEn: Charlie Chaplin
+    sourceUrl: https://www.wikidata.org/wiki/Q882
+  - nameJa: チャド・スタエルスキ
+    nameEn: Chad Stahelski
+    sourceUrl: https://www.wikidata.org/wiki/Q22277301
+  - nameJa: チャン・フン
+    nameEn: Jang Hoon
+    sourceUrl: https://www.wikidata.org/wiki/Q495879
+  - nameJa: チョン・ビョンギル
+    nameEn: Jung Byung-gil
+    sourceUrl: https://www.wikidata.org/wiki/Q15985300
+  - nameJa: ティム・ミラー
+    nameEn: Tim Miller
+    sourceUrl: https://www.wikidata.org/wiki/Q19561563
+  - nameJa: テイラー・ハックフォード
+    nameEn: Taylor Hackford
+    sourceUrl: https://www.wikidata.org/wiki/Q545573
+  - nameJa: デヴィッド・フィンチャー
+    nameEn: David Fincher
+    sourceUrl: https://www.wikidata.org/wiki/Q184903
+  - nameJa: デヴィッド・リンチ
+    nameEn: David Lynch
+    sourceUrl: https://www.wikidata.org/wiki/Q2071
+  - nameJa: デミアン・チャゼル
+    nameEn: Damien Chazelle
+    sourceUrl: https://www.wikidata.org/wiki/Q18350026
+  - nameJa: テリー・ギリアム
+    nameEn: Terry Gilliam
+    sourceUrl: https://www.wikidata.org/wiki/Q25078
+  - nameJa: テリー・ジョーンズ
+    nameEn: Terry Jones
+    sourceUrl: https://www.wikidata.org/wiki/Q166159
+  - nameJa: ドゥニ・ヴィルヌーヴ
+    nameEn: Denis Villeneuve
+    sourceUrl: https://www.wikidata.org/wiki/Q548823
+  - nameJa: トッド・フィリップス
+    nameEn: Todd Phillips
+    sourceUrl: https://www.wikidata.org/wiki/Q362824
+  - nameJa: トニー・ギルロイ
+    nameEn: Tony Gilroy
+    sourceUrl: https://www.wikidata.org/wiki/Q353117
+  - nameJa: トム・フーパ―
+    nameEn: Tom Hooper
+    sourceUrl: https://www.wikidata.org/wiki/Q295912
+  - nameJa: トラヴィス・ファイン
+    nameEn: Travis Fine
+    sourceUrl: https://www.wikidata.org/wiki/Q7836246
+  - nameJa: ニール・ブロムカンプ
+    nameEn: Neill Blomkamp
+    sourceUrl: https://www.wikidata.org/wiki/Q715838
+  - nameJa: ニック・パーク
+    nameEn: Nick Park
+    sourceUrl: https://www.wikidata.org/wiki/Q336206
+  - nameJa: ネイサン・グレノ
+    nameEn: Nathan Greno
+    sourceUrl: https://www.wikidata.org/wiki/Q16028506
+  - nameJa: ノア・バームバック
+    nameEn: Noah Baumbach
+    sourceUrl: https://www.wikidata.org/wiki/Q459349
+  - nameJa: パイロン・ハワード
+    nameEn: Byron Howard
+    sourceUrl: https://www.wikidata.org/wiki/Q1018606
+  - nameJa: パク・チャヌク
+    nameEn: Park Chan-wook
+    sourceUrl: https://www.wikidata.org/wiki/Q315484
+  - nameJa: ハビエル・フェセル
+    nameEn: Javier Fesser
+    sourceUrl: https://www.wikidata.org/wiki/Q944572
+  - nameJa: バラン・ボー・オダー
+    nameEn: Baran bo Odar
+    sourceUrl: https://www.wikidata.org/wiki/Q2883803
+  - nameJa: ピーター・ウィアー
+    nameEn: Peter Weir
+    sourceUrl: https://www.wikidata.org/wiki/Q55424
+  - nameJa: ファウン・ヴィーラスンソーン
+    nameEn: Fawn Veerasunthorn
+    sourceUrl: https://www.wikidata.org/wiki/Q120931616
+  - nameJa: ブライアン・シンガー
+    nameEn: Bryan Singer
+    sourceUrl: https://www.wikidata.org/wiki/Q220751
+  - nameJa: ブライアン・デ・パルマ
+    nameEn: Brian De Palma
+    sourceUrl: https://www.wikidata.org/wiki/Q189526
+  - nameJa: ブラッド・ペイトン
+    nameEn: Brad Peyton
+    sourceUrl: https://www.wikidata.org/wiki/Q1114465
+  - nameJa: フランシス・フォード・コッポラ
+    nameEn: Francis Ford Coppola
+    sourceUrl: https://www.wikidata.org/wiki/Q56094
+  - nameJa: フランシス・ローレンス
+    nameEn: Francis Lawrence
+    sourceUrl: https://www.wikidata.org/wiki/Q561387
+  - nameJa: フランソワ・トリュフォー
+    nameEn: François Truffaut
+    sourceUrl: https://www.wikidata.org/wiki/Q53002
+  - nameJa: ブルース・ベレスフォード
+    nameEn: Bruce Beresford
+    sourceUrl: https://www.wikidata.org/wiki/Q449220
+  - nameJa: ブレイク・エドワーズ
+    nameEn: Blake Edwards
+    sourceUrl: https://www.wikidata.org/wiki/Q56093
+  - nameJa: ペニー・マーシャル
+    nameEn: Penny Marshall
+    sourceUrl: https://www.wikidata.org/wiki/Q237659
+  - nameJa: ヘンリー・セリック
+    nameEn: Henry Selick
+    sourceUrl: https://www.wikidata.org/wiki/Q514859
+  - nameJa: ヘンリー＝アレックス・ルビン
+    nameEn: Henry Alex Rubin
+    sourceUrl: https://www.wikidata.org/wiki/Q5717193
+  - nameJa: ホアキン・ドス・サントス
+    nameEn: Joaquim Dos Santos
+    sourceUrl: https://www.wikidata.org/wiki/Q3247370
+  - nameJa: ポール・グリーングラス
+    nameEn: Paul Greengrass
+    sourceUrl: https://www.wikidata.org/wiki/Q356275
+  - nameJa: ポール・ジャドゥール
+    nameEn: Paul Jadoul
+    sourceUrl: https://www.lesfilmsdunord.com/paul-jadoul
+  - nameJa: ポール・トーマス・アンダーソン
+    nameEn: Paul Thomas Anderson
+    sourceUrl: https://www.wikidata.org/wiki/Q25132
+  - nameJa: ポン・ジュノ
+    nameEn: Bong Joon-ho
+    sourceUrl: https://www.wikidata.org/wiki/Q495980
+  - nameJa: マーティン・スコセッシ
+    nameEn: Martin Scorsese
+    sourceUrl: https://www.wikidata.org/wiki/Q41148
+  - nameJa: マーティン・マクドナー
+    nameEn: Martin McDonagh
+    sourceUrl: https://www.wikidata.org/wiki/Q372394
+  - nameJa: マイケル・カーティス
+    nameEn: Michael Curtiz
+    sourceUrl: https://www.wikidata.org/wiki/Q51491
+  - nameJa: マイケル・ドハティ
+    nameEn: Michael Dougherty
+    sourceUrl: https://mikedougherty.com/
+  - nameJa: マイケル・マン
+    nameEn: Michael Mann
+    sourceUrl: https://www.wikidata.org/wiki/Q270097
+  - nameJa: マルガレーテ・フォン・トロッタ
+    nameEn: Margarethe von Trotta
+    sourceUrl: https://www.wikidata.org/wiki/Q55418
+  - nameJa: まんきゅう
+    nameEn: Mankyū
+    sourceUrl: https://www.wikidata.org/wiki/Q11278702
+  - nameJa: ミロス・フォアマン
+    nameEn: Miloš Forman
+    sourceUrl: https://www.wikidata.org/wiki/Q51525
+  - nameJa: モーリジウス・スタークル・ドルックス
+    nameEn: Maurizius Staerkle Drux
+    sourceUrl: https://swissfilms.ch/de/person/maurizius-staerkle-drux/979d420110b7470da33da813250ec1bf
+  - nameJa: ヨルゴス・ランティモス
+    nameEn: Yorgos Lanthimos
+    sourceUrl: https://www.wikidata.org/wiki/Q975410
+  - nameJa: ライアン・マーフィー
+    nameEn: Ryan Murphy
+    sourceUrl: https://www.wikidata.org/wiki/Q316844
+  - nameJa: ラナ・ウォシャウスキー
+    nameEn: Lana Wachowski
+    sourceUrl: https://www.wikidata.org/wiki/Q9545711
+  - nameJa: リー・アイザック・チョン
+    nameEn: Lee Isaac Chung
+    sourceUrl: https://www.wikidata.org/wiki/Q6514075
+  - nameJa: リチャード・ブルックス
+    nameEn: Richard Brooks
+    sourceUrl: https://www.wikidata.org/wiki/Q434342
+  - nameJa: リドリー・スコット
+    nameEn: Ridley Scott
+    sourceUrl: https://www.wikidata.org/wiki/Q56005
+  - nameJa: リューベン・オストルンド
+    nameEn: Ruben Östlund
+    sourceUrl: https://www.wikidata.org/wiki/Q211228
+  - nameJa: リュック・ベッソン
+    nameEn: Luc Besson
+    sourceUrl: https://www.wikidata.org/wiki/Q484779
+  - nameJa: リリー・ウォシャウスキー
+    nameEn: Lilly Wachowski
+    sourceUrl: https://www.wikidata.org/wiki/Q9544977
+  - nameJa: ルイ・レテリエ
+    nameEn: Louis Leterrier
+    sourceUrl: https://www.wikidata.org/wiki/Q525332
+  - nameJa: ルカ・グァダニーノ
+    nameEn: Luca Guadagnino
+    sourceUrl: https://www.wikidata.org/wiki/Q1335528
+  - nameJa: レン・ワイズマン
+    nameEn: Len Wiseman
+    sourceUrl: https://www.wikidata.org/wiki/Q336099
+  - nameJa: ローベルト・ヴィーネ
+    nameEn: Robert Wiene
+    sourceUrl: https://www.wikidata.org/wiki/Q76552
+  - nameJa: ロバート・スティーヴン
+    nameEn: Robert Stevenson
+    sourceUrl: https://www.wikidata.org/wiki/Q725060
+  - nameJa: ロバート・ゼメキス
+    nameEn: Robert Zemeckis
+    sourceUrl: https://www.wikidata.org/wiki/Q187364
+  - nameJa: ロバート・ベントン
+    nameEn: Robert Benton
+    sourceUrl: https://www.wikidata.org/wiki/Q59085
+  - nameJa: ロブ・マーシャル
+    nameEn: Rob Marshall
+    sourceUrl: https://www.wikidata.org/wiki/Q353501
+  - nameJa: ロブ・ライナー
+    nameEn: Rob Reiner
+    sourceUrl: https://www.wikidata.org/wiki/Q287607
+  - nameJa: ロマン・ポランスキー
+    nameEn: Roman Polanski
+    sourceUrl: https://www.wikidata.org/wiki/Q51552
+  - nameJa: ロン・ハワード
+    nameEn: Ron Howard
+    sourceUrl: https://www.wikidata.org/wiki/Q103646
+  - nameJa: 庵野秀明
+    nameEn: Hideaki Anno
+    sourceUrl: https://www.wikidata.org/wiki/Q23261
+  - nameJa: 衣笠貞之助
+    nameEn: Teinosuke Kinugasa
+    sourceUrl: https://www.wikidata.org/wiki/Q723042
+  - nameJa: 井上森人
+    nameEn: Morihito Inoue
+    sourceUrl: https://screenanarchy.com/2025/07/hot-spring-shark-attack-interview-director-morihito-inoue-talks-jaws-bureaucracy-and-omnipotent-scree.html
+  - nameJa: 奥山大史
+    nameEn: Hiroshi Okuyama
+    sourceUrl: https://www.wikidata.org/wiki/Q60229799
+  - nameJa: 押山清高
+    nameEn: Kiyotaka Oshiyama
+    sourceUrl: https://www.wikidata.org/wiki/Q38276825
+  - nameJa: 岡村天斎
+    nameEn: Tensai Okamura
+    sourceUrl: https://www.wikidata.org/wiki/Q926096
+  - nameJa: 加藤久仁生
+    nameEn: Kunio Katō
+    sourceUrl: https://www.wikidata.org/wiki/Q368378
+  - nameJa: 加藤泰
+    nameEn: Tai Katō
+    sourceUrl: https://www.wikidata.org/wiki/Q7675769
+  - nameJa: 萱野孝幸
+    nameEn: Takayuki Kayano
+    sourceUrl: https://www.wikidata.org/wiki/Q118726915
+  - nameJa: 岩井俊二
+    nameEn: Shunji Iwai
+    sourceUrl: https://www.wikidata.org/wiki/Q1323347
+  - nameJa: 吉田大八
+    nameEn: Daihachi Yoshida
+    sourceUrl: https://www.wikidata.org/wiki/Q5209126
+  - nameJa: 宮崎駿
+    nameEn: Hayao Miyazaki
+    sourceUrl: https://www.wikidata.org/wiki/Q55400
+  - nameJa: 牛嶋新一郎
+    nameEn: Shinichiro Ushijima
+    sourceUrl: https://www.wikidata.org/wiki/Q114903803
+  - nameJa: 原恵一
+    nameEn: Keiichi Hara
+    sourceUrl: https://www.wikidata.org/wiki/Q3133021
+  - nameJa: 溝口健二
+    nameEn: Kenji Mizoguchi
+    sourceUrl: https://www.wikidata.org/wiki/Q55401
+  - nameJa: 荒木哲郎
+    nameEn: Tetsurō Araki
+    sourceUrl: https://www.wikidata.org/wiki/Q1101038
+  - nameJa: 黒澤明
+    nameEn: Akira Kurosawa
+    sourceUrl: https://www.wikidata.org/wiki/Q8006
+  - nameJa: 今石洋之
+    nameEn: Hiroyuki Imaishi
+    sourceUrl: https://www.wikidata.org/wiki/Q3023829
+  - nameJa: 今敏
+    nameEn: Satoshi Kon
+    sourceUrl: https://www.wikidata.org/wiki/Q333643
+  - nameJa: 佐藤純彌
+    nameEn: Junya Satō
+    sourceUrl: https://www.wikidata.org/wiki/Q6314417
+  - nameJa: 佐藤順一
+    nameEn: Junichi Sato
+    sourceUrl: https://www.wikidata.org/wiki/Q142052
+  - nameJa: 砂田麻美
+    nameEn: Mami Sunada
+    sourceUrl: https://www.wikidata.org/wiki/Q11587490
+  - nameJa: 榊原有佑
+    nameEn: Yūsuke Sakakibara
+    sourceUrl: https://www.wikidata.org/wiki/Q130725733
+  - nameJa: 山下清悟
+    nameEn: Shingo Yamashita
+    sourceUrl: https://www.wikidata.org/wiki/Q138419864
+  - nameJa: 山崎貴
+    nameEn: Takashi Yamazaki
+    sourceUrl: https://www.wikidata.org/wiki/Q1052320
+  - nameJa: 山中瑶子
+    nameEn: Yōko Yamanaka
+    sourceUrl: https://www.wikidata.org/wiki/Q62085406
+  - nameJa: 柴山智隆
+    nameEn: Tomotaka Shibayama
+    sourceUrl: https://www.wikidata.org/wiki/Q85881910
+  - nameJa: 小津安二郎
+    nameEn: Yasujirō Ozu
+    sourceUrl: https://www.wikidata.org/wiki/Q55402
+  - nameJa: 小田香
+    nameEn: Kaori Oda
+    sourceUrl: https://www.wikidata.org/wiki/Q96104294
+  - nameJa: 小島正幸
+    nameEn: Masayuki Kojima
+    sourceUrl: https://www.wikidata.org/wiki/Q219332
+  - nameJa: 照屋年之
+    nameEn: Gori
+    sourceUrl: https://www.wikidata.org/wiki/Q5586416
+  - nameJa: 城定秀夫
+    nameEn: Hideo Jōjō
+    sourceUrl: https://www.wikidata.org/wiki/Q11426076
+  - nameJa: 新海誠
+    nameEn: Makoto Shinkai
+    sourceUrl: https://www.wikidata.org/wiki/Q335080
+  - nameJa: 森本晃司
+    nameEn: Kōji Morimoto
+    sourceUrl: https://www.wikidata.org/wiki/Q2495073
+  - nameJa: 深作欣二
+    nameEn: Kinji Fukasaku
+    sourceUrl: https://www.wikidata.org/wiki/Q470779
+  - nameJa: 瀬々敬久
+    nameEn: Takahisa Zeze
+    sourceUrl: https://www.wikidata.org/wiki/Q1055439
+  - nameJa: 是枝裕和
+    nameEn: Hirokazu Koreeda
+    sourceUrl: https://www.wikidata.org/wiki/Q740758
+  - nameJa: 石田祐康
+    nameEn: Hiroyasu Ishida
+    sourceUrl: https://www.wikidata.org/wiki/Q11587052
+  - nameJa: 舛成孝二
+    nameEn: Koji Masunari
+    sourceUrl: https://www.wikidata.org/wiki/Q11613563
+  - nameJa: 前田真宏
+    nameEn: Mahiro Maeda
+    sourceUrl: https://www.wikidata.org/wiki/Q81078
+  - nameJa: 前田悠希
+    nameEn: Yuki Maeda
+    sourceUrl: https://www.jff.jpf.go.jp/watch/independent-cinema/film-lineup/wonderwall-the-movie/index.html
+  - nameJa: 大島渚
+    nameEn: Nagisa Ōshima
+    sourceUrl: https://www.wikidata.org/wiki/Q55403
+  - nameJa: 大友克洋
+    nameEn: Katsuhiro Otomo
+    sourceUrl: https://www.wikidata.org/wiki/Q378710
+  - nameJa: 瀧沢進介
+    nameEn: Shinsuke Takizawa
+    sourceUrl: https://aniplexusa.com/thegardenofsinners/
+  - nameJa: 中山勝一
+    nameEn: Katsuichi Nakayama
+    sourceUrl: https://www.wikidata.org/wiki/Q11364085
+  - nameJa: 中村義洋
+    nameEn: Yoshihiro Nakamura
+    sourceUrl: https://www.wikidata.org/wiki/Q1654384
+  - nameJa: 中島哲也
+    nameEn: Tetsuya Nakashima
+    sourceUrl: https://www.wikidata.org/wiki/Q1316131
+  - nameJa: 津田肇
+    nameEn: Hajime Tsuda
+    sourceUrl: https://www.wikidata.org/wiki/Q133265598
+  - nameJa: 鶴巻和哉
+    nameEn: Kazuya Tsurumaki
+    sourceUrl: https://www.wikidata.org/wiki/Q742757
+  - nameJa: 湯浅政明
+    nameEn: Masaaki Yuasa
+    sourceUrl: https://www.wikidata.org/wiki/Q1385540
+  - nameJa: 藤井道人
+    nameEn: Michihito Fujii
+    sourceUrl: https://www.wikidata.org/wiki/Q18054704
+  - nameJa: 内田英治
+    nameEn: Eiji Uchida
+    sourceUrl: https://www.wikidata.org/wiki/Q18457456
+  - nameJa: 白石和彌
+    nameEn: Kazuya Shiraishi
+    sourceUrl: https://www.wikidata.org/wiki/Q11580151
+  - nameJa: 樋口真嗣
+    nameEn: Shinji Higuchi
+    sourceUrl: https://www.wikidata.org/wiki/Q900501
+  - nameJa: 武内宣之
+    nameEn: Nobuyuki Takeuchi
+    sourceUrl: https://www.wikidata.org/wiki/Q11545819
+  - nameJa: 北野武
+    nameEn: Takeshi Kitano
+    sourceUrl: https://www.wikidata.org/wiki/Q26372
+  - nameJa: 麻王
+    nameEn: MAO
+    sourceUrl: https://mado-movie.jp/
+  - nameJa: 矢口史靖
+    nameEn: Shinobu Yaguchi
+    sourceUrl: https://www.wikidata.org/wiki/Q382081
+  - nameJa: 李相日
+    nameEn: Sang-il Lee
+    sourceUrl: https://www.wikidata.org/wiki/Q614697
+  - nameJa: 濱口竜介
+    nameEn: Ryusuke Hamaguchi
+    sourceUrl: https://www.wikidata.org/wiki/Q17220313
+  - nameJa: 𠮷原達矢
+    nameEn: Tatsuya Yoshihara
+    sourceUrl: https://www.sonypictures.com.au/movies/chainsaw-man-movie-reze-arc
