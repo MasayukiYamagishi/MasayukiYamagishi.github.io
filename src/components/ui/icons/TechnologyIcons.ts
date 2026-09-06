@@ -95,6 +95,12 @@ export function getTechnologyIcon(id: string): SimpleIcon | undefined {
   return (technologyIcons as Record<string, SimpleIcon | undefined>)[id];
 }
 
+/**
+ * テーマ対応の技術系アイコンを取得する
+ *
+ * @param id アイコンid
+ * @returns テーマ対応アイコン。存在しない場合はundefined
+ */
 export function getThemedTechnologyIcon(
   id: string,
 ): ThemedTechnologyIcon | undefined {

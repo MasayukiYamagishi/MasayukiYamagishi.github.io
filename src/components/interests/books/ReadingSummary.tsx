@@ -12,6 +12,12 @@ type ReadingSummaryProps = {
   dictionary: InterestsDictionary["books"];
 };
 
+/**
+ * 読了冊数やページ数などの読書概要を表示する
+ *
+ * @param ReadingSummaryProps props
+ * @returns 読書概要セクションのJSX
+ */
 export function ReadingSummary({
   locale,
   summary,

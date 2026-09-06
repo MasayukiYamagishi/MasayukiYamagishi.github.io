@@ -43,6 +43,11 @@ export function ScrollToTopButton({ label }: ScrollTopToButtonProps) {
     };
   }, []);
 
+  /**
+   * モーション設定を考慮してページ先頭へ移動する
+   *
+   * @returns 戻り値なし
+   */
   const handleClick = () => {
     const prefersReduceMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)",

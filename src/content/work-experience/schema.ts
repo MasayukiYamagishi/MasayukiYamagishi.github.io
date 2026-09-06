@@ -8,7 +8,20 @@ const yearMonthSchema = z
   .string()
   .regex(/^\d{4}-(0[1-9]|1[0-2])$/, "YYYY-MM形式で指定してください。");
 
+/**
+ * 日英両方のテキストを検証するスキーマを作成する
+ *
+ * @param fieldName エラーメッセージに表示する項目名
+ * @param maxLength 許容する最大文字数
+ * @returns ローカライズ済みテキストのZodスキーマ
+ */
 function createLocalizedTextSchema(fieldName: string, maxLength: number) {
+  /**
+   * 指定した言語の必須テキストを検証するスキーマを作成する
+   *
+   * @param languageName エラーメッセージに表示する言語名
+   * @returns 文字数制限を含む文字列のZodスキーマ
+   */
   function createTextSchema(languageName: string) {
     return z
       .string()

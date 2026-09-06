@@ -11,6 +11,13 @@ import { getPostBySlug } from "./index";
 
 const POSTS_DIRECTORY = path.join(process.cwd(), "src", "content", "posts");
 
+/**
+ * 指定した記事のMDX本文を読み込み、Reactコンポーネントに変換する
+ *
+ * @param slug 記事のslug
+ * @param locale 記事の表示言語
+ * @returns 記事本文のコンポーネント。記事が存在しない場合はundefined
+ */
 export async function getPostContent(slug: string, locale: Locale) {
   const post = await getPostBySlug(slug);
 

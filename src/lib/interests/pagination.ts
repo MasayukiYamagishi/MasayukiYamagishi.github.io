@@ -1,5 +1,13 @@
 export const INTERESTS_PAGE_SIZE = 20;
 
+/**
+ * 項目数と要求ページからページネーションの状態を計算する
+ *
+ * @param totalItems 全項目数
+ * @param requestedPage 要求されたページ番号
+ * @param pageSize 1ページに表示する項目数
+ * @returns 現在ページと表示範囲を含むページネーション状態
+ */
 export function getPaginationState(
   totalItems: number,
   requestedPage: number,

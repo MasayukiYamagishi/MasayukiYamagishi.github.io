@@ -12,6 +12,12 @@ type MovieSummaryProps = {
   dictionary: InterestsDictionary["movies"];
 };
 
+/**
+ * 鑑賞本数や時間などの映画鑑賞概要を表示する
+ *
+ * @param MovieSummaryProps props
+ * @returns 映画鑑賞概要セクションのJSX
+ */
 export function MovieSummary({
   locale,
   summary,

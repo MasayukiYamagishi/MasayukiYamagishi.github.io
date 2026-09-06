@@ -21,6 +21,13 @@ const CONTENT_DIRECTORY = path.join(
   "interests",
 );
 
+/**
+ * 趣味データのYAMLを読み込み、指定したスキーマで検証する
+ *
+ * @param fileName 読み込むYAMLファイル名
+ * @param schema データ検証に使用するZodスキーマ
+ * @returns 検証済みの趣味データ
+ */
 async function readYamlFile<T>(fileName: string, schema: z.ZodType<T>) {
   const filePath = path.join(CONTENT_DIRECTORY, fileName);
   let source: string;
@@ -60,6 +67,13 @@ async function readYamlFile<T>(fileName: string, schema: z.ZodType<T>) {
   return result.data;
 }
 
+/**
+ * コレクション内でIDが重複していないことを検証する
+ *
+ * @param values 検証するID付きデータ一覧
+ * @param collectionName エラーメッセージに表示するコレクション名
+ * @returns 戻り値なし
+ */
 function assertUniqueIds(
   values: readonly { id: string }[],
   collectionName: string,
@@ -74,6 +88,11 @@ function assertUniqueIds(
   }
 }
 
+/**
+ * すべての趣味データを読み込み、参照関係を検証する
+ *
+ * @returns 検証済みの書籍・映画関連データ
+ */
 export const getInterestsData = cache(async () => {
   const [
     booksFile,

@@ -25,6 +25,12 @@ type InterestsPageProps = {
   locale: Locale;
 };
 
+/**
+ * 読書と映画の記録および集計指標を表示するページ
+ *
+ * @param InterestsPageProps props
+ * @returns 趣味ページのJSX
+ */
 export async function InterestsPage({ locale }: InterestsPageProps) {
   const data = await getInterestsData();
   const dictionary = getDictionary(locale);

@@ -13,6 +13,12 @@ const shelfImageByStage: Record<ShelfStage, string> = {
   4: "/interests/bookshelf-stage-4.webp",
 };
 
+/**
+ * 棚板への負荷ステージに対応するイラストを表示する
+ *
+ * @param ShelfLoadIllustrationProps props
+ * @returns 棚板負荷イラストのJSX
+ */
 export function ShelfLoadIllustration({
   stage,
   alt = "",

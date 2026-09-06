@@ -8,6 +8,12 @@ type ReadingWarningsProps = {
   dictionary: InterestsDictionary["books"];
 };
 
+/**
+ * 読書状況に応じた警告メッセージを表示する
+ *
+ * @param ReadingWarningsProps props
+ * @returns 警告メッセージのJSX。警告がない場合はnull
+ */
 export function ReadingWarnings({
   warnings,
   dictionary,

@@ -1,5 +1,12 @@
 import type { Movie, WatchEntry } from "@/schemas/interests";
 
+/**
+ * 鑑賞記録から合計鑑賞時間を計算する
+ *
+ * @param movies 映画一覧
+ * @param watches 鑑賞記録一覧
+ * @returns 合計鑑賞時間の日・時・分表現と合計値
+ */
 export function calculateWatchTime(
   movies: readonly Movie[],
   watches: readonly WatchEntry[],

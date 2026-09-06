@@ -11,6 +11,11 @@ const EMPTY_POST_ROUTE_SLUG = "__placeholder__";
 const POSTS_DIRECTORY = path.join(process.cwd(), "src", "content", "posts");
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
+/**
+ * 記事として読み込むディレクトリのslugを取得する
+ *
+ * @returns 検証および並べ替え済みの記事slug一覧
+ */
 async function getPostSlugs() {
   const entries = await readdir(POSTS_DIRECTORY, {
     withFileTypes: true,
@@ -38,6 +43,12 @@ async function getPostSlugs() {
     .sort((left, right) => left.localeCompare(right));
 }
 
+/**
+ * 記事メタデータのYAMLを読み込み、表示用データに変換する
+ *
+ * @param slug 記事のslug
+ * @returns 検証済みの記事データ
+ */
 async function readPost(slug: string): Promise<Post> {
   const filePath = path.join(POSTS_DIRECTORY, slug, "post.yaml");
 
@@ -97,6 +108,11 @@ async function readPost(slug: string): Promise<Post> {
   } satisfies Post;
 }
 
+/**
+ * すべての記事を公開日の新しい順で取得する
+ *
+ * @returns 検証および並べ替え済みの記事一覧
+ */
 export const getPosts = cache(async (): Promise<readonly Post[]> => {
   const slugs = await getPostSlugs();
 
@@ -110,6 +126,12 @@ export const getPosts = cache(async (): Promise<readonly Post[]> => {
   return posts;
 });
 
+/**
+ * slugに一致する記事を取得する
+ *
+ * @param slug 記事のslug
+ * @returns 一致する記事。存在しない場合はundefined
+ */
 export async function getPostBySlug(slug: string): Promise<Post | undefined> {
   const posts = await getPosts();
 
@@ -118,6 +140,11 @@ export async function getPostBySlug(slug: string): Promise<Post | undefined> {
 
 export type { Post } from "./types";
 
+/**
+ * 記事詳細ページを静的生成するためのパラメータを取得する
+ *
+ * @returns 記事slugを含むルートパラメータ一覧
+ */
 export async function getPostRouteParams() {
   const posts = await getPosts();
 

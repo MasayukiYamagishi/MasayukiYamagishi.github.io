@@ -17,6 +17,12 @@ type PaginationProps = {
   dictionary: InterestsDictionary["common"]["pagination"];
 };
 
+/**
+ * 趣味データ一覧のページ移動コントロールを表示する
+ *
+ * @param PaginationProps props
+ * @returns ページ移動コントロールのJSX。1ページのみの場合はnull
+ */
 export function Pagination({
   name,
   locale,

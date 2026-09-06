@@ -14,10 +14,21 @@ type PostPageProps = {
 
 export const dynamicParams = false;
 
+/**
+ * 日本語版の記事詳細ページを静的生成するパラメータを取得する
+ *
+ * @returns 記事slugを含むルートパラメータ一覧
+ */
 export async function generateStaticParams() {
   return getPostRouteParams();
 }
 
+/**
+ * 日本語版の記事詳細ページのメタデータを生成する
+ *
+ * @param PostPageProps props
+ * @returns 記事詳細ページのメタデータ
+ */
 export async function generateMetadata({
   params,
 }: PostPageProps): Promise<Metadata> {

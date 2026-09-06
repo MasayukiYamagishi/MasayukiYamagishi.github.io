@@ -18,6 +18,11 @@ type ThemeSwitcherProps = {
 export function ThemeSwitcher({ label }: ThemeSwitcherProps) {
   const { resolvedTheme, setTheme } = useTheme();
 
+  /**
+   * ライトテーマとダークテーマを切り替える
+   *
+   * @returns 戻り値なし
+   */
   function toggleMenu() {
     setTheme(resolvedTheme === "dark" ? "light" : "dark");
   }

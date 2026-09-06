@@ -70,9 +70,7 @@ export function ExternalLinkCard({
           </p>
 
           {description && (
-            <p className="mt-1.5 text-sm leading-6 text-muted">
-              {description}
-            </p>
+            <p className="mt-1.5 text-sm leading-6 text-muted">{description}</p>
           )}
 
           <p className="mt-auto flex flex-wrap items-center gap-x-2 gap-y-1 pt-3 text-xs text-muted">
@@ -94,7 +92,7 @@ export function ExternalLinkCard({
         </div>
 
         {imageSrc && (
-          <div className="relative aspect-[40/21] min-h-0 bg-border sm:aspect-auto">
+          <div className="relative aspect-40/21 min-h-0 bg-border sm:aspect-auto">
             <Image
               src={imageSrc}
               alt=""

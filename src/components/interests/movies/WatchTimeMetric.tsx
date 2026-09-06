@@ -16,6 +16,12 @@ type WatchTimeMetricProps = {
   dictionary: InterestsDictionary["movies"];
 };
 
+/**
+ * 映画の総鑑賞時間とフィルム換算値を表示する
+ *
+ * @param WatchTimeMetricProps props
+ * @returns 鑑賞時間とフィルム換算値のJSX
+ */
 export function WatchTimeMetric({
   watchTime,
   film,

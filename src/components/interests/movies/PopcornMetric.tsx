@@ -12,6 +12,12 @@ type PopcornMetricProps = {
   dictionary: InterestsDictionary["movies"]["popcorn"];
 };
 
+/**
+ * 劇場鑑賞に伴うポップコーン消費量の推定値を表示する
+ *
+ * @param PopcornMetricProps props
+ * @returns ポップコーン消費量セクションのJSX
+ */
 export function PopcornMetric({
   estimate,
   dictionary,

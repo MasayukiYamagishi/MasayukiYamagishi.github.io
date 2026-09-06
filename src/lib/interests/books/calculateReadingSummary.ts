@@ -1,6 +1,12 @@
 import type { Book } from "@/schemas/interests";
 import { calculateBookWeight } from "./calculateBookWeight";
 
+/**
+ * 書籍一覧から読書状況の概要指標を計算する
+ *
+ * @param books 書籍一覧
+ * @returns 読了冊数・ページ数・重量と読書中の冊数
+ */
 export function calculateReadingSummary(books: readonly Book[]) {
   const completedBooks = books.filter((book) => book.status === "completed");
 

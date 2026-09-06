@@ -19,6 +19,12 @@ type HeaderNavigationProps = {
 
 const ACTIVE_OFFSET_PX = 80;
 
+/**
+ * スクロール位置から現在表示中のセクションを取得する
+ *
+ * @param items ナビゲーション項目一覧
+ * @returns 現在表示中のセクションid
+ */
 function useActiveSection(items: ReadonlyArray<HeaderNavigationItem>) {
   const [activeSectionId, setActiveSectionId] = useState("");
 
@@ -33,6 +39,11 @@ function useActiveSection(items: ReadonlyArray<HeaderNavigationItem>) {
 
     let frameId: number | null = null;
 
+    /**
+     * 現在のスクロール位置からアクティブなセクションを更新する
+     *
+     * @returns 戻り値なし
+     */
     const updateActiveSection = () => {
       frameId = null;
 
@@ -59,6 +70,11 @@ function useActiveSection(items: ReadonlyArray<HeaderNavigationItem>) {
       setActiveSectionId(nextActiveSectionId);
     };
 
+    /**
+     * 次の描画フレームでアクティブセクションの更新を予約する
+     *
+     * @returns 戻り値なし
+     */
     const scheduleUpdate = () => {
       if (frameId !== null) {
         return;

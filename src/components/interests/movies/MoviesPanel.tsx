@@ -62,6 +62,12 @@ type MoviesPanelProps = {
   dictionary: InterestsDictionary["movies"];
 };
 
+/**
+ * 映画の概要・換算指標・ランキング・鑑賞履歴をまとめて表示する
+ *
+ * @param MoviesPanelProps props
+ * @returns 映画パネルのJSX
+ */
 export function MoviesPanel({
   locale,
   movies,

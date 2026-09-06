@@ -4,6 +4,12 @@ export const POST_TITLE_MAX_LENGTH = 80;
 export const POST_DESCRIPTION_MAX_LENGTH = 180;
 export const POST_IMAGE_ALT_MAX_LENGTH = 160;
 
+/**
+ * 文字列が実在するISO形式の日付かを判定する
+ *
+ * @param value 判定する日付文字列
+ * @returns YYYY-MM-DD形式の有効な日付の場合はtrue
+ */
 function isIsoCalendarDate(value: string) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) {
     return false;
@@ -22,7 +28,20 @@ const dateSchema = z.string().refine(isIsoCalendarDate, {
   message: "YYYY-MM-DD形式の有効な日付を指定してください。",
 });
 
+/**
+ * 日英両方のテキストを検証するスキーマを作成する
+ *
+ * @param fieldName エラーメッセージに表示する項目名
+ * @param maxLength 許容する最大文字数
+ * @returns ローカライズ済みテキストのZodスキーマ
+ */
 function createLocalizedTextSchema(fieldName: string, maxLength: number) {
+  /**
+   * 指定した言語の必須テキストを検証するスキーマを作成する
+   *
+   * @param languageName エラーメッセージに表示する言語名
+   * @returns 文字数制限を含む文字列のZodスキーマ
+   */
   function createTextSchema(languageName: string) {
     return z
       .string()

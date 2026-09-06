@@ -21,6 +21,13 @@ const dateLocales = {
   en: "en-US",
 } as const satisfies Record<Locale, string>;
 
+/**
+ * 記事の日付を表示言語に合わせて整形する
+ *
+ * @param value 整形する日付文字列
+ * @param locale 表示言語
+ * @returns ローカライズされた日付文字列
+ */
 function formatDate(value: string, locale: Locale) {
   return new Intl.DateTimeFormat(dateLocales[locale], {
     year: "numeric",

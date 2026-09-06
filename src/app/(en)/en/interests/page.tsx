@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   description: "A record of books, films, and a few strange metrics.",
 };
 
+/**
+ * 英語版の趣味ページ
+ *
+ * @returns 英語版趣味ページのJSX
+ */
 export default function EnglishInterestsPage() {
   return <InterestsPage locale="en" />;
 }

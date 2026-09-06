@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   description: "読書と映画鑑賞の記録、そして少し変わった集計指標。",
 };
 
+/**
+ * 日本語版の趣味ページ
+ *
+ * @returns 日本語版趣味ページのJSX
+ */
 export default function JapaneseInterestsPage() {
   return <InterestsPage locale="ja" />;
 }

@@ -4,6 +4,12 @@ type SectionHeadingProps = {
   description?: string;
 };
 
+/**
+ * 趣味ページ内のセクション見出しを表示する
+ *
+ * @param SectionHeadingProps props
+ * @returns セクション見出しのJSX
+ */
 export function SectionHeading({
   eyebrow,
   heading,

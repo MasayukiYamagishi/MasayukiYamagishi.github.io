@@ -10,6 +10,12 @@ import { InlineText } from "./InlineText";
 type LinkProps = ComponentPropsWithoutRef<"a">;
 type ImageProps = ComponentPropsWithoutRef<"img">;
 
+/**
+ * 外部リンクに識別用アイコンを付ける記事本文向けリンク
+ *
+ * @param LinkProps props
+ * @returns 記事本文向けリンクのJSX
+ */
 function PostContentLink({ href, children, ...props }: LinkProps) {
   const isExternal = typeof href === "string" && /^https?:\/\//.test(href);
 
@@ -25,6 +31,12 @@ function PostContentLink({ href, children, ...props }: LinkProps) {
   );
 }
 
+/**
+ * 代替テキストと遅延読み込みを保証する記事本文向け画像
+ *
+ * @param ImageProps props
+ * @returns 記事本文向け画像のJSX
+ */
 function PostContentImage({ alt, loading, decoding, ...props }: ImageProps) {
   if (alt === undefined) {
     throw new Error(
