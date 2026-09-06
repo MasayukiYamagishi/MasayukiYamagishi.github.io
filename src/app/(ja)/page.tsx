@@ -18,6 +18,7 @@ export default async function HomePage() {
       <main className="mx-auto w-full max-w-5xl px-6 sm:px-8">
         <Hero profile={ja.profile} dictionary={ja.hero}></Hero>
         <About
+          locale="ja"
           heading={ja.sections.about}
           profile={ja.profile}
           dictionary={ja.about}

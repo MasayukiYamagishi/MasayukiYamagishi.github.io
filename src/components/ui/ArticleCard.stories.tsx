@@ -1,10 +1,15 @@
 import type { Post } from "@/content/posts/types";
 import { en } from "@/i18n/dictionaries/en";
 import { ja } from "@/i18n/dictionaries/ja";
-import storyThumbnail from "@/stories/assets/assets.png";
+import storyThumbnailAsset from "@/stories/assets/assets.png";
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 import { expect, within } from "storybook/test";
 import { ArticleCard } from "./ArticleCard";
+
+const storyThumbnail =
+  typeof storyThumbnailAsset === "string"
+    ? { src: storyThumbnailAsset, width: 580, height: 260 }
+    : storyThumbnailAsset;
 
 const mockPost = {
   slug: "building-my-portfolio",
@@ -19,7 +24,7 @@ const mockPost = {
   publishedAt: "2026-08-25",
   updatedAt: "2026-09-01",
   thumbnail: {
-    // Storybook用画像はNext.jsによって内部URLへ返還されるため、Story内に限ってPostの画像パス型として扱う
+    // Storybookでは画像をViteのURLとして扱うため、Story内に限ってPostの画像パス型として扱う
     src: storyThumbnail.src as Post["thumbnail"]["src"],
     width: storyThumbnail.width,
     height: storyThumbnail.height,
