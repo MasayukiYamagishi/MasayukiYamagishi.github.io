@@ -10,7 +10,16 @@ const config: StorybookConfig = {
     "@storybook/addon-mcp",
     "@storybook/addon-themes",
   ],
-  framework: "@storybook/nextjs-vite",
+  framework: {
+    name: "@storybook/nextjs-vite",
+    options: {
+      image: {
+        // Windows absolute paths are not escaped correctly by the current image plugin.
+        // Let Vite serve image imports as URLs until that upstream issue is resolved.
+        excludeFiles: ["**/*"],
+      },
+    },
+  },
   staticDirs: ["../public"],
 
   async viteFinal(config) {
