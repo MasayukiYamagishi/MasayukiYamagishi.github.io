@@ -4003,3 +4003,60 @@
     "countries":
       - "Japan"
     "sourceUrl": "https://www.wikidata.org/wiki/Q100156151"
+  - "id": "movie-0276"
+    "title": "オデュッセイア"
+    "titleEn": "The Odyssey"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q131547207"
+    "releaseYear": 2026
+    "runtimeMinutes": 172
+    "directors":
+      - "クリストファー・ノーラン"
+    "genres":
+      - "Action"
+      - "Adventure"
+      - "History"
+    "countries":
+      - "United States"
+      - "United Kingdom"
+  - "id": "movie-0277"
+    "title": "バックルームズ"
+    "titleEn": "Backrooms"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q125131076"
+    "releaseYear": 2026
+    "runtimeMinutes": 126
+    "directors":
+      - "ケイン・パーソンズ"
+    "genres":
+      - "Horror"
+      - "Science Fiction"
+      - "Thriller"
+    "countries":
+      - "United States"
+  - "id": "movie-0278"
+    "title": "ヒンド・ラジャブの声"
+    "titleEn": "The Voice of Hind Rajab"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q135038882"
+    "releaseYear": 2025
+    "runtimeMinutes": 89
+    "directors":
+      - "カウテール・ベン・ハニア"
+    "genres":
+      - "Drama"
+    "countries":
+      - "Tunisia"
+      - "France"
+  - "id": "movie-0279"
+    "title": "戦場0地点"
+    "titleEn": "2000 Meters to Andriivka"
+    "titleEnSourceUrl": "https://www.wikidata.org/wiki/Q131785610"
+    "releaseYear": 2026
+    "runtimeMinutes": 107
+    "directors":
+      - "ミスティスラフ・チェルノフ"
+    "genres":
+      - "Documentary"
+      - "War"
+    "countries":
+      - "Ukraine"
+      - "United States"
+      - "Canada"

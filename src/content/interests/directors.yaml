@@ -89,6 +89,9 @@ directors:
   - nameJa: オリヴィエ・ナカシュ
     nameEn: Olivier Nakache
     sourceUrl: https://www.wikidata.org/wiki/Q74428
+  - nameJa: カウテール・ベン・ハニア
+    nameEn: Kaouther Ben Hania
+    sourceUrl: https://www.wikidata.org/wiki/Q30005402
   - nameJa: ガイ・リッチー
     nameEn: Guy Ritchie
     sourceUrl: https://www.wikidata.org/wiki/Q192990
@@ -119,6 +122,9 @@ directors:
   - nameJa: ゲイリー・ロス
     nameEn: Gary Ross
     sourceUrl: https://www.wikidata.org/wiki/Q598675
+  - nameJa: ケイン・パーソンズ
+    nameEn: Kane Parsons
+    sourceUrl: https://www.wikidata.org/wiki/Q111653356
   - nameJa: ケリー・ライカート
     nameEn: Kelly Reichardt
     sourceUrl: https://www.wikidata.org/wiki/Q436861
@@ -407,6 +413,9 @@ directors:
   - nameJa: まんきゅう
     nameEn: Mankyū
     sourceUrl: https://www.wikidata.org/wiki/Q11278702
+  - nameJa: ミスティスラフ・チェルノフ
+    nameEn: Mstyslav Chernov
+    sourceUrl: https://www.wikidata.org/wiki/Q79059219
   - nameJa: ミロス・フォアマン
     nameEn: Miloš Forman
     sourceUrl: https://www.wikidata.org/wiki/Q51525
