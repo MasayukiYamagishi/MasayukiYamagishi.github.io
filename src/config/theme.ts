@@ -7,6 +7,12 @@ export const defaultTheme: Theme = "system";
 export const themeStorageKey = "theme";
 export const themeAttribute = "data-theme";
 
+/**
+ * 値が利用可能なテーマかを判定する
+ *
+ * @param value 判定する値
+ * @returns 利用可能なテーマの場合はtrue
+ */
 export function isTheme(value: unknown): value is Theme {
   return typeof value === "string" && themes.includes(value as Theme);
 }

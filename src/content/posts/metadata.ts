@@ -10,12 +10,26 @@ const openGraphLocales = {
   en: "en_US",
 } as const satisfies Record<Locale, string>;
 
+/**
+ * 言語とslugから記事ページのパスを生成する
+ *
+ * @param locale 記事の表示言語
+ * @param slug 記事のslug
+ * @returns 記事ページのパス
+ */
 function getPostPath(locale: Locale, slug: string) {
   const prefix = locale === defaultLocale ? "" : localePaths[locale];
 
   return `${prefix}/posts/${slug}`;
 }
 
+/**
+ * 指定した記事と言語に対応するメタデータを生成する
+ *
+ * @param slug 記事のslug
+ * @param locale 記事の表示言語
+ * @returns 記事ページのメタデータ
+ */
 export async function getPostMetadata(
   slug: string,
   locale: Locale,

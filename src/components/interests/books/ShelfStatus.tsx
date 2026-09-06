@@ -14,6 +14,12 @@ type ShelfStatusProps = {
   dictionary: InterestsDictionary["books"]["shelf"];
 };
 
+/**
+ * 読了した本による棚板への負荷状況を表示する
+ *
+ * @param ShelfStatusProps props
+ * @returns 棚板状態セクションのJSX
+ */
 export function ShelfStatus({
   shelf,
   load,

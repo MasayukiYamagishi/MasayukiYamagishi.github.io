@@ -5,7 +5,20 @@ const TAG_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 export const PROJECT_TITLE_MAX_LENGTH = 50;
 export const PROJECT_DESCRIPTION_MAX_LENGTH = 300;
 
+/**
+ * 日英両方のテキストを検証するスキーマを作成する
+ *
+ * @param fieldName エラーメッセージに表示する項目名
+ * @param maxLength 許容する最大文字数
+ * @returns ローカライズ済みテキストのZodスキーマ
+ */
 function createLocalizedTextSchema(fieldName: string, maxLength?: number) {
+  /**
+   * 指定した言語の必須テキストを検証するスキーマを作成する
+   *
+   * @param languageName エラーメッセージに表示する言語名
+   * @returns 文字列のZodスキーマ
+   */
   function createTextSchema(languageName: string) {
     const schema = z
       .string()

@@ -14,6 +14,12 @@ type ReadingHistoryProps = {
   dictionary: InterestsDictionary["books"];
 };
 
+/**
+ * 読了した書籍の履歴をページ単位で表示する
+ *
+ * @param ReadingHistoryProps props
+ * @returns 読書履歴セクションのJSX
+ */
 export function ReadingHistory({
   books,
   locale,
@@ -30,6 +36,12 @@ export function ReadingHistory({
     setCurrentPage,
   } = usePagination(books);
 
+  /**
+   * 読書履歴の表示ページを変更して一覧の先頭へ移動する
+   *
+   * @param page 移動先のページ番号
+   * @returns 戻り値なし
+   */
   function handlePageChange(page: number) {
     setCurrentPage(page);
     sectionRef.current?.scrollIntoView({ block: "start" });

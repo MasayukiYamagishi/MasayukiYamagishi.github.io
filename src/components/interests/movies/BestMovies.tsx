@@ -13,6 +13,12 @@ type BestMoviesProps = {
   dictionary: InterestsDictionary["movies"]["bestMovies"];
 };
 
+/**
+ * お気に入りの映画を監督・ジャンルとともに表示する
+ *
+ * @param BestMoviesProps props
+ * @returns お気に入り映画一覧のJSX
+ */
 export function BestMovies({
   movies,
   directorNames,

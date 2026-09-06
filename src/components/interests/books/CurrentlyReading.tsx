@@ -11,6 +11,12 @@ type CurrentlyReadingProps = {
   dictionary: InterestsDictionary["books"];
 };
 
+/**
+ * 現在読書中の書籍と警告を表示する
+ *
+ * @param CurrentlyReadingProps props
+ * @returns 読書中一覧セクションのJSX
+ */
 export function CurrentlyReading({
   books,
   locale,

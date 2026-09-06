@@ -8,6 +8,12 @@ type MetricCardProps = {
   accent?: boolean;
 };
 
+/**
+ * 趣味に関する集計値を表示するカード
+ *
+ * @param MetricCardProps props
+ * @returns 集計値カードのJSX
+ */
 export function MetricCard({
   label,
   value,

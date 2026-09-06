@@ -16,6 +16,12 @@ type ProjectCardProps = {
   dictionary: ProjectCardDictionary;
 };
 
+/**
+ * URLからカードに表示するホスト名を取得する
+ *
+ * @param url プロジェクトのURL
+ * @returns wwwを除いたホスト名
+ */
 function getDestination(url: string) {
   return new URL(url).hostname.replace(/^www\./, "");
 }

@@ -20,6 +20,12 @@ type MovieHistoryProps = {
   dictionary: InterestsDictionary["movies"];
 };
 
+/**
+ * 映画の鑑賞履歴をページ単位で表示する
+ *
+ * @param MovieHistoryProps props
+ * @returns 映画鑑賞履歴セクションのJSX
+ */
 export function MovieHistory({
   movies,
   directorNames,
@@ -49,11 +55,23 @@ export function MovieHistory({
     setCurrentPage,
   } = usePagination(sortedWatches);
 
+  /**
+   * 鑑賞履歴の表示ページを変更して一覧の先頭へ移動する
+   *
+   * @param page 移動先のページ番号
+   * @returns 戻り値なし
+   */
   function handlePageChange(page: number) {
     setCurrentPage(page);
     sectionRef.current?.scrollIntoView({ block: "start" });
   }
 
+  /**
+   * 鑑賞日を表示言語に合わせて整形する
+   *
+   * @param value 整形する日付文字列
+   * @returns ローカライズされた日付文字列
+   */
   function formatDate(value: string) {
     return new Intl.DateTimeFormat(locale === "ja" ? "ja-JP" : "en-US", {
       year: "numeric",

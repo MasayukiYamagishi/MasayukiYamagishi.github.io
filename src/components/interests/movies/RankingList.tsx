@@ -7,6 +7,12 @@ type RankingListProps = {
   limit?: number;
 };
 
+/**
+ * 件数に比例したバー付きランキングを表示する
+ *
+ * @param RankingListProps props
+ * @returns ランキング一覧のJSX
+ */
 export function RankingList({
   heading,
   values,

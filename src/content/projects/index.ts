@@ -16,6 +16,11 @@ const PROJECT_DIRECTORY = path.join(
 
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
+/**
+ * プロジェクトとして読み込むディレクトリのslugを取得する
+ *
+ * @returns 検証済みのプロジェクトslug一覧
+ */
 async function getProjectSlugs() {
   const entries = await readdir(PROJECT_DIRECTORY, {
     withFileTypes: true,
@@ -41,6 +46,12 @@ async function getProjectSlugs() {
   return directories.map((entry) => entry.name);
 }
 
+/**
+ * プロジェクトのYAMLを読み込み、表示用データに変換する
+ *
+ * @param slug プロジェクトのslug
+ * @returns 検証済みのプロジェクトデータ
+ */
 async function readProject(slug: string): Promise<Project> {
   const filePath = path.join(PROJECT_DIRECTORY, slug, "project.yaml");
 
@@ -86,6 +97,11 @@ async function readProject(slug: string): Promise<Project> {
   } satisfies Project;
 }
 
+/**
+ * すべてのプロジェクトを表示順で取得する
+ *
+ * @returns 検証および並べ替え済みのプロジェクト一覧
+ */
 export const getProject = cache(async (): Promise<readonly Project[]> => {
   const slugs = await getProjectSlugs();
 

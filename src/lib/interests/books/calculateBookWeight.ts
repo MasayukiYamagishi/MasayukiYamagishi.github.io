@@ -28,6 +28,12 @@ type WeightInput = Pick<
   "id" | "pages" | "format" | "binding" | "widthMm" | "heightMm"
 >;
 
+/**
+ * 判型・ページ数・製本形式から1冊分の重量を推定する
+ *
+ * @param book 重量計算に必要な書籍情報
+ * @returns 推定重量（グラム）
+ */
 function estimateVolumeWeight(book: WeightInput) {
   const fallbackSize =
     book.format === "custom" ? undefined : BOOK_SIZE_PROFILES[book.format];
@@ -50,6 +56,12 @@ function estimateVolumeWeight(book: WeightInput) {
   return Math.round(bodyPaperWeightG * 1.15);
 }
 
+/**
+ * 実測値または書誌情報から書籍の合計重量を取得する
+ *
+ * @param book 書籍データ
+ * @returns 書籍の合計重量（グラム）
+ */
 export function calculateBookWeight(book: Book) {
   if (book.actualWeightG) {
     return book.actualWeightG;

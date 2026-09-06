@@ -10,6 +10,12 @@ type ReadingTableProps = {
   caption: string;
 };
 
+/**
+ * 書籍情報と推定重量を表形式で表示する
+ *
+ * @param ReadingTableProps props
+ * @returns 書籍一覧テーブルのJSX
+ */
 export function ReadingTable({
   books,
   locale,

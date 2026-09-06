@@ -18,6 +18,12 @@ type InterestsTabsProps = {
 
 const tabIds: readonly TabId[] = ["books", "movies"];
 
+/**
+ * 読書と映画の表示を切り替えるタブを表示する
+ *
+ * @param InterestsTabsProps props
+ * @returns 趣味カテゴリ切り替えタブのJSX
+ */
 export function InterestsTabs({
   label,
   labels,
@@ -30,11 +36,23 @@ export function InterestsTabs({
     movies: null,
   });
 
+  /**
+   * 指定したタブを選択してフォーカスを移動する
+   *
+   * @param tabId 選択するタブid
+   * @returns 戻り値なし
+   */
   function selectAndFocus(tabId: TabId) {
     setActiveTab(tabId);
     tabRefs.current[tabId]?.focus();
   }
 
+  /**
+   * キーボード操作に応じて選択中のタブを移動する
+   *
+   * @param event タブで発生したキーボードイベント
+   * @returns 戻り値なし
+   */
   function handleKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
     const currentIndex = tabIds.indexOf(activeTab);
     let nextTab: TabId | undefined;

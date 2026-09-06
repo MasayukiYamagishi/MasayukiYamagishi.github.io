@@ -1,6 +1,12 @@
 import type { RankedValue } from "@/lib/interests";
 import { RankingList } from "./RankingList";
 
+/**
+ * 映画のジャンル別ランキングを表示する
+ *
+ * @param props ジャンル別ランキングのプロパティ
+ * @returns ジャンル別ランキングのJSX
+ */
 export function GenreRanking({
   heading,
   note,

@@ -28,6 +28,12 @@ type BooksPanelProps = {
   dictionary: InterestsDictionary["books"];
 };
 
+/**
+ * 読書の概要・本棚の状態・読書履歴をまとめて表示する
+ *
+ * @param BooksPanelProps props
+ * @returns 読書パネルのJSX
+ */
 export function BooksPanel({
   locale,
   books,

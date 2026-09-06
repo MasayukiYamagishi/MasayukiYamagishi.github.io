@@ -15,6 +15,11 @@ const WORK_EXPERIENCE_DIRECTORY = path.join(
 );
 const FILE_NAME_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*\.yaml$/;
 
+/**
+ * 職歴データとして読み込むYAMLファイル名を取得する
+ *
+ * @returns 検証済みの職歴YAMLファイル名一覧
+ */
 async function getWorkExperienceFileNames() {
   const entries = await readdir(WORK_EXPERIENCE_DIRECTORY, {
     withFileTypes: true,
@@ -37,6 +42,12 @@ async function getWorkExperienceFileNames() {
   return fileNames.sort((left, right) => left.localeCompare(right));
 }
 
+/**
+ * 職歴YAMLを読み込み、検証済みの職歴データに変換する
+ *
+ * @param fileName 読み込むYAMLファイル名
+ * @returns 検証済みの職歴データ
+ */
 async function readWorkExperience(fileName: string): Promise<WorkExperience> {
   const filePath = path.join(WORK_EXPERIENCE_DIRECTORY, fileName);
 
@@ -92,6 +103,11 @@ async function readWorkExperience(fileName: string): Promise<WorkExperience> {
   };
 }
 
+/**
+ * すべての職歴を開始年月の新しい順で取得する
+ *
+ * @returns 検証および並べ替え済みの職歴一覧
+ */
 export const getWorkExperiences = cache(
   async (): Promise<readonly WorkExperience[]> => {
     const fileNames = await getWorkExperienceFileNames();
