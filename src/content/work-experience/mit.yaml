@@ -30,6 +30,7 @@ projects:
       - ja: "Claude Codeを活用した仕様駆動開発に取り組み、コマンドやスキルの整備から仕様作成、実装、テスト作成までを担当。"
         en: "Use Claude Code for specification-driven development, covering command and skill setup, specification authoring, implementation, and test creation."
     technologies:
+      - linux
       - nextjs
       - typescript
       - java
@@ -38,6 +39,7 @@ projects:
       - flyway
       - prisma
       - claudecode
+      - git
 
   - id: education-service-operations-tool
     title:
@@ -69,6 +71,7 @@ projects:
       - cursor
       - githubcopilot
       - apachejmeter
+      - git
 
   - id: programming-school-operations
     title:
@@ -124,6 +127,7 @@ projects:
       - prisma
       - storybook
       - linux
+      - git
 
   - id: lease-management-system-replacement
     title:
