@@ -1,0 +1,143 @@
+diff --git a/lib/compile.js b/lib/compile.js
+index dce69be..a406caa 100644
+--- a/lib/compile.js
++++ b/lib/compile.js
+@@ -1,9 +1,12 @@
+ 'use strict';
+ 
++const { assertAst } = require('./limits');
++
+ const fill = require('fill-range');
+ const utils = require('./utils');
+ 
+ const compile = (ast, options = {}) => {
++  assertAst(ast);
+   const walk = (node, parent = {}) => {
+     const invalidBlock = utils.isInvalidBrace(parent);
+     const invalidNode = node.invalid === true && options.escapeInvalid === true;
+diff --git a/lib/expand.js b/lib/expand.js
+index 35b2c41..c0d3964 100644
+--- a/lib/expand.js
++++ b/lib/expand.js
+@@ -1,5 +1,7 @@
+ 'use strict';
+ 
++const { assertAst } = require('./limits');
++
+ const fill = require('fill-range');
+ const stringify = require('./stringify');
+ const utils = require('./utils');
+@@ -31,6 +33,7 @@ const append = (queue = '', stash = '', enclose = false) => {
+ };
+ 
+ const expand = (ast, options = {}) => {
++  assertAst(ast);
+   const rangeLimit = options.rangeLimit === undefined ? 1000 : options.rangeLimit;
+ 
+   const walk = (node, parent = {}) => {
+diff --git a/lib/limits.js b/lib/limits.js
+new file mode 100644
+index 0000000..f865066
+--- /dev/null
++++ b/lib/limits.js
+@@ -0,0 +1,56 @@
++'use strict';
++
++const MAX_DEPTH = 100;
++const MAX_NODES = 20000;
++
++/** Reject structures that cannot safely reach the recursive upstream walkers. */
++const assertAst = ast => {
++  const frames = [{ node: ast, depth: 0, index: -1 }];
++  const active = new WeakSet();
++  let visited = 0;
++  while (frames.length !== 0) {
++    const frame = frames[frames.length - 1];
++    const node = frame.node;
++    if (frame.index === -1) {
++      if (node === null || typeof node !== 'object' || Array.isArray(node)) {
++        throw new TypeError('Expected an AST node');
++      }
++      if (frame.depth > MAX_DEPTH || ++visited > MAX_NODES || active.has(node)) {
++        throw new SyntaxError('Brace AST exceeds safe traversal limits');
++      }
++      if (node.value !== undefined && typeof node.value !== 'string') {
++        throw new TypeError('Expected an AST string value');
++      }
++      if (node.nodes !== undefined && !Array.isArray(node.nodes)) {
++        throw new TypeError('Expected AST children to be an array');
++      }
++      let parent = node.parent;
++      const parents = new WeakSet([node]);
++      let height = 0;
++      while (parent !== undefined && parent !== null) {
++        if (typeof parent !== 'object' || parents.has(parent) || ++height > MAX_DEPTH) {
++          throw new SyntaxError('Brace AST has an unsafe parent chain');
++        }
++        parents.add(parent);
++        parent = parent.parent;
++      }
++      active.add(node);
++      frame.index = 0;
++    }
++    if (node.nodes && frame.index < node.nodes.length) {
++      frames.push({ node: node.nodes[frame.index++], depth: frame.depth + 1, index: -1 });
++    } else {
++      active.delete(node);
++      frames.pop();
++    }
++  }
++};
++
++/** Keep parser-created nesting below the same immutable walker bound. */
++const assertNesting = stackSize => {
++  if (stackSize >= MAX_DEPTH) {
++    throw new SyntaxError('Brace pattern exceeds safe nesting limit');
++  }
++};
++
++module.exports = { assertAst, assertNesting };
+diff --git a/lib/parse.js b/lib/parse.js
+index 3a6988e..0aab2c5 100644
+--- a/lib/parse.js
++++ b/lib/parse.js
+@@ -1,5 +1,7 @@
+ 'use strict';
+ 
++const { assertNesting } = require('./limits');
++
+ const stringify = require('./stringify');
+ 
+ /**
+@@ -143,6 +145,7 @@ const parse = (input, options = {}) => {
+      */
+ 
+     if (value === CHAR_LEFT_PARENTHESES) {
++      assertNesting(stack.length);
+       block = push({ type: 'paren', nodes: [] });
+       stack.push(block);
+       push({ type: 'text', value });
+@@ -195,6 +198,7 @@ const parse = (input, options = {}) => {
+      */
+ 
+     if (value === CHAR_LEFT_CURLY_BRACE) {
++      assertNesting(stack.length);
+       depth++;
+ 
+       const dollar = prev.value && prev.value.slice(-1) === '$' || block.dollar === true;
+diff --git a/lib/stringify.js b/lib/stringify.js
+index 8bcf872..5155368 100644
+--- a/lib/stringify.js
++++ b/lib/stringify.js
+@@ -1,8 +1,11 @@
+ 'use strict';
+ 
++const { assertAst } = require('./limits');
++
+ const utils = require('./utils');
+ 
+ module.exports = (ast, options = {}) => {
++  assertAst(ast);
+   const stringify = (node, parent = {}) => {
+     const invalidBlock = options.escapeInvalid && utils.isInvalidBrace(parent);
+     const invalidNode = node.invalid === true && options.escapeInvalid === true;
