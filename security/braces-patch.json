@@ -14,5 +14,6 @@
     "lib/parse.js": "ff60c16446f560b85be22d1ae9ac6a725aeebbfa3a1b6095a793e57a2af15e66",
     "lib/stringify.js": "9fd7faad584deef440db0b665c79d56bc07017f2e256f83eb832f552618cea62",
     "lib/limits.js": "e91a5302b6342d6c2a621b11aebdf73a3a48b29d52e365fb4cbc9cc63151ee41"
-  }
+  },
+  "hash_normalization": "UTF-8; CRLF normalized to LF before SHA-256"
 }

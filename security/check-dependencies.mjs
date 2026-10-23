@@ -41,7 +41,7 @@ test('installed braces copies carry the bounded-traversal backport', { skip: pac
     assert.equal(info.name, 'braces');
     assert.equal(info.version, '3.0.3');
     for (const [file, expected] of Object.entries(manifest.files_sha256)) {
-      const actual = crypto.createHash('sha256').update(fs.readFileSync(path.join(directory, file))).digest('hex');
+      const actual = crypto.createHash('sha256').update(fs.readFileSync(path.join(directory, file), 'utf8').replace(/\r\n/g, '\n')).digest('hex');
       assert.equal(actual, expected, 'Security patch is missing or changed: ' + path.join(directory, file));
     }
     const braces = loadPackage(directory);
