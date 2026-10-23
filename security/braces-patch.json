@@ -1,0 +1,18 @@
+{
+  "advisory": "GHSA-vfj7-8cjw-p6xm",
+  "upstream_package": "braces",
+  "upstream_version": "3.0.3",
+  "upstream_status": "No fixed registry release as of 2026-10-23; original version metadata retained.",
+  "policy": {
+    "max_ast_depth": 100,
+    "max_ast_nodes": 20000
+  },
+  "patch_sha256": "0fa8dc34e0aceb4e0ecd698c38d2de474333a730ff3fb1137d613a97c4f9c580",
+  "files_sha256": {
+    "lib/compile.js": "03f7aea3df9d32bd073697fc5ecf5a597c7f9925b940f98faf56cad58b6b2cf9",
+    "lib/expand.js": "d212c0519b7794eb727a18c0a87c94176a7d0b761ab38654e8fff4adf499055b",
+    "lib/parse.js": "ff60c16446f560b85be22d1ae9ac6a725aeebbfa3a1b6095a793e57a2af15e66",
+    "lib/stringify.js": "9fd7faad584deef440db0b665c79d56bc07017f2e256f83eb832f552618cea62",
+    "lib/limits.js": "e91a5302b6342d6c2a621b11aebdf73a3a48b29d52e365fb4cbc9cc63151ee41"
+  }
+}

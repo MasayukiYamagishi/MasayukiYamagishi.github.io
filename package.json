@@ -17,7 +17,9 @@
     "project:new": "node scripts/create-project.mjs",
     "test:scripts": "node --test tests/scripts/content-scaffolding.test.mjs",
     "test:unit": "vitest run --project unit",
-    "test:stories": "vitest run"
+    "test:stories": "vitest run",
+    "test:dependency-security": "node --test security/check-dependencies.mjs",
+    "postinstall": "node --test security/check-dependencies.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
